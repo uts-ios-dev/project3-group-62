@@ -14,6 +14,13 @@
 		7EDC969420A3C7550088D94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969320A3C7550088D94F /* Assets.xcassets */; };
 		7EDC969720A3C7550088D94F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969520A3C7550088D94F /* LaunchScreen.storyboard */; };
 		7EDC969F20A3C7B80088D94F /* Prototype Wireframe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */; };
+		F318E4D420ACF2A6006523B1 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4D320ACF2A6006523B1 /* Symbol.swift */; };
+		F318E4D620ACF2C4006523B1 /* Defination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4D520ACF2C4006523B1 /* Defination.swift */; };
+		F318E4D820ACF2D5006523B1 /* Formula.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4D720ACF2D5006523B1 /* Formula.swift */; };
+		F318E4DC20ACF304006523B1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4DB20ACF304006523B1 /* Settings.swift */; };
+		F318E4DE20ACF48E006523B1 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4DD20ACF48E006523B1 /* Tag.swift */; };
+		F318E4E020ACF669006523B1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4DF20ACF669006523B1 /* Category.swift */; };
+		F318E4E220ACF721006523B1 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4E120ACF721006523B1 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		7EDC969620A3C7550088D94F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EDC969820A3C7550088D94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Prototype Wireframe.storyboard"; sourceTree = "<group>"; };
+		F318E4D320ACF2A6006523B1 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		F318E4D520ACF2C4006523B1 /* Defination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defination.swift; sourceTree = "<group>"; };
+		F318E4D720ACF2D5006523B1 /* Formula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formula.swift; sourceTree = "<group>"; };
+		F318E4DB20ACF304006523B1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F318E4DD20ACF48E006523B1 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		F318E4DF20ACF669006523B1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		F318E4E120ACF721006523B1 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,13 @@
 				7EDC969520A3C7550088D94F /* LaunchScreen.storyboard */,
 				7EDC969820A3C7550088D94F /* Info.plist */,
 				7EDC969020A3C7540088D94F /* Math_Notation_To_Language_Converter.xcdatamodeld */,
+				F318E4D320ACF2A6006523B1 /* Symbol.swift */,
+				F318E4D520ACF2C4006523B1 /* Defination.swift */,
+				F318E4D720ACF2D5006523B1 /* Formula.swift */,
+				F318E4DB20ACF304006523B1 /* Settings.swift */,
+				F318E4DD20ACF48E006523B1 /* Tag.swift */,
+				F318E4DF20ACF669006523B1 /* Category.swift */,
+				F318E4E120ACF721006523B1 /* Data.swift */,
 			);
 			path = "Math Notation To Language Converter";
 			sourceTree = "<group>";
@@ -144,7 +165,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EDC968C20A3C7540088D94F /* ViewController.swift in Sources */,
+				F318E4E220ACF721006523B1 /* Data.swift in Sources */,
+				F318E4D420ACF2A6006523B1 /* Symbol.swift in Sources */,
+				F318E4DC20ACF304006523B1 /* Settings.swift in Sources */,
+				F318E4D820ACF2D5006523B1 /* Formula.swift in Sources */,
 				7EDC968A20A3C7540088D94F /* AppDelegate.swift in Sources */,
+				F318E4E020ACF669006523B1 /* Category.swift in Sources */,
+				F318E4D620ACF2C4006523B1 /* Defination.swift in Sources */,
+				F318E4DE20ACF48E006523B1 /* Tag.swift in Sources */,
 				7EDC969220A3C7540088D94F /* Math_Notation_To_Language_Converter.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
