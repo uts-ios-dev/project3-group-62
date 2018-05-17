@@ -14,7 +14,43 @@
 		7EDC969420A3C7550088D94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969320A3C7550088D94F /* Assets.xcassets */; };
 		7EDC969720A3C7550088D94F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969520A3C7550088D94F /* LaunchScreen.storyboard */; };
 		7EDC969F20A3C7B80088D94F /* Prototype Wireframe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */; };
+		A4F1986A20ACF2A4002A059E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1986920ACF2A4002A059E /* SearchViewController.swift */; };
+		A4F1986C20ACF352002A059E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1986B20ACF352002A059E /* ResultViewController.swift */; };
+		A4F1986E20ACF53E002A059E /* ResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1986D20ACF53E002A059E /* ResultDetailViewController.swift */; };
+		A4F1987020ACF677002A059E /* FormulaCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1986F20ACF677002A059E /* FormulaCategoryVC.swift */; };
+		A4F1987220ACFA0C002A059E /* CommonFormulaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1987120ACFA0C002A059E /* CommonFormulaVC.swift */; };
+		A4F1987420ACFB8C002A059E /* FormulaSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1987320ACFB8C002A059E /* FormulaSearchVC.swift */; };
+		A4F1987620ACFC5B002A059E /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1987520ACFC5B002A059E /* FavoriteViewController.swift */; };
+		A4F1987820ACFCD7002A059E /* CustomDefineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1987720ACFCD7002A059E /* CustomDefineVC.swift */; };
+		A4F1987A20ACFE04002A059E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1987920ACFE04002A059E /* SettingViewController.swift */; };
+		A4F1988220ACFE61002A059E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1988120ACFE61002A059E /* KeyboardViewController.swift */; };
+		A4F1988620ACFE61002A059E /* symbolKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A4F1987F20ACFE61002A059E /* symbolKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A4F1988C20ACFEA4002A059E /* symbolKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4F1988B20ACFEA4002A059E /* symbolKeyboardView.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4F1988420ACFE61002A059E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EDC967E20A3C7530088D94F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4F1987E20ACFE61002A059E;
+			remoteInfo = symbolKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A4F1988A20ACFE61002A059E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A4F1988620ACFE61002A059E /* symbolKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7EDC968620A3C7530088D94F /* Math Notation To Language Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Notation To Language Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +62,30 @@
 		7EDC969620A3C7550088D94F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EDC969820A3C7550088D94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Prototype Wireframe.storyboard"; sourceTree = "<group>"; };
+		A4F1986920ACF2A4002A059E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A4F1986B20ACF352002A059E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		A4F1986D20ACF53E002A059E /* ResultDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetailViewController.swift; sourceTree = "<group>"; };
+		A4F1986F20ACF677002A059E /* FormulaCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaCategoryVC.swift; sourceTree = "<group>"; };
+		A4F1987120ACFA0C002A059E /* CommonFormulaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFormulaVC.swift; sourceTree = "<group>"; };
+		A4F1987320ACFB8C002A059E /* FormulaSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaSearchVC.swift; sourceTree = "<group>"; };
+		A4F1987520ACFC5B002A059E /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		A4F1987720ACFCD7002A059E /* CustomDefineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDefineVC.swift; sourceTree = "<group>"; };
+		A4F1987920ACFE04002A059E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		A4F1987F20ACFE61002A059E /* symbolKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = symbolKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F1988120ACFE61002A059E /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		A4F1988320ACFE61002A059E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4F1988B20ACFEA4002A059E /* symbolKeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = symbolKeyboardView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7EDC968320A3C7530088D94F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4F1987C20ACFE61002A059E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				7EDC968820A3C7530088D94F /* Math Notation To Language Converter */,
+				A4F1988020ACFE61002A059E /* symbolKeyboard */,
 				7EDC968720A3C7530088D94F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				7EDC968620A3C7530088D94F /* Math Notation To Language Converter.app */,
+				A4F1987F20ACFE61002A059E /* symbolKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,8 +124,27 @@
 				7EDC969520A3C7550088D94F /* LaunchScreen.storyboard */,
 				7EDC969820A3C7550088D94F /* Info.plist */,
 				7EDC969020A3C7540088D94F /* Math_Notation_To_Language_Converter.xcdatamodeld */,
+				A4F1986920ACF2A4002A059E /* SearchViewController.swift */,
+				A4F1986B20ACF352002A059E /* ResultViewController.swift */,
+				A4F1986D20ACF53E002A059E /* ResultDetailViewController.swift */,
+				A4F1986F20ACF677002A059E /* FormulaCategoryVC.swift */,
+				A4F1987120ACFA0C002A059E /* CommonFormulaVC.swift */,
+				A4F1987320ACFB8C002A059E /* FormulaSearchVC.swift */,
+				A4F1987520ACFC5B002A059E /* FavoriteViewController.swift */,
+				A4F1987720ACFCD7002A059E /* CustomDefineVC.swift */,
+				A4F1987920ACFE04002A059E /* SettingViewController.swift */,
 			);
 			path = "Math Notation To Language Converter";
+			sourceTree = "<group>";
+		};
+		A4F1988020ACFE61002A059E /* symbolKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A4F1988120ACFE61002A059E /* KeyboardViewController.swift */,
+				A4F1988320ACFE61002A059E /* Info.plist */,
+				A4F1988B20ACFEA4002A059E /* symbolKeyboardView.xib */,
+			);
+			path = symbolKeyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,15 +157,34 @@
 				7EDC968220A3C7530088D94F /* Sources */,
 				7EDC968320A3C7530088D94F /* Frameworks */,
 				7EDC968420A3C7530088D94F /* Resources */,
+				A4F1988A20ACFE61002A059E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A4F1988520ACFE61002A059E /* PBXTargetDependency */,
 			);
 			name = "Math Notation To Language Converter";
 			productName = "Math Notation To Language Converter";
 			productReference = 7EDC968620A3C7530088D94F /* Math Notation To Language Converter.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A4F1987E20ACFE61002A059E /* symbolKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4F1988720ACFE61002A059E /* Build configuration list for PBXNativeTarget "symbolKeyboard" */;
+			buildPhases = (
+				A4F1987B20ACFE61002A059E /* Sources */,
+				A4F1987C20ACFE61002A059E /* Frameworks */,
+				A4F1987D20ACFE61002A059E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = symbolKeyboard;
+			productName = symbolKeyboard;
+			productReference = A4F1987F20ACFE61002A059E /* symbolKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +197,10 @@
 				ORGANIZATIONNAME = "Summer Studios";
 				TargetAttributes = {
 					7EDC968520A3C7530088D94F = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+					};
+					A4F1987E20ACFE61002A059E = {
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
 					};
@@ -120,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				7EDC968520A3C7530088D94F /* Math Notation To Language Converter */,
+				A4F1987E20ACFE61002A059E /* symbolKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +237,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4F1987D20ACFE61002A059E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F1988C20ACFEA4002A059E /* symbolKeyboardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -143,13 +252,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F1987220ACFA0C002A059E /* CommonFormulaVC.swift in Sources */,
+				A4F1987420ACFB8C002A059E /* FormulaSearchVC.swift in Sources */,
+				A4F1987020ACF677002A059E /* FormulaCategoryVC.swift in Sources */,
+				A4F1986E20ACF53E002A059E /* ResultDetailViewController.swift in Sources */,
+				A4F1987620ACFC5B002A059E /* FavoriteViewController.swift in Sources */,
+				A4F1986C20ACF352002A059E /* ResultViewController.swift in Sources */,
 				7EDC968C20A3C7540088D94F /* ViewController.swift in Sources */,
+				A4F1987820ACFCD7002A059E /* CustomDefineVC.swift in Sources */,
 				7EDC968A20A3C7540088D94F /* AppDelegate.swift in Sources */,
+				A4F1986A20ACF2A4002A059E /* SearchViewController.swift in Sources */,
 				7EDC969220A3C7540088D94F /* Math_Notation_To_Language_Converter.xcdatamodeld in Sources */,
+				A4F1987A20ACFE04002A059E /* SettingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4F1987B20ACFE61002A059E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4F1988220ACFE61002A059E /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4F1988520ACFE61002A059E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4F1987E20ACFE61002A059E /* symbolKeyboard */;
+			targetProxy = A4F1988420ACFE61002A059E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7EDC968D20A3C7540088D94F /* Main.storyboard */ = {
@@ -287,6 +421,7 @@
 		7EDC969C20A3C7550088D94F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4975ZZV574;
@@ -303,6 +438,7 @@
 		7EDC969D20A3C7550088D94F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4975ZZV574;
@@ -311,6 +447,36 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Summer-Studios.Math-Notation-To-Language-Converter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A4F1988820ACFE61002A059E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4975ZZV574;
+				INFOPLIST_FILE = symbolKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Summer-Studios.Math-Notation-To-Language-Converter.symbolKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4F1988920ACFE61002A059E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4975ZZV574;
+				INFOPLIST_FILE = symbolKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Summer-Studios.Math-Notation-To-Language-Converter.symbolKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +499,15 @@
 			buildConfigurations = (
 				7EDC969C20A3C7550088D94F /* Debug */,
 				7EDC969D20A3C7550088D94F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4F1988720ACFE61002A059E /* Build configuration list for PBXNativeTarget "symbolKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4F1988820ACFE61002A059E /* Debug */,
+				A4F1988920ACFE61002A059E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
