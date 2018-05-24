@@ -26,6 +26,7 @@ class ResultDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Maybe we just use navigation built-in back button
     func backButton() {
         // Click back button and back to last view?
     }

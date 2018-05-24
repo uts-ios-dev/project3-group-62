@@ -12,11 +12,17 @@ import UIKit
  * In this view a list of favorite symbols and formulas will be shown
  */
 class FavoriteViewController: UIViewController {
-
+    @IBOutlet weak var keywordsSearchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        var keywords = keywordsSearchBar.text {
+            didSet {
+                searchTextChanged()
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,9 +30,12 @@ class FavoriteViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func itemClicked() {
-        // If user click anyone of the favorite item, the application will go to
-        // detail page and show the detail of that item?
+    @IBAction func itemClicked(_ sender: Any) {
+        // Promote to SymbolDetail View or FormulaDetail View
+    }
+    
+    func searchTextChanged() {
+        
     }
 
 }

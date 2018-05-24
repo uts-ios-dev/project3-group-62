@@ -14,12 +14,12 @@
 		7EDC969420A3C7550088D94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969320A3C7550088D94F /* Assets.xcassets */; };
 		7EDC969720A3C7550088D94F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969520A3C7550088D94F /* LaunchScreen.storyboard */; };
 		7EDC969F20A3C7B80088D94F /* Prototype Wireframe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */; };
+		A4A2DD3C20B63F660037653F /* FormulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A2DD3B20B63F660037653F /* FormulaViewController.swift */; };
+		A4A2DD3E20B63FB00037653F /* CommonFormulaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A2DD3D20B63FB00037653F /* CommonFormulaVC.swift */; };
+		A4A2DD4020B63FD40037653F /* FormulaDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A2DD3F20B63FD40037653F /* FormulaDetailVC.swift */; };
 		A4F1986A20ACF2A4002A059E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1986920ACF2A4002A059E /* SearchViewController.swift */; };
 		A4F1986C20ACF352002A059E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1986B20ACF352002A059E /* ResultViewController.swift */; };
 		A4F1986E20ACF53E002A059E /* ResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1986D20ACF53E002A059E /* ResultDetailViewController.swift */; };
-		A4F1987020ACF677002A059E /* FormulaCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1986F20ACF677002A059E /* FormulaCategoryVC.swift */; };
-		A4F1987220ACFA0C002A059E /* CommonFormulaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1987120ACFA0C002A059E /* CommonFormulaVC.swift */; };
-		A4F1987420ACFB8C002A059E /* FormulaSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1987320ACFB8C002A059E /* FormulaSearchVC.swift */; };
 		A4F1987620ACFC5B002A059E /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1987520ACFC5B002A059E /* FavoriteViewController.swift */; };
 		A4F1987820ACFCD7002A059E /* CustomDefineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1987720ACFCD7002A059E /* CustomDefineVC.swift */; };
 		A4F1987A20ACFE04002A059E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F1987920ACFE04002A059E /* SettingViewController.swift */; };
@@ -62,12 +62,12 @@
 		7EDC969620A3C7550088D94F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EDC969820A3C7550088D94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Prototype Wireframe.storyboard"; sourceTree = "<group>"; };
+		A4A2DD3B20B63F660037653F /* FormulaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaViewController.swift; sourceTree = "<group>"; };
+		A4A2DD3D20B63FB00037653F /* CommonFormulaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFormulaVC.swift; sourceTree = "<group>"; };
+		A4A2DD3F20B63FD40037653F /* FormulaDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaDetailVC.swift; sourceTree = "<group>"; };
 		A4F1986920ACF2A4002A059E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A4F1986B20ACF352002A059E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		A4F1986D20ACF53E002A059E /* ResultDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultDetailViewController.swift; sourceTree = "<group>"; };
-		A4F1986F20ACF677002A059E /* FormulaCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaCategoryVC.swift; sourceTree = "<group>"; };
-		A4F1987120ACFA0C002A059E /* CommonFormulaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFormulaVC.swift; sourceTree = "<group>"; };
-		A4F1987320ACFB8C002A059E /* FormulaSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaSearchVC.swift; sourceTree = "<group>"; };
 		A4F1987520ACFC5B002A059E /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		A4F1987720ACFCD7002A059E /* CustomDefineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDefineVC.swift; sourceTree = "<group>"; };
 		A4F1987920ACFE04002A059E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -127,12 +127,12 @@
 				A4F1986920ACF2A4002A059E /* SearchViewController.swift */,
 				A4F1986B20ACF352002A059E /* ResultViewController.swift */,
 				A4F1986D20ACF53E002A059E /* ResultDetailViewController.swift */,
-				A4F1986F20ACF677002A059E /* FormulaCategoryVC.swift */,
-				A4F1987120ACFA0C002A059E /* CommonFormulaVC.swift */,
-				A4F1987320ACFB8C002A059E /* FormulaSearchVC.swift */,
 				A4F1987520ACFC5B002A059E /* FavoriteViewController.swift */,
 				A4F1987720ACFCD7002A059E /* CustomDefineVC.swift */,
 				A4F1987920ACFE04002A059E /* SettingViewController.swift */,
+				A4A2DD3B20B63F660037653F /* FormulaViewController.swift */,
+				A4A2DD3D20B63FB00037653F /* CommonFormulaVC.swift */,
+				A4A2DD3F20B63FD40037653F /* FormulaDetailVC.swift */,
 			);
 			path = "Math Notation To Language Converter";
 			sourceTree = "<group>";
@@ -252,16 +252,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4F1987220ACFA0C002A059E /* CommonFormulaVC.swift in Sources */,
-				A4F1987420ACFB8C002A059E /* FormulaSearchVC.swift in Sources */,
-				A4F1987020ACF677002A059E /* FormulaCategoryVC.swift in Sources */,
+				A4A2DD3C20B63F660037653F /* FormulaViewController.swift in Sources */,
 				A4F1986E20ACF53E002A059E /* ResultDetailViewController.swift in Sources */,
+				A4A2DD4020B63FD40037653F /* FormulaDetailVC.swift in Sources */,
 				A4F1987620ACFC5B002A059E /* FavoriteViewController.swift in Sources */,
 				A4F1986C20ACF352002A059E /* ResultViewController.swift in Sources */,
 				7EDC968C20A3C7540088D94F /* ViewController.swift in Sources */,
 				A4F1987820ACFCD7002A059E /* CustomDefineVC.swift in Sources */,
 				7EDC968A20A3C7540088D94F /* AppDelegate.swift in Sources */,
 				A4F1986A20ACF2A4002A059E /* SearchViewController.swift in Sources */,
+				A4A2DD3E20B63FB00037653F /* CommonFormulaVC.swift in Sources */,
 				7EDC969220A3C7540088D94F /* Math_Notation_To_Language_Converter.xcdatamodeld in Sources */,
 				A4F1987A20ACFE04002A059E /* SettingViewController.swift in Sources */,
 			);
