@@ -8,11 +8,13 @@ Defination {
 Symbol {
     String symbol
     Defination def[]
+    String img[]
     Category cat
 }
 Formula {
     Symbol symbol[]
     String tag
+    String imgs[]
     String description
     Category cat
 }

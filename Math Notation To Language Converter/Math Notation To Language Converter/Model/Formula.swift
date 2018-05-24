@@ -11,16 +11,19 @@ import Foundation
 class Formula  {
     
     var symbols : [Symbol] = []
-    var tags : [Tag] = []
+    var tags : String
     var description : String
+    var cat : Category
     var imgs : [String] = []
 
-    init(symbols : Symbol,tag : Tag, description : String, img : String) {
-        self.symbols.append(symbols)
-        self.tags.append(tag)
+    init(cat : Category,symbol : Symbol,description : String, tag : String,img : String? = nil) {
+        self.cat = cat
+        self.symbols.append(symbol)
         self.description = description
-        imgs.append(img)
-        
+        self.tags = tag
+        if let picture = img {
+            imgs.append(picture)
+        }
     }
     
     func toString() -> String {
@@ -28,7 +31,7 @@ class Formula  {
     }
     
     func allSymbols() -> String {
-        var str = ""
+        var str : String = " "
         for s in symbols {
             str += s.toString()
         }

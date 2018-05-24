@@ -10,16 +10,20 @@ import Foundation
 
 class Defination{
     var name : String
-    var tags : [Tag] = []
+    var tag : String
     var meaning : String
     var description : String
-    var URL : String
+    var url : String?
     
-    init(name : String,tag : Tag, meaning : String, description : String, URL : String) {
+    init(name : String,tag : String, meaning : String, description : String, url : String? = nil) {
         self.name = name
-        self.tags.append(tag)
+        self.tag = tag
         self.meaning = meaning
         self.description = description
-        self.URL = URL
+        self.url = url
+    }
+    
+    public func toString() -> String {
+        return "name :\(name) tag: \(tag) meaning: \(meaning) description: \(description) URL: \(url)"
     }
 }

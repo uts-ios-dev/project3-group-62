@@ -9,10 +9,11 @@
 import Foundation
 
 class Category {
-    var tags : [Tag] = []
     var name : String
-    init(tag : Tag,name : String) {
-        self.tags.append(tag)
+    init(name : String) {
         self.name = name
+    }
+    public func toString()-> String{
+        return "name: \(name)"
     }
 }
