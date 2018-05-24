@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6615070820B6515F001DF875 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6615070720B6515F001DF875 /* main.swift */; };
 		7EDC968A20A3C7540088D94F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC968920A3C7540088D94F /* AppDelegate.swift */; };
 		7EDC968C20A3C7540088D94F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC968B20A3C7540088D94F /* ViewController.swift */; };
 		7EDC968F20A3C7540088D94F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC968D20A3C7540088D94F /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6615070720B6515F001DF875 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7EDC968620A3C7530088D94F /* Math Notation To Language Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Notation To Language Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDC968920A3C7540088D94F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EDC968B20A3C7540088D94F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				F318E4D720ACF2D5006523B1 /* Formula.swift */,
 				F318E4DB20ACF304006523B1 /* Settings.swift */,
 				F33A9D2A20B640F600ABA011 /* Dictionary.swift */,
+				6615070720B6515F001DF875 /* main.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				F33A9D2B20B640F600ABA011 /* Dictionary.swift in Sources */,
 				F318E4D820ACF2D5006523B1 /* Formula.swift in Sources */,
 				7EDC968A20A3C7540088D94F /* AppDelegate.swift in Sources */,
+				6615070820B6515F001DF875 /* main.swift in Sources */,
 				F318E4E020ACF669006523B1 /* Category.swift in Sources */,
 				F318E4D620ACF2C4006523B1 /* Defination.swift in Sources */,
 				7EDC969220A3C7540088D94F /* Math_Notation_To_Language_Converter.xcdatamodeld in Sources */,
