@@ -19,10 +19,10 @@ class Dictionary {
         //Add new data sample
         
         //Symbol
-        let def = Defination(name: "plus", tag: "Basic", meaning: "add", description: "1 + 1 = 2",url:"blog.sparrow.moe")
-        //Create and assign category & defination
+        let def = Definition(name: "plus", tag: "Basic", meaning: "add", translation: "", description: "1 + 1 = 2",url:"blog.sparrow.moe")
+        //Create and assign category & definition
         let symbolCat = Category(name: "Basic Symbol")
-        let symbol = Symbol(cat: symbolCat, symbol: "+", defination: def)
+        let symbol = Symbol(cat: symbolCat, symbol: "+", definition: def)
         //Finally add this symbol to dictioray array
         symbols.append(symbol)
         
