@@ -1,0 +1,51 @@
+Defination {    
+    String name
+    String tag
+    String meaning 
+    String description
+    String URL
+}
+Symbol {
+    String symbol
+    Defination def[]
+    String img[]
+    Category cat
+}
+Formula {
+    Symbol symbol[]
+    String tag
+    String imgs[]
+    String description
+    Category cat
+}
+
+Category {
+    String name
+}
+
+Dictionary {
+    //Category 
+    Category formulaCategories[]
+    Category symbolCategories[]
+    //Symbols & formulas
+    Symbol symbols[]
+    Formula formulas[]
+
+    //Data
+
+    //Symbol
+    Defination def = new Defination(...)
+    //Create symbol Category
+    Category symbolCat = new Category()
+    Symbol symbol = new Symbol(def,symbolCat,...)
+    symbols.add(symbol) //Append to the symbols array
+
+    //Formula
+    //Create formula Category
+    Category formulaCat = new Category()
+    Formula formula = new Formula(symbol,formulaCat,...)
+    formulas.add(formula)
+
+
+
+}
