@@ -28,11 +28,11 @@ Symbol;Name;Meaning;Translation;Tags
 ⊂;Inclusion; inclusion... A ⊂ B means that the set A is part of the set B;is a (proper) subset of;Set Theory
 ⊆;Non-Strict Inclusion; nonstrict inclusion... A ⊆ B means that the set A is part of the set B or coincides with B ;is a subset of (and may or may not equal);Set Theory
 ∅;Empty Set; empty set;for the empty set;Set Theory
-∑;Summation Operator;sum, <Insert Picture> ak = a1 + a2 + ... + an;evaluate the expression ($v4) ($v2)-($v1) times by starting at ($v3)  = ($v1), up until ($v3) = ($v2) , and summing the accumulated result each time.;Summation,Sequences
-∏;Product Operator;product, <Insert Picture> ak = a1 ⋅ a2 ⋅ ... ⋅ an;evaluate the expression ($v4) ($v2)-($v1) times by starting at ($v3)  = ($v1), up until ($v3) = ($v2) , and multiplying the accumulated result each time.;Product,Summation,Sequences
+∑;Summation Operator;sum, ($p1) ak = a1 + a2 + ... + an;evaluate the expression ($v4) ($v2)-($v1) times by starting at ($v3)  = ($v1), up until ($v3) = ($v2) , and summing the accumulated result each time.;Summation,Sequences
+∏;Product Operator;product, ($p1) ak = a1 ⋅ a2 ⋅ ... ⋅ an;evaluate the expression ($v4) ($v2)-($v1) times by starting at ($v3)  = ($v1), up until ($v3) = ($v2) , and multiplying the accumulated result each time.;Product,Summation,Sequences
 ∂;Partial Derivative; symbol used to denote partial derivatives and differential operators... ∂x is the operator of differentiation with respect to x;is the partial derivative of;Calculus & Mathematical Analysis
 ∇;Nabla; vector differential operator 'nabla'... ∇a is the gradient of a scalar a;the gradient of;Calculus & Mathematical Analysis,Geometry
-∫;Integral; integral... <insert Picture> f(x) dx is the integral of a function f(x) over the interval [a, b];the integral;Calculus & Mathematical Analysis
+∫;Integral; integral... ($p1) f(x) dx is the integral of a function f(x) over the interval [a, b];the integral;Calculus & Mathematical Analysis
 ∮;Contour Integral; contour integral (denotes an integral over a closed contour);the contour integral;Calculus & Mathematical Analysis
 ⊥;Perpindicular; perpendicular;is perpendicular to;Geometry
 ∥;Parallel; parallel;is parallel to;Geometry
@@ -41,7 +41,7 @@ arg z;Principle Argument;principal value of Arg z... by definition, arg z = Arg 
 √a;Square Root;square root of a number a, defined by the property (√a )2 = a;divide ($v1) by itself once;Universal Symbols & Arithmetic
 n√a;Nth Root;nth root of a number a(n=2, 3, …,a≥0),defined by the property(n√ a)n=a;divide ($v1) by itself ($v2) times;Universal Symbols & Arithmetic
 a;Vector;vector, a = {a1 , a2 , a3 }, where a1 , a2 , a3 are the vector components;<not implemented for mvp v1>;Linear Algebra
-|a|;Modulus of Vector;a⋅a modulus of a vector a, |a| = √ <insert picture here>;<not implemented for mvp v1>;Linear Algebra
+|a|;Modulus of Vector;a⋅a modulus of a vector a, |a| = √ ($p1);<not implemented for mvp v1>;Linear Algebra
 a⋅b;Inner Product;inner product of vectors a and b, denoted also by (a ⋅ b). Also known as the ‘dot product’.;multiply the corresponding co-ordinates of vectors ($v1) and ($v2) and add up their products to produce a total.;Linear Algebra
 a×b;Cross Product;cross-product of vectors a and b. Also known as ‘cartesian product’.;multiply vectors ($v1) and ($v2) by the sine of the angle (and the unit vector at right angles) between them.;Linear Algebra
 [abc];Triple Vector Product;triple product of vectors a, b, c. Also known as mixed product, box product, or triple scalar product.;product of the 3 vectors ($v1), ($v2) and ($v3);Linear Algebra
@@ -57,33 +57,32 @@ arccosh x;Hyberbolic Arccosine Function;hyperbolic arccosine, the inverse functi
 arccoth x;Hyperbolic Arccotangent Function;hyperbolic arccotangent, the inverse function of hyperbolic cotangent ;the arccoth function ($v1);Trigonometry,Physics,Functions & Equations
 arcsinh x;Hyperbolic Arcsine Function;hyperbolic arcsine, the inverse function of hyperbolic sine ;the arcsinh function ($v1);Trigonometry,Physics,Functions & Equations
 arctanh x;Hyperbolic Arctangent Function;hyperbolic arctangent, the inverse function of hyperbolic tangent ;the arctanh function ($v1);Trigonometry,Physics,Functions & Equations
-Cnk;Binomial Coefficients;"binomial coefficients, also denoted by <Insert picture here>
-";the number of ways of picking ($v1) unordered outcomes from possibilities ($v2);Combinatorics
-C;Eulerconstant;Eulerconstant <insert picture here>;<eulerconstant not implemented for mvp v1>;Calculus & Mathematical Analysis
+Cnk;Binomial Coefficients;binomial coefficients, also denoted by ($p1);the number of ways of picking ($v1) unordered outcomes from possibilities ($v2);Combinatorics
+C;Eulerconstant;Eulerconstant ($p1);<eulerconstant not implemented for mvp v1>;Calculus & Mathematical Analysis
 cos x;Cosine Function;cosine, even trigonometric function of period 2π;the cos function ($v1);Trigonometry,Physics,Functions & Equations
-cosec x;Cosecant Function;cosecant, odd trigonometric function of period 2π: cosec <insert picture here>;the cosec function ($v1);Trigonometry,Physics,Functions & Equations
+cosec x;Cosecant Function;cosecant, odd trigonometric function of period 2π: cosec ($p1);the cosec function ($v1);Trigonometry,Physics,Functions & Equations
 cosh x;Hyperbolic Cosine Function;hyperbolic cosine, cosh x = 1 (ex + e–x );the cosh function ($v1);Trigonometry,Physics,Functions & Equations
 cot x;Cotangent Function;cotangent, odd trigonometric function of period π, cot x = cos x/sin x ;the cot function ($v1);Trigonometry,Physics,Functions & Equations
 coth x;Hyperbolic Cotangent Function;hyperbolic cotangent, coth x = cosh x/sinh x;the coth function ($v1);Trigonometry,Physics,Functions & Equations
 det A;Determinant;determinant of a matrix A = (aij ) ;the determinant of matrix ($v1);Linear Algebra
 div a;Divergence;divergence of a vector a ;the divergence of vector ($v1);Linear Algebra
-e;Euler’s Constant;the number 'e' (base of natural logarithms), e = 2.718281 . . . ... definition:  <insert picture here>;2.718281…(the irrational number ‘e’);Universal
-erf x;Error Function;Gauss error function, erf x =<insert picture here>;gaussian error (sigmoid error) function ($v1);Statistics,Functions & Equations
-erfc x;Complementary Error Function;complementary error function, erfc x <insert picture here>;complementary error function ($v1);Statistics,Functions & Equations
+e;Euler’s Constant;the number 'e' (base of natural logarithms), e = 2.718281 . . . ... definition: ($p1);2.718281…(the irrational number ‘e’);Universal
+erf x;Error Function;Gauss error function, erf x = ($p1);gaussian error (sigmoid error) function ($v1);Statistics,Functions & Equations
+erfc x;Complementary Error Function;complementary error function, erfc x ($p1);complementary error function ($v1);Statistics,Functions & Equations
 exp x;Exponential Function;exponential (exponential function), denoted also by exp x = ex ;exponential function ($v1);Exponents,Functions & Equations
 grad a;Gradient;gradient of a scalar a, denoted also by ∇a ;gradient of scalar ($v1);Linear Algebra,Geometry
-Hn(x);Hermite Polynomial;Hermite polynomial, Hn (x) <Insert picture here>;<not implemented for mvp>;Probability,Combinatorics
-Iν (x);Modified Bessel Function 1;modified Bessel function of the first kind, Iν (x) = <insert picture here>;<not implemented for mvp>;Differential Equations
+Hn(x);Hermite Polynomial;Hermite polynomial, Hn (x) ($p1);<not implemented for mvp>;Probability,Combinatorics
+Iν (x);Modified Bessel Function 1;modified Bessel function of the first kind, Iν (x) = ($p1);<not implemented for mvp>;Differential Equations
 Im z;Imaginary Part of Complex Number;imaginary part of a complex number... if z=x+iy, then Im z =y ;the imaginary part of complex number ($v1);Complex Numbers
 inf A;Infinium;"infimum of a (numerical) set A... if A=(a,b) or A=[a,b) , then inf A=a 
 ";the infinium of numerical set ($v1);Set Theory
-Jν (x);Bessel Function 1;Bessel function of the first kind <Insert picture here>;bessel function of ($v1);Functions & Equations
+Jν (x);Bessel Function 1;Bessel function of the first kind ($p1);bessel function of ($v1);Functions & Equations
 Kν (x);Modified Bessel Function 2;Modified Bessel function of the second kind;modified bessel function of ($v1);Functions & Equations
-lim f (x) <make picture>;Limit;limit of a function f(x) as x → a ;limited of function ($v1) as ($v1) approaches ($v2);Calculus & Mathematical Analysis,Functions & Equations
+lim f (x) ($p1);Limit;limit of a function f(x) as x → a ;limited of function ($v1) as ($v1) approaches ($v2);Calculus & Mathematical Analysis,Functions & Equations
 ln x;Natural Logarithm;"natural logarithm (logarithm to base e) ";the result of the question ‘what to the power of 2.718281…(the irrational number ‘e’) gives ($v1)?’?;Universal,Logarithms
 loga x;Logarithm;logarithm to base a;the result the question ‘what power of ($v1) gives ($v2)?’;Universal,Logarithms
-max f (x) <make picture>;Function Maximum;maximum of a function f (x) on the interval a ≤ x ≤ b ;the maximum result of of function ($v4) in the interval where ($v1) ≤ ($v2) ≤ ($v3);Functions & Equations,Calculus & Mathematical Analysis,Geometry
-min f (x) <make picture>;Function Minimum;minimum of a function f (x) on the interval a ≤ x ≤ b;the minimum result of of function ($v4) in the interval where ($v1) ≤ ($v2) ≤ ($v3);Functions & Equations,Calculus & Mathematical Analysis,Geometry
+max f (x) ($p1);Function Maximum;maximum of a function f (x) on the interval a ≤ x ≤ b ;the maximum result of of function ($v4) in the interval where ($v1) ≤ ($v2) ≤ ($v3);Functions & Equations,Calculus & Mathematical Analysis,Geometry
+min f (x) ($p1);Function Minimum;minimum of a function f (x) on the interval a ≤ x ≤ b;the minimum result of of function ($v4) in the interval where ($v1) ≤ ($v2) ≤ ($v3);Functions & Equations,Calculus & Mathematical Analysis,Geometry
 n!;Factorial;factorial: 0!=1!=1, n!=1⋅2⋅3...(n–1)n, n=2, 3, 4, ... =;the product of ($v1) and all integers below it;Combinatorics,Sequences
 ℝ;Set of Real Numbers;set of real numbers,ℝ={–∞<x<∞} ;the set of real numbers;Set theory
 Re z;Real Part of Complex Number;real part of a complex number... if z=x+iy, then Rez=x ;the real part of complex number ($v1);Complex Numbers
@@ -91,7 +90,7 @@ r,ℵ, z;Cylindrical Coordinates;cylindrical coordinates, r=􏰑x2+y2 and x=rcos
 r,θ,ℵ;Spherical Coordinates;sphericalcoordinates, r=􏰑x2+y2+z2 and x=rsinθcosℵ, y=sinθsinℵ, z = rcosθ;spherical co-ordinates ($v1) and ($v2);Coordinates
 rank A;Rank;rank of a matrix A;the rank of matrix ($v1);Linear Algebra
 curl a;Curl;curl of a vector a, also denoted by rot a ;the curl of matrix ($v1);Linear Algebra
-sec x;Secant Function;secant, even trigonometric function of period 2π: sec x = <insert picture here>;the secant function ($v1);Trigonometry,Physics,Functions & Equations
+sec x;Secant Function;secant, even trigonometric function of period 2π: sec x = ($p1);the secant function ($v1);Trigonometry,Physics,Functions & Equations
 sign x;Sign Function;'sign'function: it is equal to 1 if x>0, –1 if x<0, and 0 if x=0;the sign function ($v1);Physics,Functions & Equations
 sin x;Sine Function;sine, odd trigonometric function of period 2π;the sin function ($v1);Trigonometry,Physics,Functions & Equations
 sinh x;Hyperbolic Sine Function;hyperbolic sine, sinh x = 1 (ex – e–x);the hyberbolic sine function ($v1);Trigonometry,Physics,Functions & Equations
@@ -102,17 +101,17 @@ x;Variable (or Argument);independent variable, argument ;variable (or argument) 
 x,y,z;Cartesian Coordinates;spatial variables (Cartesian coordinates) ;cartesian co-ordinates ($v1), ($v2) and ($v3);Coordinates
 Yν (x);Bessel Function 2;Bessel function of the second kind... Yν (x) = ;bessel function of ($v1);Differential Equations
 y;Dependent Variable;dependent variable, function... one often writes y = y(x) or y = f(x) ;(dependent) variable ($v1);Universal Symbols & Arithmetic,Calculus & Mathematical Analysis,Functions & Equations
-y'x;First Derivative;first derivative of a function y = f(x), also denoted by y′, <Insert picture here>;first derivative of the function ($v1);Calculus & Mathematical Analysis,Functions & Equations
-y’'xx;Second Derivative;"second derivative of a function y = f(x), also denoted by y′′, <Insert picture here>
+y'x;First Derivative;first derivative of a function y = f(x), also denoted by y′, ($p1);first derivative of the function ($v1);Calculus & Mathematical Analysis,Functions & Equations
+y’'xx;Second Derivative;"second derivative of a function y = f(x), also denoted by y′′, ($p1)
 ";second derivative of the function ($v1);Calculus & Mathematical Analysis,Functions & Equations
-<insert picture>;nth Derivative;nth derivative of a function y = f(x), also denoted by  <Insert picture here>;nth derivative of the function ($v1);Calculus & Mathematical Analysis,Functions & Equations
+($p1);nth Derivative;nth derivative of a function y = f(x), also denoted by  ($p2);nth derivative of the function ($v1);Calculus & Mathematical Analysis,Functions & Equations
 z=x+iy;Complex Number;complex number... x is the real part of z, y is the imaginary part of z,i =–1;<not implemented for mvp>;Complex Numbers
 z ̄=x–iy;Complex Conjugate Number;complex conjugate number, i2 = –1;<not implemented for mvp>;Complex Numbers
 |z|;Modulus;modulus of a complex number... if z=x+iy, then|z|= ;modulus of complex number ($v1);Complex Numbers
 Γ(α);Gamma Function;gamma function, Γ(α) = ;a gamma function;Complex Numbers,Functions & Equations,Probability,Combinatorics
 γ(α,x);Incomplete Gamma Function;incomplete gamma function, γ(α, x) = ;an incomplete gamma function;Complex Numbers,Functions & Equations,Probability,Combinatorics
-Φ(a,b...x);Degenerate Hypergeometric Function;degenerate hypergeometricfunction, Φ(a,b...x) <insert picture here>;a degenerate hypergeometric function;Differential Equations
-Δ;Laplace Operator;Laplace operator... in the two dimensional case, <insert picture here>;the laplace transform of;Differential Equations
+Φ(a,b...x);Degenerate Hypergeometric Function;degenerate hypergeometricfunction, Φ(a,b...x) ($p1);a degenerate hypergeometric function;Differential Equations
+Δ;Laplace Operator;Laplace operator... in the two dimensional case, ($p1);the laplace transform of;Differential Equations
 Δx;Increment of Argument;Increment of the argument;the increment of the argument ($v1);Calculus & Mathematical Analysis,Functions & Equations
 Δy;Increment of Function;increment of the function... if y = f(x), then Δy = f(x + Δx) – f(x) ;the increment of the function ($v1);Calculus & Mathematical Analysis,Functions & Equations
 π;Pi;the number 'pi' (ratio of the circumference to the diameter), π = 3.141592 . . .;3.141592…. (irrational number pi);Universal Symbols & Arithmetic,Geometry
