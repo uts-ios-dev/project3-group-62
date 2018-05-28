@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Defination{
+class Definition {
     var name : String
     var tag : String
     var meaning : String

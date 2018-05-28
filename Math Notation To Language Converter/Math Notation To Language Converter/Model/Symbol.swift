@@ -10,14 +10,14 @@ import Foundation
 
 class Symbol  {
     var symbol : String
-    var definations : [Defination] = []
+    var definition : [Definition] = []
     var imgs : [String] = []
     var cat : Category
     
-    init(cat : Category,symbol : String, defination : Defination,img : String? = nil) {
+    init(cat : Category,symbol : String, definition : Definition,img : String? = nil) {
         self.cat = cat
         self.symbol = symbol
-        self.definations.append(defination)
+        self.definition.append(definition)
         if let picture = img {
             imgs.append(picture)
         }
@@ -25,7 +25,7 @@ class Symbol  {
     
     func printAllDefs() ->String{
         var output = ""
-        for def in definations {
+        for def in definition {
             output += def.toString()
         }
         return output
