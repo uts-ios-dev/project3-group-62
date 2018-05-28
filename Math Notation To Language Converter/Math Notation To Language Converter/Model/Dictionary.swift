@@ -9,6 +9,7 @@
 import Foundation
 
 class Dictionary {
+    
     var formulaCategories : [Category] = []
     var symbolCategories : [Category] = []
     

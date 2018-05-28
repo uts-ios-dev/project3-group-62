@@ -1,118 +1,118 @@
-Symbol,Meaning,Calculation Symbol,Translation,Tags
-= , equal to,,is equal to,Universal Symbols & Arithmetic
-≡ , identically equal to,,is identically equal to,Universal Symbols & Arithmetic
-≠ , not equal to,,is not equal to,Universal Symbols & Arithmetic
-≈ , approximately equal to,,is approximately equal to,Universal Symbols & Arithmetic
-∼ ," of same order as (used in comparisons of infinitesimals or infinites) < less than; “a less than b” is written as a < b (or, equivalently, b > a) ≤ less than or equal to;a less than or equal to b is written as a≤b",,is of the same order as,Universal Symbols & Arithmetic
-≪ , much less than; a much less than b is written as a ≪ b,,is much less than,Universal Symbols & Arithmetic
-> ," greater than; a greater than b is written as a > b (or, equivalently, b < a) ≥ greater than or equal to; a greater than or equal to b is written as a ≥ b",,is greater than,Universal Symbols & Arithmetic
-≫ , much greater than; a much greater than b is written as a ≫ b,,is much greater than,Universal Symbols & Arithmetic
-+ , plus sign; the sum of numbers a and b is denoted by a + b and has the property a+b=b+a,,plus,Universal Symbols & Arithmetic
-– , minus sign; the difference of numbers a and b is denoted by a – b,,minus,Universal Symbols & Arithmetic
-⋅ , multiplication sign; the product of numbers a and b is denoted by either ab or a ⋅ b (sometimes a × b) and has the property ab = ba; the inner product of vectors a and b is denoted by a ⋅ b,,"multiplied by (or if vectors, the inner product of)","Universal Symbols & Arithmetic,Linear Algebra"
-× , multiplication sign; the product of numbers a and b is sometimes denoted by a × b; the cross-product of vectors a and b is denoted by a × b,,multipled by,"Universal Symbols & Arithmetic,Linear Algebra"
-: , division sign; the ratio of numbers a and b is denoted by a : b or a/b,,"ratio between (literally, ‘divided by’)",Universal Symbols & Arithmetic
-! ,"factorial sign: 0!=1!=1, n!=1⋅2⋅3...(n–1)n, n=2, 3, 4, ...",,factorial (the product of this number and all integers below it),Universal Symbols & Arithmetic
-!! ,"double factorial sign: 0!! = 1!! = 1, (2n)!! = 2 ⋅ 4 ⋅ 6...(2n), (2n + 1)!! = 1⋅3⋅5…(2n+1),where n=1, 2, 3, …",,double factorial (product of this number and all even numbers below it),Universal Symbols & Arithmetic
-% ,percent sign; 1% is one hundredth of the entire quantity,,percent (1% is one hundreth of the entire quantity),Universal Symbols & Arithmetic
-∞ , infinity,,a number greater than any assignable quantity or countable number,"Universal Symbols & Arithmetic,Calculus & Mathematical Analysis"
-→ , tends (infinitely approaches) to; x → a means that x tends to a,,infinitely approaches,"Universal Symbols & Arithmetic,Calculus & Mathematical Analysis"
-⇒,implies; consequently ,,implies that,Universal Symbols & Arithmetic
-⇐⇒ ,is equivalent to(if and only if...) ,,is equivalent to,Universal Symbols & Arithmetic
-∀ ,"for all, for any ",,for all,Set Theory
-∃ , there exists,,there exists,Set Theory
-∈ , 􏰁􏰁belongs to; a ∈ A means that a is an element of the set A,,belongs to,Set Theory
-∉ , does not belong to; a ∉􏰂 A means that a is not an element of the set A,,does not belong to,Set Theory
-∪ , union (Boolean addition); A ∪ B stands for the union of sets A and B,,union of (the joining of),Set Theory
-∩ , intersection (Boolean multiplication); A ∩ B stands for the intersection (common part) of sets A and B,,the intersection of,Set Theory
-⊂ , inclusion; A ⊂ B means that the set A is part of the set B,,is a (proper) subset of,Set Theory
-⊆ , nonstrict inclusion; A ⊆ B means that the set A is part of the set B or coincides with B ,,is a subset of (and may or may not equal),Set Theory
-∅ , empty set,,for the empty set,Set Theory
-∑ ,"sum, <Insert Picture> ak = a1 + a2 + ... + an",,"evaluate the expression ($v4) ($v2)-($v1) times by starting at ($v3)  = ($v1), up until ($v3) = ($v2) , and summing the accumulated result each time.","Summation,Sequences"
-∏ ,"product, <Insert Picture> ak = a1 ⋅ a2 ⋅ ... ⋅ an",,"evaluate the expression ($v4) ($v2)-($v1) times by starting at ($v3)  = ($v1), up until ($v3) = ($v2) , and multiplying the accumulated result each time.","Product,Summation,Sequences"
-∂ , symbol used to denote partial derivatives and differential operators; ∂x is the operator of differentiation with respect to x,,is the partial derivative of,Calculus & Mathematical Analysis
-∇ , vector differential operator “nabla”; ∇a is the gradient of a scalar a,,the gradient of,"Calculus & Mathematical Analysis,Geometry"
-∫ ," integral; <insert Picture> f(x) dx is the integral of a function f(x) over the interval [a, b]",,the integral,Calculus & Mathematical Analysis
-∮ , contour integral (denotes an integral over a closed contour),,the contour integral,Calculus & Mathematical Analysis
-⊥ , perpendicular,,is perpendicular to,Geometry
-∥ , parallel,,is parallel to,Geometry
-Argz ,"argument of a complex number z = x + iy; by definition, tan(Arg z) = y/x ",Arg,the argument of complex number ($v1),Complex Numbers
-arg z ,"principal value of Arg z; by definition, arg z = Arg z, where –π < Arg z ≤ π ",arg ,the principal value of the argument of complex number ($v1),Complex Numbers
-√a,"square root of a number a, defined by the property (√a )2 = a ",√,divide ($v1) by itself once,Universal Symbols & Arithmetic
-n√a,"nth root of a number a(n=2, 3, …,a≥0),defined by the property(n√ a)n=a ",n√,divide ($v1) by itself ($v2) times,Universal Symbols & Arithmetic
-a ,"vector, a = {a1 , a2 , a3 }, where a1 , a2 , a3 are the vector components",,<not implemented for mvp v1>,Linear Algebra
-|a| ,"a⋅a modulus of a vector a, |a| = √ <insert picture here>",,<not implemented for mvp v1>,Linear Algebra
-a⋅b ,"inner product of vectors a and b, denoted also by (a ⋅ b). Also known as the ‘dot product’.",⋅,multiply the corresponding co-ordinates of vectors ($v1) and ($v2) and add up their products to produce a total.,Linear Algebra
-a×b ,cross-product of vectors a and b. Also known as ‘cartesian product’.,×,multiply vectors ($v1) and ($v2) by the sine of the angle (and the unit vector at right angles) between them.,Linear Algebra
-[abc] ,"triple product of vectors a, b, c. Also known as mixed product, box product, or triple scalar product.",,"product of the 3 vectors ($v1), ($v2) and ($v3)",Linear Algebra
-"(a, b) ",interval (open interval) a < x < b,,"within the interval ranging from ($v1) to ($v2), where ($v1) and ($v2) are not included","Universal Symbols & Arithmetic,Set Theory"
-"(a, b] ",half-open interval a < x ≤ b,,"within the interval ranging from ($v1) to ($v2), where ($v1) is not included but ($v2) is included","Universal Symbols & Arithmetic,Set Theory"
-"[a, b) ",half-open interval a ≤ x < b,,"within the interval ranging from ($v1) to ($v2), where ($v1) is included but ($v2) is not included","Universal Symbols & Arithmetic,Set Theory"
-"[a, b] ",interval (closed interval) a ≤ x ≤ b,,"within the interval ranging from ($v1) to ($v2), where ($v1) and ($v2) are both included","Universal Symbols & Arithmetic,Set Theory"
-arccos x ,"arccosine, the inverse function of cosine: cos(arccos x) = x, |x| ≤ 1",arccos,the arccos function ($v1),"Trigonometry,Physics,Functions & Equations"
-arccot x ,"arccotangent, the inverse function of cotangent: cot(arccot x) = x",arccot,the arccot function ($v1),"Trigonometry,Physics,Functions & Equations"
-arcsin x ,"arcsine, the inverse function of sine: sin(arcsin x) = x, |x| ≤ 1",arcsin,the arcsin function ($v1),"Trigonometry,Physics,Functions & Equations"
-arctan x ,"arctangent, the inverse function of tangent: tan(arctan x) = x",arctan,the arctan function ($v1),"Trigonometry,Physics,Functions & Equations"
-arccosh x ,"hyperbolic arccosine, the inverse function of hyperbolic cosine ",arccosh,the arccosh function ($v1),"Trigonometry,Physics,Functions & Equations"
-arccoth x ,"hyperbolic arccotangent, the inverse function of hyperbolic cotangent ",arccoth,the arccoth function ($v1),"Trigonometry,Physics,Functions & Equations"
-arcsinh x ,"hyperbolic arcsine, the inverse function of hyperbolic sine ",arcsinh,the arcsinh function ($v1),"Trigonometry,Physics,Functions & Equations"
-arctanh x ,"hyperbolic arctangent, the inverse function of hyperbolic tangent ",arctanh,the arctanh function ($v1),"Trigonometry,Physics,Functions & Equations"
-Cnk ,"binomial coefficients, also denoted by <Insert picture here>
-",,the number of ways of picking ($v1) unordered outcomes from possibilities ($v2),Combinatorics
-C ,Eulerconstant <insert picture here>,,<eulerconstant not implemented for mvp v1>,Calculus & Mathematical Analysis
-cos x ,"cosine, even trigonometric function of period 2π ",cos,the cos function ($v1),"Trigonometry,Physics,Functions & Equations"
-cosec x ,"cosecant, odd trigonometric function of period 2π: cosec <insert picture here>",cosec,the cosec function ($v1),"Trigonometry,Physics,Functions & Equations"
-cosh x ,"hyperbolic cosine, cosh x = 1 (ex + e–x ) ",cosh,the cosh function ($v1),"Trigonometry,Physics,Functions & Equations"
-cot x ,"cotangent, odd trigonometric function of period π, cot x = cos x/sin x ",cot,the cot function ($v1),"Trigonometry,Physics,Functions & Equations"
-coth x ,"hyperbolic cotangent, coth x = cosh x/sinh x",coth,the coth function ($v1),"Trigonometry,Physics,Functions & Equations"
-det A ,determinant of a matrix A = (aij ) ,det,the determinant of matrix ($v1),Linear Algebra
-div a ,divergence of a vector a ,div,the divergence of vector ($v1),Linear Algebra
-e ,"the number “e” (base of natural logarithms), e = 2.718281 . . . ; definition:  <insert picture here>",e ,2.718281…(the irrational number ‘e’),Universal
-erf x ,"Gauss error function, erf x =<insert picture here>",erf,gaussian error (sigmoid error) function ($v1),"Statistics,Functions & Equations"
-erfc x ,"complementary error function, erfc x <insert picture here>",erfc ,complementary error function ($v1),"Statistics,Functions & Equations"
-exp x ,"exponential (exponential function), denoted also by exp x = ex ",exp,exponential function ($v1),"Exponents,Functions & Equations"
-grad a ,"gradient of a scalar a, denoted also by ∇a ",grad,gradient of scalar ($v1),"Linear Algebra,Geometry"
-Hn(x) ,"Hermite polynomial, Hn (x) <Insert picture here>",Hn(x) ,<not implemented for mvp>,"Probability,Combinatorics"
-Iν (x) ,"modified Bessel function of the first kind, Iν (x) = <insert picture here>",Iν (x) ,<not implemented for mvp>,Differential Equations
-Im z ,"imaginary part of a complex number; if z=x+iy, then Im z =y ",Im,the imaginary part of complex number ($v1),Complex Numbers
-inf A ,"infimum of a (numerical) set A; if A=(a,b) or A=[a,b) , then inf A=a 
-",inf,the infinium of numerical set ($v1),Set Theory
-Jν (x) ,Bessel function of the first kind <Insert picture here>,Jν (x) ,bessel function of ($v1),Functions & Equations
-Kν (x) ,Modified Bessel function of the second kind,Kν (x) ,modified bessel function of ($v1),Functions & Equations
-lim f (x) <make picture>,limit of a function f(x) as x → a ,,limited of function ($v1) as ($v1) approaches ($v2),"Calculus & Mathematical Analysis,Functions & Equations"
-ln x ,"natural logarithm (logarithm to base e) ",,the result of the question ‘what to the power of 2.718281…(the irrational number ‘e’) gives ($v1)?’?,"Universal,Logarithms"
-loga x ,logarithm to base a,,the result the question ‘what power of ($v1) gives ($v2)?’,"Universal,Logarithms"
-max f (x) <make picture>,maximum of a function f (x) on the interval a ≤ x ≤ b ,,the maximum result of of function ($v4) in the interval where ($v1) ≤ ($v2) ≤ ($v3),"Functions & Equations,Calculus & Mathematical Analysis,Geometry"
-min f (x) <make picture>,minimum of a function f (x) on the interval a ≤ x ≤ b,,the minimum result of of function ($v4) in the interval where ($v1) ≤ ($v2) ≤ ($v3),"Functions & Equations,Calculus & Mathematical Analysis,Geometry"
-n! ,"factorial: 0!=1!=1, n!=1⋅2⋅3...(n–1)n, n=2, 3, 4, ... =",,the product of ($v1) and all integers below it,"Combinatorics,Sequences"
-ℝ,"set of real numbers,ℝ={–∞<x<∞} ",,the set of real numbers,Set theory
-Re z ,"real part of a complex number; if z=x+iy, then Rez=x ",Re,the real part of complex number ($v1),Complex Numbers
-"r,ℵ, z","cylindrical coordinates, r=􏰑x2+y2 and x=rcosℵ, y=rsinℵ",,cylindrical co-ordinates ($v1) and ($v2),Coordinates
-"r,θ,ℵ ","sphericalcoordinates, r=􏰑x2+y2+z2 and x=rsinθcosℵ, y=sinθsinℵ, z = rcosθ",,spherical co-ordinates ($v1) and ($v2),Coordinates
-rank A ,rank of a matrix A,rank,the rank of matrix ($v1),Linear Algebra
-curl a ,"curl of a vector a, also denoted by rot a ",curl,the curl of matrix ($v1),Linear Algebra
-sec x ,"secant, even trigonometric function of period 2π: sec x = <insert picture here>",sec,the secant function ($v1),"Trigonometry,Physics,Functions & Equations"
-sign x ,"“sign”function: it is equal to 1 if x>0, –1 if x<0, and 0 if x=0 ",sign,the sign function ($v1),"Physics,Functions & Equations"
-sin x ,"sine, odd trigonometric function of period 2π ",sin,the sin function ($v1),"Trigonometry,Physics,Functions & Equations"
-sinh x ,"hyperbolic sine, sinh x = 1 (ex – e–x) ",sinh,the hyberbolic sine function ($v1),"Trigonometry,Physics,Functions & Equations"
-sup A ,"supremum of a (numerical) set A; if A = (a,b) or A = (a,b], then sup A = b ",sup,the suprenum of numerical set ($v1),Set Theory
-tan x ,"tangent, odd trigonometric function of period π, tan x = sin x/cos x ",tan,the tangent function ($v1),"Trigonometry,Physics,Functions & Equations"
-tanh x ,"hyperbolic tangent, tanh x = sinh x/cosh x",tanh,the hyperbolic tangent function ($v1),"Trigonometry,Physics,Functions & Equations"
-x ,"independent variable, argument ",,variable (or argument) ($v1),"Universal Symbols & Arithmetic,Calculus & Mathematical Analysis,Functions & Equations"
-"x,y,z ",spatial variables (Cartesian coordinates) ,,"cartesian co-ordinates ($v1), ($v2) and ($v3)",Coordinates
-Yν (x) ,Bessel function of the second kind; Yν (x) = ,,bessel function of ($v1),Differential Equations
-y ,"dependent variable, function; one often writes y = y(x) or y = f(x) ",,(dependent) variable ($v1),"Universal Symbols & Arithmetic,Calculus & Mathematical Analysis,Functions & Equations"
-y'x,"first derivative of a function y = f(x), also denoted by y′, <Insert picture here>",‘,first derivative of the function ($v1),"Calculus & Mathematical Analysis,Functions & Equations"
-y’'xx,"second derivative of a function y = f(x), also denoted by y′′, <Insert picture here>
-",’’,second derivative of the function ($v1),"Calculus & Mathematical Analysis,Functions & Equations"
-<insert picture>,"nth derivative of a function y = f(x), also denoted by  <Insert picture here>",,nth derivative of the function ($v1),"Calculus & Mathematical Analysis,Functions & Equations"
-z=x+iy ,"complex number; x is the real part of z, y is the imaginary part of z,i =–1 ",,<not implemented for mvp>,Complex Numbers
-z ̄=x–iy ,"complex conjugate number, i2 = –1 ",,<not implemented for mvp>,Complex Numbers
-|z| ,"modulus of a complex number; if z=x+iy, then|z|= ",,modulus of complex number ($v1),Complex Numbers
-Γ(α) ,"gamma function, Γ(α) = ",,a gamma function,"Complex Numbers,Functions & Equations,Probability,Combinatorics"
-"γ(α,x) ","incomplete gamma function, γ(α, x) = ",,an incomplete gamma function,"Complex Numbers,Functions & Equations,Probability,Combinatorics"
-"Φ(a,b;x) ","degenerate hypergeometricfunction, Φ(a,b;x) <insert picture here>",,a degenerate hypergeometric function,Differential Equations
-Δ ,"Laplace operator; in the two dimensional case, <insert picture here>",,the laplace transform of,Differential Equations
-Δx ,Increment of the argument,,the increment of the argument ($v1),"Calculus & Mathematical Analysis,Functions & Equations"
-Δy ,"increment of the function; if y = f(x), then Δy = f(x + Δx) – f(x) ",,the increment of the function ($v1),"Calculus & Mathematical Analysis,Functions & Equations"
-π ,"the number “pi” (ratio of the circumference to the diameter), π = 3.141592 . . . ",,3.141592…. (irrational number pi),"Universal Symbols & Arithmetic,Geometry"
+Symbol;Meaning;Translation;Tags;
+=; equal to;is equal to;Universal Symbols & Arithmetic;
+≡; identically equal to;is identically equal to;Universal Symbols & Arithmetic;
+≠; not equal to;is not equal to;Universal Symbols & Arithmetic;
+≈; approximately equal to;is approximately equal to;Universal Symbols & Arithmetic;
+∼; of same order as (used in comparisons of infinitesimals or infinites) < less than... 'a less than b' is written as a < b (or, equivalently, b > a) ≤ less than or equal to...a less than or equal to b is written as a≤b;is of the same order as;Universal Symbols & Arithmetic;
+≪; much less than... a much less than b is written as a ≪ b;is much less than;Universal Symbols & Arithmetic;
+>; greater than... a greater than b is written as a > b (or, equivalently, b < a) ≥ greater than or equal to... a greater than or equal to b is written as a ≥ b;is greater than;Universal Symbols & Arithmetic;
+≫; much greater than... a much greater than b is written as a ≫ b;is much greater than;Universal Symbols & Arithmetic;
++; plus sign... the sum of numbers a and b is denoted by a + b and has the property a+b=b+a;plus;Universal Symbols & Arithmetic;
+–; minus sign... the difference of numbers a and b is denoted by a – b;minus;Universal Symbols & Arithmetic;
+⋅; multiplication sign... the product of numbers a and b is denoted by either ab or a ⋅ b (sometimes a × b) and has the property ab = ba... the inner product of vectors a and b is denoted by a ⋅ b;multiplied by (or if vectors, the inner product of);Universal Symbols & Arithmetic,Linear Algebra;
+×; multiplication sign... the product of numbers a and b is sometimes denoted by a × b... the cross-product of vectors a and b is denoted by a × b;multipled by;Universal Symbols & Arithmetic,Linear Algebra;
+:; division sign... the ratio of numbers a and b is denoted by a : b or a/b;ratio between (literally, ‘divided by’);Universal Symbols & Arithmetic;
+!;factorial sign: 0!=1!=1, n!=1⋅2⋅3...(n–1)n, n=2, 3, 4, ...;factorial (the product of this number and all integers below it);Universal Symbols & Arithmetic;
+!!;double factorial sign: 0!! = 1!! = 1, (2n)!! = 2 ⋅ 4 ⋅ 6...(2n), (2n + 1)!! = 1⋅3⋅5…(2n+1),where n=1, 2, 3, …;double factorial (product of this number and all even numbers below it);Universal Symbols & Arithmetic;
+%;percent sign... 1% is one hundredth of the entire quantity;percent (1% is one hundreth of the entire quantity);Universal Symbols & Arithmetic;
+∞; infinity;a number greater than any assignable quantity or countable number;Universal Symbols & Arithmetic,Calculus & Mathematical Analysis;
+→; tends (infinitely approaches) to... x → a means that x tends to a;infinitely approaches;Universal Symbols & Arithmetic,Calculus & Mathematical Analysis;
+⇒;implies... consequently ;implies that;Universal Symbols & Arithmetic;
+⇐⇒;is equivalent to(if and only if...) ;is equivalent to;Universal Symbols & Arithmetic;
+∀;for all, for any ;for all;Set Theory;
+∃; there exists;there exists;Set Theory;
+∈; 􏰁􏰁belongs to... a ∈ A means that a is an element of the set A;belongs to;Set Theory;
+∉; does not belong to... a ∉􏰂 A means that a is not an element of the set A;does not belong to;Set Theory;
+∪; union (Boolean addition)... A ∪ B stands for the union of sets A and B;union of (the joining of);Set Theory;
+∩; intersection (Boolean multiplication)... A ∩ B stands for the intersection (common part) of sets A and B;the intersection of;Set Theory;
+⊂; inclusion... A ⊂ B means that the set A is part of the set B;is a (proper) subset of;Set Theory;
+⊆; nonstrict inclusion... A ⊆ B means that the set A is part of the set B or coincides with B ;is a subset of (and may or may not equal);Set Theory;
+∅; empty set;for the empty set;Set Theory;
+∑;sum, <Insert Picture> ak = a1 + a2 + ... + an;evaluate the expression ($v4) ($v2)-($v1) times by starting at ($v3)  = ($v1), up until ($v3) = ($v2) , and summing the accumulated result each time.;Summation,Sequences;
+∏;product, <Insert Picture> ak = a1 ⋅ a2 ⋅ ... ⋅ an;evaluate the expression ($v4) ($v2)-($v1) times by starting at ($v3)  = ($v1), up until ($v3) = ($v2) , and multiplying the accumulated result each time.;Product,Summation,Sequences;
+∂; symbol used to denote partial derivatives and differential operators... ∂x is the operator of differentiation with respect to x;is the partial derivative of;Calculus & Mathematical Analysis;
+∇; vector differential operator 'nabla'... ∇a is the gradient of a scalar a;the gradient of;Calculus & Mathematical Analysis,Geometry;
+∫; integral... <insert Picture> f(x) dx is the integral of a function f(x) over the interval [a, b];the integral;Calculus & Mathematical Analysis;
+∮; contour integral (denotes an integral over a closed contour);the contour integral;Calculus & Mathematical Analysis;
+⊥; perpendicular;is perpendicular to;Geometry;
+∥; parallel;is parallel to;Geometry;
+Argz;argument of a complex number z = x + iy... by definition, tan(Arg z) = y/x ;the argument of complex number ($v1);Complex Numbers;
+arg z;principal value of Arg z... by definition, arg z = Arg z, where –π < Arg z ≤ π ;the principal value of the argument of complex number ($v1);Complex Numbers;
+√a;square root of a number a, defined by the property (√a )2 = a;divide ($v1) by itself once;Universal Symbols & Arithmetic;
+n√a;nth root of a number a(n=2, 3, …,a≥0),defined by the property(n√ a)n=a;divide ($v1) by itself ($v2) times;Universal Symbols & Arithmetic;
+a;vector, a = {a1 , a2 , a3 }, where a1 , a2 , a3 are the vector components;<not implemented for mvp v1>;Linear Algebra;
+|a|;a⋅a modulus of a vector a, |a| = √ <insert picture here>;<not implemented for mvp v1>;Linear Algebra;
+a⋅b;inner product of vectors a and b, denoted also by (a ⋅ b). Also known as the ‘dot product’.;multiply the corresponding co-ordinates of vectors ($v1) and ($v2) and add up their products to produce a total.;Linear Algebra;
+a×b;cross-product of vectors a and b. Also known as ‘cartesian product’.;multiply vectors ($v1) and ($v2) by the sine of the angle (and the unit vector at right angles) between them.;Linear Algebra;
+[abc];triple product of vectors a, b, c. Also known as mixed product, box product, or triple scalar product.;product of the 3 vectors ($v1), ($v2) and ($v3);Linear Algebra;
+(a, b);interval (open interval) a < x < b;within the interval ranging from ($v1) to ($v2), where ($v1) and ($v2) are not included;Universal Symbols & Arithmetic,Set Theory;
+(a, b];half-open interval a < x ≤ b;within the interval ranging from ($v1) to ($v2), where ($v1) is not included but ($v2) is included;Universal Symbols & Arithmetic,Set Theory;
+[a, b);half-open interval a ≤ x < b;within the interval ranging from ($v1) to ($v2), where ($v1) is included but ($v2) is not included;Universal Symbols & Arithmetic,Set Theory;
+[a, b];interval (closed interval) a ≤ x ≤ b;within the interval ranging from ($v1) to ($v2), where ($v1) and ($v2) are both included;Universal Symbols & Arithmetic,Set Theory;
+arccos x;arccosine, the inverse function of cosine: cos(arccos x) = x, |x| ≤ 1;the arccos function ($v1);Trigonometry,Physics,Functions & Equations;
+arccot x;arccotangent, the inverse function of cotangent: cot(arccot x) = x;the arccot function ($v1);Trigonometry,Physics,Functions & Equations;
+arcsin x;arcsine, the inverse function of sine: sin(arcsin x) = x, |x| ≤ 1;the arcsin function ($v1);Trigonometry,Physics,Functions & Equations;
+arctan x;arctangent, the inverse function of tangent: tan(arctan x) = x;the arctan function ($v1);Trigonometry,Physics,Functions & Equations;
+arccosh x;hyperbolic arccosine, the inverse function of hyperbolic cosine ;the arccosh function ($v1);Trigonometry,Physics,Functions & Equations;
+arccoth x;hyperbolic arccotangent, the inverse function of hyperbolic cotangent ;the arccoth function ($v1);Trigonometry,Physics,Functions & Equations;
+arcsinh x;hyperbolic arcsine, the inverse function of hyperbolic sine ;the arcsinh function ($v1);Trigonometry,Physics,Functions & Equations;
+arctanh x;hyperbolic arctangent, the inverse function of hyperbolic tangent ;the arctanh function ($v1);Trigonometry,Physics,Functions & Equations;
+Cnk;"binomial coefficients, also denoted by <Insert picture here>
+";the number of ways of picking ($v1) unordered outcomes from possibilities ($v2);Combinatorics;
+C;Eulerconstant <insert picture here>;<eulerconstant not implemented for mvp v1>;Calculus & Mathematical Analysis;
+cos x;cosine, even trigonometric function of period 2π;the cos function ($v1);Trigonometry,Physics,Functions & Equations;
+cosec x;cosecant, odd trigonometric function of period 2π: cosec <insert picture here>;the cosec function ($v1);Trigonometry,Physics,Functions & Equations;
+cosh x;hyperbolic cosine, cosh x = 1 (ex + e–x );the cosh function ($v1);Trigonometry,Physics,Functions & Equations;
+cot x;cotangent, odd trigonometric function of period π, cot x = cos x/sin x ;the cot function ($v1);Trigonometry,Physics,Functions & Equations;
+coth x;hyperbolic cotangent, coth x = cosh x/sinh x;the coth function ($v1);Trigonometry,Physics,Functions & Equations;
+det A;determinant of a matrix A = (aij ) ;the determinant of matrix ($v1);Linear Algebra;
+div a;divergence of a vector a ;the divergence of vector ($v1);Linear Algebra;
+e;the number 'e' (base of natural logarithms), e = 2.718281 . . . ... definition:  <insert picture here>;2.718281…(the irrational number ‘e’);Universal;
+erf x;Gauss error function, erf x =<insert picture here>;gaussian error (sigmoid error) function ($v1);Statistics,Functions & Equations;
+erfc x;complementary error function, erfc x <insert picture here>;complementary error function ($v1);Statistics,Functions & Equations;
+exp x;exponential (exponential function), denoted also by exp x = ex ;exponential function ($v1);Exponents,Functions & Equations;
+grad a;gradient of a scalar a, denoted also by ∇a ;gradient of scalar ($v1);Linear Algebra,Geometry;
+Hn(x);Hermite polynomial, Hn (x) <Insert picture here>;<not implemented for mvp>;Probability,Combinatorics;
+Iν (x);modified Bessel function of the first kind, Iν (x) = <insert picture here>;<not implemented for mvp>;Differential Equations;
+Im z;imaginary part of a complex number... if z=x+iy, then Im z =y ;the imaginary part of complex number ($v1);Complex Numbers;
+inf A;"infimum of a (numerical) set A... if A=(a,b) or A=[a,b) , then inf A=a 
+";the infinium of numerical set ($v1);Set Theory;
+Jν (x);Bessel function of the first kind <Insert picture here>;bessel function of ($v1);Functions & Equations;
+Kν (x);Modified Bessel function of the second kind;modified bessel function of ($v1);Functions & Equations;
+lim f (x) <make picture>;limit of a function f(x) as x → a ;limited of function ($v1) as ($v1) approaches ($v2);Calculus & Mathematical Analysis,Functions & Equations;
+ln x;"natural logarithm (logarithm to base e) ";the result of the question ‘what to the power of 2.718281…(the irrational number ‘e’) gives ($v1)?’?;Universal,Logarithms;
+loga x;logarithm to base a;the result the question ‘what power of ($v1) gives ($v2)?’;Universal,Logarithms;
+max f (x) <make picture>;maximum of a function f (x) on the interval a ≤ x ≤ b ;the maximum result of of function ($v4) in the interval where ($v1) ≤ ($v2) ≤ ($v3);Functions & Equations,Calculus & Mathematical Analysis,Geometry;
+min f (x) <make picture>;minimum of a function f (x) on the interval a ≤ x ≤ b;the minimum result of of function ($v4) in the interval where ($v1) ≤ ($v2) ≤ ($v3);Functions & Equations,Calculus & Mathematical Analysis,Geometry;
+n!;factorial: 0!=1!=1, n!=1⋅2⋅3...(n–1)n, n=2, 3, 4, ... =;the product of ($v1) and all integers below it;Combinatorics,Sequences;
+ℝ;set of real numbers,ℝ={–∞<x<∞} ;the set of real numbers;Set theory;
+Re z;real part of a complex number... if z=x+iy, then Rez=x ;the real part of complex number ($v1);Complex Numbers;
+r,ℵ, z;cylindrical coordinates, r=􏰑x2+y2 and x=rcosℵ, y=rsinℵ;cylindrical co-ordinates ($v1) and ($v2);Coordinates;
+r,θ,ℵ;sphericalcoordinates, r=􏰑x2+y2+z2 and x=rsinθcosℵ, y=sinθsinℵ, z = rcosθ;spherical co-ordinates ($v1) and ($v2);Coordinates;
+rank A;rank of a matrix A;the rank of matrix ($v1);Linear Algebra;
+curl a;curl of a vector a, also denoted by rot a ;the curl of matrix ($v1);Linear Algebra;
+sec x;secant, even trigonometric function of period 2π: sec x = <insert picture here>;the secant function ($v1);Trigonometry,Physics,Functions & Equations;
+sign x;'sign'function: it is equal to 1 if x>0, –1 if x<0, and 0 if x=0;the sign function ($v1);Physics,Functions & Equations;
+sin x;sine, odd trigonometric function of period 2π;the sin function ($v1);Trigonometry,Physics,Functions & Equations;
+sinh x;hyperbolic sine, sinh x = 1 (ex – e–x);the hyberbolic sine function ($v1);Trigonometry,Physics,Functions & Equations;
+sup A;supremum of a (numerical) set A... if A = (a,b) or A = (a,b], then sup A = b ;the suprenum of numerical set ($v1);Set Theory;
+tan x;tangent, odd trigonometric function of period π, tan x = sin x/cos x ;the tangent function ($v1);Trigonometry,Physics,Functions & Equations;
+tanh x;hyperbolic tangent, tanh x = sinh x/cosh x;the hyperbolic tangent function ($v1);Trigonometry,Physics,Functions & Equations;
+x;independent variable, argument ;variable (or argument) ($v1);Universal Symbols & Arithmetic,Calculus & Mathematical Analysis,Functions & Equations;
+x,y,z;spatial variables (Cartesian coordinates) ;cartesian co-ordinates ($v1), ($v2) and ($v3);Coordinates;
+Yν (x);Bessel function of the second kind... Yν (x) = ;bessel function of ($v1);Differential Equations;
+y;dependent variable, function... one often writes y = y(x) or y = f(x) ;(dependent) variable ($v1);Universal Symbols & Arithmetic,Calculus & Mathematical Analysis,Functions & Equations;
+y'x;first derivative of a function y = f(x), also denoted by y′, <Insert picture here>;first derivative of the function ($v1);Calculus & Mathematical Analysis,Functions & Equations;
+y’'xx;"second derivative of a function y = f(x), also denoted by y′′, <Insert picture here>
+";second derivative of the function ($v1);Calculus & Mathematical Analysis,Functions & Equations;
+<insert picture>;nth derivative of a function y = f(x), also denoted by  <Insert picture here>;nth derivative of the function ($v1);Calculus & Mathematical Analysis,Functions & Equations;
+z=x+iy;complex number... x is the real part of z, y is the imaginary part of z,i =–1;<not implemented for mvp>;Complex Numbers;
+z ̄=x–iy;complex conjugate number, i2 = –1;<not implemented for mvp>;Complex Numbers;
+|z|;modulus of a complex number... if z=x+iy, then|z|= ;modulus of complex number ($v1);Complex Numbers;
+Γ(α);gamma function, Γ(α) = ;a gamma function;Complex Numbers,Functions & Equations,Probability,Combinatorics;
+γ(α,x);incomplete gamma function, γ(α, x) = ;an incomplete gamma function;Complex Numbers,Functions & Equations,Probability,Combinatorics;
+Φ(a,b...x);degenerate hypergeometricfunction, Φ(a,b...x) <insert picture here>;a degenerate hypergeometric function;Differential Equations;
+Δ;Laplace operator... in the two dimensional case, <insert picture here>;the laplace transform of;Differential Equations;
+Δx;Increment of the argument;the increment of the argument ($v1);Calculus & Mathematical Analysis,Functions & Equations;
+Δy;increment of the function... if y = f(x), then Δy = f(x + Δx) – f(x) ;the increment of the function ($v1);Calculus & Mathematical Analysis,Functions & Equations;
+π;the number 'pi' (ratio of the circumference to the diameter), π = 3.141592 . . .;3.141592…. (irrational number pi);Universal Symbols & Arithmetic,Geometry;

@@ -37,9 +37,9 @@ struct ReadCSV {
         let rows = file.components(separatedBy: "\n")
         if rows.count > 0 {
             csvData = []
-            columnNames = rows.first!.components(separatedBy: ",")
+            columnNames = rows.first!.components(separatedBy: ";")
             for row in rows {
-                let fields = row.components(separatedBy: ",")
+                let fields = row.components(separatedBy: ";")
                 if fields.count != columnNames.count {continue}
                     var csvDataRow = [String:String]()
                     for (index,field) in fields.enumerated(){

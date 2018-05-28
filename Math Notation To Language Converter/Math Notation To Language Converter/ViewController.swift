@@ -28,6 +28,9 @@ class ViewController: UIViewController {
         } else {
             print("File could not be written")
         }
+        
+        print("\n Total CSV Rows Imported: \n")
+        print(dictionary.csvData.count)
     
     }
 
