@@ -47,7 +47,7 @@ class ViewController: UIViewController {
                 cat: Category(name: "NULL"),
                 symbol : dictionary.csvData[i]["Symbol"]!,
                 definition : Definition(
-                    name : "Not Yet Implemented",                                    //DEV COMMENT Peter: Will add names to the CSV file
+                    name : dictionary.csvData[i]["Name"]!,
                     tag : dictionary.csvData[i]["Tags"]!,
                     meaning : dictionary.csvData[i]["Meaning"]!,
                     translation: dictionary.csvData[i]["Translation"]!,
