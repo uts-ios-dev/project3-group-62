@@ -45,5 +45,17 @@ class Dictionary {
             print(formula.toString())
         }
     }
+    
+    func getAllSymbolsList() -> [String] {
+        var output : [String] = []
+        for symbol in symbols {
+            output.append(symbol.symbol)
+        }
+        return output
+    }
 }
+
+
+
+
 
