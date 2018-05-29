@@ -34,7 +34,7 @@ struct ReadCSV {
     }
     
     private mutating func convertCSV(file:String) {                                 //convert the CSV into tabular dictionary format
-        let rows = file.components(separatedBy: "\n")
+        let rows = fixCarriageReturns(file: file).components(separatedBy: "\n")
         if rows.count > 0 {
             csvData = []
             columnNames = rows.first!.components(separatedBy: ";")
@@ -52,11 +52,18 @@ struct ReadCSV {
         }
     }
     
+    func fixCarriageReturns(file: String ) -> String {
+        var fixedFile = file
+        fixedFile = fixedFile.replacingOccurrences(of: "\r", with: "\n")
+        fixedFile = fixedFile.replacingOccurrences(of: "\n\n", with: "\n")
+        return fixedFile
+    }
+    
     func printData() {                                                              //prints the data in both model and row by row format for easy debugging
         var tableString = ""
         var rowString = ""
         print("\n\nPrinting CSV data in Tabular Dictionary Format: \n\n\(csvData)")
-        for row in csvData{
+        for row in csvData {
             rowString = ""
             for fieldName in columnNames{
                 guard let field = row[fieldName] else {
