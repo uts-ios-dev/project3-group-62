@@ -13,12 +13,8 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //Test model data
-//        let dictionary = Dictionary()
-//        dictionary.testAddData()
-//        dictionary.testRetrieveData()
-    
-          PopulateObjectsFromCSVSource()    //populate model objects
+
+        //DEV COMMENTS: Model load has moved to the AppDelegate so we can switch the 'Initial View Controller' without affecting the source load
     }
     
     
@@ -28,6 +24,6 @@ class MainVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
 }
 

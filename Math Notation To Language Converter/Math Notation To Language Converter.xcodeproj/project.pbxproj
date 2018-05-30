@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		6615070820B6515F001DF875 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6615070720B6515F001DF875 /* Main.swift */; };
 		7E37D8FE20BB94E80039ADD5 /* Dictionary.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E37D8FD20BB94E70039ADD5 /* Dictionary.csv */; };
-		7E37D90120BB968D0039ADD5 /* ReadCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37D90020BB968D0039ADD5 /* ReadCSV.swift */; };
-		7EC802A220BE588100287017 /* PopulateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC802A120BE588100287017 /* PopulateModel.swift */; };
+		7E37D90120BB968D0039ADD5 /* CSVHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37D90020BB968D0039ADD5 /* CSVHandler.swift */; };
+		7EC802A220BE588100287017 /* SourceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC802A120BE588100287017 /* SourceData.swift */; };
 		7EDC968A20A3C7540088D94F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC968920A3C7540088D94F /* AppDelegate.swift */; };
 		7EDC968C20A3C7540088D94F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC968B20A3C7540088D94F /* MainVC.swift */; };
 		7EDC968F20A3C7540088D94F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC968D20A3C7540088D94F /* Main.storyboard */; };
@@ -38,8 +38,8 @@
 /* Begin PBXFileReference section */
 		6615070720B6515F001DF875 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Main.swift; path = "Math Notation To Language Converter/Model/Main.swift"; sourceTree = SOURCE_ROOT; };
 		7E37D8FD20BB94E70039ADD5 /* Dictionary.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dictionary.csv; sourceTree = "<group>"; };
-		7E37D90020BB968D0039ADD5 /* ReadCSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadCSV.swift; sourceTree = "<group>"; };
-		7EC802A120BE588100287017 /* PopulateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulateModel.swift; sourceTree = "<group>"; };
+		7E37D90020BB968D0039ADD5 /* CSVHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVHandler.swift; sourceTree = "<group>"; };
+		7EC802A120BE588100287017 /* SourceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceData.swift; sourceTree = "<group>"; };
 		7EDC968620A3C7530088D94F /* Math Notation To Language Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Notation To Language Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDC968920A3C7540088D94F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EDC968B20A3C7540088D94F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -81,8 +81,9 @@
 			isa = PBXGroup;
 			children = (
 				7EDC968920A3C7540088D94F /* AppDelegate.swift */,
-				7EC802A120BE588100287017 /* PopulateModel.swift */,
-				7E37D90020BB968D0039ADD5 /* ReadCSV.swift */,
+				7EC802A120BE588100287017 /* SourceData.swift */,
+				F33A9D2A20B640F600ABA011 /* Dictionary.swift */,
+				7E37D90020BB968D0039ADD5 /* CSVHandler.swift */,
 				7E37D8FD20BB94E70039ADD5 /* Dictionary.csv */,
 			);
 			path = Data;
@@ -128,7 +129,6 @@
 				F318E4DF20ACF669006523B1 /* Category.swift */,
 				F318E4D720ACF2D5006523B1 /* Formula.swift */,
 				F318E4DB20ACF304006523B1 /* Settings.swift */,
-				F33A9D2A20B640F600ABA011 /* Dictionary.swift */,
 				6615070720B6515F001DF875 /* Main.swift */,
 			);
 			path = Model;
@@ -232,9 +232,9 @@
 				F318E4D420ACF2A6006523B1 /* Symbol.swift in Sources */,
 				F318E4DC20ACF304006523B1 /* Settings.swift in Sources */,
 				F33A9D2B20B640F600ABA011 /* Dictionary.swift in Sources */,
-				7E37D90120BB968D0039ADD5 /* ReadCSV.swift in Sources */,
+				7E37D90120BB968D0039ADD5 /* CSVHandler.swift in Sources */,
 				A40E141920BCE5F2003E6775 /* SettingViewVC.swift in Sources */,
-				7EC802A220BE588100287017 /* PopulateModel.swift in Sources */,
+				7EC802A220BE588100287017 /* SourceData.swift in Sources */,
 				A40E141C20BCE5F2003E6775 /* ResultViewVC.swift in Sources */,
 				F318E4D820ACF2D5006523B1 /* Formula.swift in Sources */,
 				7EDC968A20A3C7540088D94F /* AppDelegate.swift in Sources */,

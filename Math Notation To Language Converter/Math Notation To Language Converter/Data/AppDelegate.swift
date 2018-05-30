@@ -17,7 +17,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let model = Dictionary()
+        
+        //DEV: Examples of Object Retrieval:
+        
+        //Retrieve symbol object
+        if let symbol = model.getSymbolDataByName(symbolName: "Plus") {
+            print("Symbol Object: \n \(symbol) \n")
+        } else {
+            print("Symbol not found.")
+        }
+        
+        //Retrieve symbol meaning
+        if let symbolMeaning = model.getSymbolDataByName(symbolName: "Plus")?.meaning {
+            print("Symbol Meaning: \n \(symbolMeaning) \n")
+        }
+        //Retrieve symbol translation
+        if let symbolTranslation = model.getSymbolDataByName(symbolName: "Plus")?.translation {
+            print("Symbol Translation: \n \(symbolTranslation) \n")
+        }
+        
+        //Test model data
+        //        let dictionary = Dictionary()
+        //        dictionary.testAddData()
+        //        dictionary.testRetrieveData()
+        
+        
         return true
+    
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

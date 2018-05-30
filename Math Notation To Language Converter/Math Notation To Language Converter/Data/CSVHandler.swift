@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ReadCSV {
+struct CSVHandler {
   
     let filename: String
     var csvData: [[String:String]] = []
@@ -16,6 +16,9 @@ struct ReadCSV {
 
     init(filename: String) {                                                        //read file and convert it into tabular format
         self.filename = filename
+    }
+    
+    mutating func loadData() {
         convertCSV(file: readDataFromFile(file: filename))
     }
     
@@ -52,7 +55,7 @@ struct ReadCSV {
         }
     }
     
-    func fixCarriageReturns(file: String ) -> String {
+    private func fixCarriageReturns(file: String ) -> String {
         var fixedFile = file
         fixedFile = fixedFile.replacingOccurrences(of: "\r", with: "\n")
         fixedFile = fixedFile.replacingOccurrences(of: "\n\n", with: "\n")

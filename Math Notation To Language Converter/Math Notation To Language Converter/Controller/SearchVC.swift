@@ -52,11 +52,8 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         tableView.dataSource = self
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
-        //Load data
-        let dictionary = Dictionary()
-        dictionary.testAddData()
-        data = dictionary.getAllSymbolsList()
         
+        //DEV COMMENTS: Model load has moved to the AppDelegate so we can switch the 'Initial View Controller' without affecting the source load
     }
 
     override func didReceiveMemoryWarning() {
