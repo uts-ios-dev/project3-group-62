@@ -24,7 +24,8 @@ class ViewController: UIViewController {
         let dictionary = ReadCSV(filename: "Dictionary")
         dictionary.printData()
         if (dictionary.writeDataToFile(file: "transcribed")) {
-            print("File Successfully Written")
+            print(
+                "File Successfully Written")
         } else {
             print("File could not be written")
         }

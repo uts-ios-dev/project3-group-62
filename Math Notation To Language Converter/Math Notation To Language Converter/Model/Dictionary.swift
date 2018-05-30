@@ -26,6 +26,14 @@ class Dictionary {
         let symbol = Symbol(cat: symbolCat, symbol: "+", definition: def)
         //Finally add this symbol to dictioray array
         symbols.append(symbol)
+        //Symbol 2
+        //Symbol
+        let defTwo = Definition(name: "minus", tag: "Basic", meaning: "minus", translation: "", description: "1 - 1 = 0",url:"blog.sparrow.moe")
+        //Create and assign category & definition
+        let symbolCatTwo = Category(name: "Basic Symbol")
+        let symbolTwo = Symbol(cat: symbolCatTwo, symbol: "-", definition: defTwo)
+        //Finally add this symbol to dictioray array
+        symbols.append(symbolTwo)
         
         //Formula
         let formulaCat = Category(name: "Basic Math")
@@ -45,5 +53,17 @@ class Dictionary {
             print(formula.toString())
         }
     }
+    
+    func getAllSymbolsList() -> [String] {
+        var output : [String] = []
+        for symbol in symbols {
+            output.append(symbol.symbol)
+        }
+        return output
+    }
 }
+
+
+
+
 

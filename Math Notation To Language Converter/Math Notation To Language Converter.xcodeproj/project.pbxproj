@@ -23,7 +23,6 @@
 		A40E141A20BCE5F2003E6775 /* CommonFormulaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E141120BCE5F2003E6775 /* CommonFormulaVC.swift */; };
 		A40E141B20BCE5F2003E6775 /* FormulaDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E141220BCE5F2003E6775 /* FormulaDetailVC.swift */; };
 		A40E141C20BCE5F2003E6775 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E141320BCE5F2003E6775 /* ResultViewController.swift */; };
-		A40E141D20BCE5F2003E6775 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E141420BCE5F2003E6775 /* SearchViewController.swift */; };
 		A40E141E20BCE5F2003E6775 /* CustomDefineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E141520BCE5F2003E6775 /* CustomDefineVC.swift */; };
 		A40E141F20BCE5F2003E6775 /* FormulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E141620BCE5F2003E6775 /* FormulaViewController.swift */; };
 		F318E4D420ACF2A6006523B1 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4D320ACF2A6006523B1 /* Symbol.swift */; };
@@ -32,6 +31,7 @@
 		F318E4DC20ACF304006523B1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4DB20ACF304006523B1 /* Settings.swift */; };
 		F318E4E020ACF669006523B1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4DF20ACF669006523B1 /* Category.swift */; };
 		F33A9D2B20B640F600ABA011 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A9D2A20B640F600ABA011 /* Dictionary.swift */; };
+		F3FC9DB220BD5F1700DDB0A1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC9DB120BD5F1700DDB0A1 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +53,6 @@
 		A40E141120BCE5F2003E6775 /* CommonFormulaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFormulaVC.swift; sourceTree = "<group>"; };
 		A40E141220BCE5F2003E6775 /* FormulaDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaDetailVC.swift; sourceTree = "<group>"; };
 		A40E141320BCE5F2003E6775 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		A40E141420BCE5F2003E6775 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A40E141520BCE5F2003E6775 /* CustomDefineVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDefineVC.swift; sourceTree = "<group>"; };
 		A40E141620BCE5F2003E6775 /* FormulaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormulaViewController.swift; sourceTree = "<group>"; };
 		F318E4D320ACF2A6006523B1 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		F318E4DB20ACF304006523B1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F318E4DF20ACF669006523B1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F33A9D2A20B640F600ABA011 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		F3FC9DB120BD5F1700DDB0A1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +78,7 @@
 		7E37D8FF20BB95010039ADD5 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				7EDC968920A3C7540088D94F /* AppDelegate.swift */,
 				7E37D8FD20BB94E70039ADD5 /* Dictionary.csv */,
 			);
 			path = Data;
@@ -103,8 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				7E37D8FF20BB95010039ADD5 /* Data */,
-				7EDC968920A3C7540088D94F /* AppDelegate.swift */,
-				7EDC968B20A3C7540088D94F /* ViewController.swift */,
+				F3FC9DAC20BBF4ED00DDB0A1 /* Controller */,
 				7EDC968D20A3C7540088D94F /* Main.storyboard */,
 				7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */,
 				A40E141120BCE5F2003E6775 /* CommonFormulaVC.swift */,
@@ -114,7 +114,6 @@
 				A40E141620BCE5F2003E6775 /* FormulaViewController.swift */,
 				A40E140F20BCE5F1003E6775 /* ResultDetailViewController.swift */,
 				A40E141320BCE5F2003E6775 /* ResultViewController.swift */,
-				A40E141420BCE5F2003E6775 /* SearchViewController.swift */,
 				A40E141020BCE5F1003E6775 /* SettingViewController.swift */,
 				7EDC969320A3C7550088D94F /* Assets.xcassets */,
 				7EDC969520A3C7550088D94F /* LaunchScreen.storyboard */,
@@ -138,6 +137,15 @@
 				7E37D90020BB968D0039ADD5 /* Data.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F3FC9DAC20BBF4ED00DDB0A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7EDC968B20A3C7540088D94F /* ViewController.swift */,
+				F3FC9DB120BD5F1700DDB0A1 /* SearchViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +234,8 @@
 				A40E141C20BCE5F2003E6775 /* ResultViewController.swift in Sources */,
 				F318E4D820ACF2D5006523B1 /* Formula.swift in Sources */,
 				7EDC968A20A3C7540088D94F /* AppDelegate.swift in Sources */,
+				F3FC9DB220BD5F1700DDB0A1 /* SearchViewController.swift in Sources */,
 				6615070820B6515F001DF875 /* Main.swift in Sources */,
-				A40E141D20BCE5F2003E6775 /* SearchViewController.swift in Sources */,
 				F318E4E020ACF669006523B1 /* Category.swift in Sources */,
 				A40E141F20BCE5F2003E6775 /* FormulaViewController.swift in Sources */,
 				F318E4D620ACF2C4006523B1 /* Definition.swift in Sources */,
