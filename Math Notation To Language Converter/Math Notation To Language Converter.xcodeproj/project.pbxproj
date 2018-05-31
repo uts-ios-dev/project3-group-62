@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6615070820B6515F001DF875 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6615070720B6515F001DF875 /* Main.swift */; };
-		7E37D8FE20BB94E80039ADD5 /* Dictionary.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E37D8FD20BB94E70039ADD5 /* Dictionary.csv */; };
 		7E37D90120BB968D0039ADD5 /* CSVHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37D90020BB968D0039ADD5 /* CSVHandler.swift */; };
 		7EC802A220BE588100287017 /* SourceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC802A120BE588100287017 /* SourceData.swift */; };
 		7EDC968A20A3C7540088D94F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC968920A3C7540088D94F /* AppDelegate.swift */; };
@@ -18,6 +17,8 @@
 		7EDC969420A3C7550088D94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969320A3C7550088D94F /* Assets.xcassets */; };
 		7EDC969720A3C7550088D94F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969520A3C7550088D94F /* LaunchScreen.storyboard */; };
 		7EDC969F20A3C7B80088D94F /* Prototype Wireframe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */; };
+		A407F15420BF7AC300C8B443 /* Dictionary.csv in Resources */ = {isa = PBXBuildFile; fileRef = A407F15320BF7AC300C8B443 /* Dictionary.csv */; };
+		A407F15620BF7ACC00C8B443 /* OpenUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A407F15520BF7ACC00C8B443 /* OpenUrl.swift */; };
 		A40E141720BCE5F2003E6775 /* FavoritesViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E140E20BCE5F1003E6775 /* FavoritesViewVC.swift */; };
 		A40E141820BCE5F2003E6775 /* ResultDetailViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E140F20BCE5F1003E6775 /* ResultDetailViewVC.swift */; };
 		A40E141920BCE5F2003E6775 /* SettingViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E141020BCE5F1003E6775 /* SettingViewVC.swift */; };
@@ -37,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		6615070720B6515F001DF875 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Main.swift; path = "Math Notation To Language Converter/Model/Main.swift"; sourceTree = SOURCE_ROOT; };
-		7E37D8FD20BB94E70039ADD5 /* Dictionary.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dictionary.csv; sourceTree = "<group>"; };
 		7E37D90020BB968D0039ADD5 /* CSVHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVHandler.swift; sourceTree = "<group>"; };
 		7EC802A120BE588100287017 /* SourceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceData.swift; sourceTree = "<group>"; };
 		7EDC968620A3C7530088D94F /* Math Notation To Language Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Notation To Language Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +49,8 @@
 		7EDC969620A3C7550088D94F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EDC969820A3C7550088D94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Prototype Wireframe.storyboard"; sourceTree = "<group>"; };
+		A407F15320BF7AC300C8B443 /* Dictionary.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dictionary.csv; sourceTree = "<group>"; };
+		A407F15520BF7ACC00C8B443 /* OpenUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenUrl.swift; sourceTree = "<group>"; };
 		A40E140E20BCE5F1003E6775 /* FavoritesViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewVC.swift; sourceTree = "<group>"; };
 		A40E140F20BCE5F1003E6775 /* ResultDetailViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultDetailViewVC.swift; sourceTree = "<group>"; };
 		A40E141020BCE5F1003E6775 /* SettingViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewVC.swift; sourceTree = "<group>"; };
@@ -84,7 +86,7 @@
 				7EC802A120BE588100287017 /* SourceData.swift */,
 				F33A9D2A20B640F600ABA011 /* Dictionary.swift */,
 				7E37D90020BB968D0039ADD5 /* CSVHandler.swift */,
-				7E37D8FD20BB94E70039ADD5 /* Dictionary.csv */,
+				A407F15320BF7AC300C8B443 /* Dictionary.csv */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -112,6 +114,7 @@
 				F3FC9DAC20BBF4ED00DDB0A1 /* Controller */,
 				F33A9D2E20B64A9700ABA011 /* Model */,
 				7EDC968D20A3C7540088D94F /* Main.storyboard */,
+				A407F15520BF7ACC00C8B443 /* OpenUrl.swift */,
 				7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */,
 				7EDC969320A3C7550088D94F /* Assets.xcassets */,
 				7EDC969520A3C7550088D94F /* LaunchScreen.storyboard */,
@@ -213,7 +216,7 @@
 				7EDC969720A3C7550088D94F /* LaunchScreen.storyboard in Resources */,
 				7EDC969F20A3C7B80088D94F /* Prototype Wireframe.storyboard in Resources */,
 				7EDC969420A3C7550088D94F /* Assets.xcassets in Resources */,
-				7E37D8FE20BB94E80039ADD5 /* Dictionary.csv in Resources */,
+				A407F15420BF7AC300C8B443 /* Dictionary.csv in Resources */,
 				7EDC968F20A3C7540088D94F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +247,7 @@
 				A40E141F20BCE5F2003E6775 /* FormulaViewVC.swift in Sources */,
 				F318E4D620ACF2C4006523B1 /* Definition.swift in Sources */,
 				A40E141820BCE5F2003E6775 /* ResultDetailViewVC.swift in Sources */,
+				A407F15620BF7ACC00C8B443 /* OpenUrl.swift in Sources */,
 				A40E141720BCE5F2003E6775 /* FavoritesViewVC.swift in Sources */,
 				7EDC969220A3C7540088D94F /* Math_Notation_To_Language_Converter.xcdatamodeld in Sources */,
 			);
