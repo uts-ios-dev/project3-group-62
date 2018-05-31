@@ -1,117 +1,116 @@
-Symbol;Name;Meaning;Translation;Tags
-=;Equals; equal to;is equal to;Universal Symbols & Arithmetic
-≡;Identically Equals; identically equal to;is identically equal to;Universal Symbols & Arithmetic
-≠;Not Equals; not equal to;is not equal to;Universal Symbols & Arithmetic
-≈;Approximately Equals; approximately equal to;is approximately equal to;Universal Symbols & Arithmetic
-∼;Tilde; of same order as (used in comparisons of infinitesimals or infinites) < less than... 'a less than b' is written as a < b (or, equivalently, b > a) ≤ less than or equal to...a less than or equal to b is written as a≤b;is of the same order as;Universal Symbols & Arithmetic
-≪;Much Less Than; much less than... a much less than b is written as a ≪ b;is much less than;Universal Symbols & Arithmetic
->;Greater Than; greater than... a greater than b is written as a > b (or, equivalently, b < a) ≥ greater than or equal to... a greater than or equal to b is written as a ≥ b;is greater than;Universal Symbols & Arithmetic
-≫;Much Greater Than; much greater than... a much greater than b is written as a ≫ b;is much greater than;Universal Symbols & Arithmetic
-+;Plus; plus sign... the sum of numbers a and b is denoted by a + b and has the property a+b=b+a;plus;Universal Symbols & Arithmetic
-–;Minus; minus sign... the difference of numbers a and b is denoted by a – b;minus;Universal Symbols & Arithmetic
-⋅;Product; multiplication sign... the product of numbers a and b is denoted by either ab or a ⋅ b (sometimes a × b) and has the property ab = ba... the inner product of vectors a and b is denoted by a ⋅ b;multiplied by (or if vectors, the inner product of);Universal Symbols & Arithmetic,Linear Algebra
-×;Product; multiplication sign... the product of numbers a and b is sometimes denoted by a × b... the cross-product of vectors a and b is denoted by a × b;multipled by;Universal Symbols & Arithmetic,Linear Algebra
-:;Ratio; division sign... the ratio of numbers a and b is denoted by a : b or a/b;ratio between (literally, ‘divided by’);Universal Symbols & Arithmetic
-!;Factorial;factorial sign: 0!=1!=1, n!=1⋅2⋅3...(n–1)n, n=2, 3, 4, ...;factorial (the product of this number and all integers below it);Universal Symbols & Arithmetic
-!!;Double Factorial;double factorial sign: 0!! = 1!! = 1, (2n)!! = 2 ⋅ 4 ⋅ 6...(2n), (2n + 1)!! = 1⋅3⋅5…(2n+1),where n=1, 2, 3, …;double factorial (product of this number and all even numbers below it);Universal Symbols & Arithmetic
-%;Percent;percent sign... 1% is one hundredth of the entire quantity;percent (1% is one hundreth of the entire quantity);Universal Symbols & Arithmetic
-∞;Infinity; infinity;a number greater than any assignable quantity or countable number;Universal Symbols & Arithmetic,Calculus & Mathematical Analysis
-→;Arrow; tends (infinitely approaches) to... x → a means that x tends to a;infinitely approaches;Universal Symbols & Arithmetic,Calculus & Mathematical Analysis
-⇒;Right Double Arrow;implies... consequently ;implies that;Universal Symbols & Arithmetic
-⇐⇒;Left Right Double Arrow;is equivalent to(if and only if...) ;is equivalent to;Universal Symbols & Arithmetic
-∀;Upside Down A;for all, for any ;for all;Set Theory
-∃;Existential Qualifier; there exists;there exists;Set Theory
-∈;Epsilon; 􏰁􏰁belongs to... a ∈ A means that a is an element of the set A;belongs to;Set Theory
-∉;Not An Element Of; does not belong to... a ∉􏰂 A means that a is not an element of the set A;does not belong to;Set Theory
-∪;Union; union (Boolean addition)... A ∪ B stands for the union of sets A and B;union of (the joining of);Set Theory
-∩;Intersection; intersection (Boolean multiplication)... A ∩ B stands for the intersection (common part) of sets A and B;the intersection of;Set Theory
-⊂;Inclusion; inclusion... A ⊂ B means that the set A is part of the set B;is a (proper) subset of;Set Theory
-⊆;Non-Strict Inclusion; nonstrict inclusion... A ⊆ B means that the set A is part of the set B or coincides with B ;is a subset of (and may or may not equal);Set Theory
-∅;Empty Set; empty set;for the empty set;Set Theory
-∑;Summation Operator;sum, ($p1) ak = a1 + a2 + ... + an;evaluate the expression ($v4) ($v2)-($v1) times by starting at ($v3)  = ($v1), up until ($v3) = ($v2) , and summing the accumulated result each time.;Summation,Sequences
-∏;Product Operator;product, ($p1) ak = a1 ⋅ a2 ⋅ ... ⋅ an;evaluate the expression ($v4) ($v2)-($v1) times by starting at ($v3)  = ($v1), up until ($v3) = ($v2) , and multiplying the accumulated result each time.;Product,Summation,Sequences
-∂;Partial Derivative; symbol used to denote partial derivatives and differential operators... ∂x is the operator of differentiation with respect to x;is the partial derivative of;Calculus & Mathematical Analysis
-∇;Nabla; vector differential operator 'nabla'... ∇a is the gradient of a scalar a;the gradient of;Calculus & Mathematical Analysis,Geometry
-∫;Integral; integral... ($p1) f(x) dx is the integral of a function f(x) over the interval [a, b];the integral;Calculus & Mathematical Analysis
-∮;Contour Integral; contour integral (denotes an integral over a closed contour);the contour integral;Calculus & Mathematical Analysis
-⊥;Perpindicular; perpendicular;is perpendicular to;Geometry
-∥;Parallel; parallel;is parallel to;Geometry
-Argz;Argument;argument of a complex number z = x + iy... by definition, tan(Arg z) = y/x ;the argument of complex number ($v1);Complex Numbers
-arg z;Principle Argument;principal value of Arg z... by definition, arg z = Arg z, where –π < Arg z ≤ π ;the principal value of the argument of complex number ($v1);Complex Numbers
-√a;Square Root;square root of a number a, defined by the property (√a )2 = a;divide ($v1) by itself once;Universal Symbols & Arithmetic
-n√a;Nth Root;nth root of a number a(n=2, 3, …,a≥0),defined by the property(n√ a)n=a;divide ($v1) by itself ($v2) times;Universal Symbols & Arithmetic
-a;Vector;vector, a = {a1 , a2 , a3 }, where a1 , a2 , a3 are the vector components;<not implemented for mvp v1>;Linear Algebra
-|a|;Modulus of Vector;a⋅a modulus of a vector a, |a| = √ ($p1);<not implemented for mvp v1>;Linear Algebra
-a⋅b;Inner Product;inner product of vectors a and b, denoted also by (a ⋅ b). Also known as the ‘dot product’.;multiply the corresponding co-ordinates of vectors ($v1) and ($v2) and add up their products to produce a total.;Linear Algebra
-a×b;Cross Product;cross-product of vectors a and b. Also known as ‘cartesian product’.;multiply vectors ($v1) and ($v2) by the sine of the angle (and the unit vector at right angles) between them.;Linear Algebra
-[abc];Triple Vector Product;triple product of vectors a, b, c. Also known as mixed product, box product, or triple scalar product.;product of the 3 vectors ($v1), ($v2) and ($v3);Linear Algebra
-(a, b);Open Interval;interval (open interval) a < x < b;within the interval ranging from ($v1) to ($v2), where ($v1) and ($v2) are not included;Universal Symbols & Arithmetic,Set Theory
-(a, b];Half Open Interval 1;half-open interval a < x ≤ b;within the interval ranging from ($v1) to ($v2), where ($v1) is not included but ($v2) is included;Universal Symbols & Arithmetic,Set Theory
-[a, b);Half Open Interval 2;half-open interval a ≤ x < b;within the interval ranging from ($v1) to ($v2), where ($v1) is included but ($v2) is not included;Universal Symbols & Arithmetic,Set Theory
-[a, b];Closed Interval;interval (closed interval) a ≤ x ≤ b;within the interval ranging from ($v1) to ($v2), where ($v1) and ($v2) are both included;Universal Symbols & Arithmetic,Set Theory
-arccos x;Arccosine Function;arccosine, the inverse function of cosine: cos(arccos x) = x, |x| ≤ 1;the arccos function ($v1);Trigonometry,Physics,Functions & Equations
-arccot x;Arccotangent Function;arccotangent, the inverse function of cotangent: cot(arccot x) = x;the arccot function ($v1);Trigonometry,Physics,Functions & Equations
-arcsin x;Arcsine Function;arcsine, the inverse function of sine: sin(arcsin x) = x, |x| ≤ 1;the arcsin function ($v1);Trigonometry,Physics,Functions & Equations
-arctan x;Arctangent Function;arctangent, the inverse function of tangent: tan(arctan x) = x;the arctan function ($v1);Trigonometry,Physics,Functions & Equations
-arccosh x;Hyberbolic Arccosine Function;hyperbolic arccosine, the inverse function of hyperbolic cosine ;the arccosh function ($v1);Trigonometry,Physics,Functions & Equations
-arccoth x;Hyperbolic Arccotangent Function;hyperbolic arccotangent, the inverse function of hyperbolic cotangent ;the arccoth function ($v1);Trigonometry,Physics,Functions & Equations
-arcsinh x;Hyperbolic Arcsine Function;hyperbolic arcsine, the inverse function of hyperbolic sine ;the arcsinh function ($v1);Trigonometry,Physics,Functions & Equations
-arctanh x;Hyperbolic Arctangent Function;hyperbolic arctangent, the inverse function of hyperbolic tangent ;the arctanh function ($v1);Trigonometry,Physics,Functions & Equations
-Cnk;Binomial Coefficients;binomial coefficients, also denoted by ($p1);the number of ways of picking ($v1) unordered outcomes from possibilities ($v2);Combinatorics
-C;Eulerconstant;Eulerconstant ($p1);<eulerconstant not implemented for mvp v1>;Calculus & Mathematical Analysis
-cos x;Cosine Function;cosine, even trigonometric function of period 2π;the cos function ($v1);Trigonometry,Physics,Functions & Equations
-cosec x;Cosecant Function;cosecant, odd trigonometric function of period 2π: cosec ($p1);the cosec function ($v1);Trigonometry,Physics,Functions & Equations
-cosh x;Hyperbolic Cosine Function;hyperbolic cosine, cosh x = 1 (ex + e–x );the cosh function ($v1);Trigonometry,Physics,Functions & Equations
-cot x;Cotangent Function;cotangent, odd trigonometric function of period π, cot x = cos x/sin x ;the cot function ($v1);Trigonometry,Physics,Functions & Equations
-coth x;Hyperbolic Cotangent Function;hyperbolic cotangent, coth x = cosh x/sinh x;the coth function ($v1);Trigonometry,Physics,Functions & Equations
-det A;Determinant;determinant of a matrix A = (aij ) ;the determinant of matrix ($v1);Linear Algebra
-div a;Divergence;divergence of a vector a ;the divergence of vector ($v1);Linear Algebra
-e;Euler’s Constant;the number 'e' (base of natural logarithms), e = 2.718281 . . . ... definition: ($p1);2.718281…(the irrational number ‘e’);Universal
-erf x;Error Function;Gauss error function, erf x = ($p1);gaussian error (sigmoid error) function ($v1);Statistics,Functions & Equations
-erfc x;Complementary Error Function;complementary error function, erfc x ($p1);complementary error function ($v1);Statistics,Functions & Equations
-exp x;Exponential Function;exponential (exponential function), denoted also by exp x = ex ;exponential function ($v1);Exponents,Functions & Equations
-grad a;Gradient;gradient of a scalar a, denoted also by ∇a ;gradient of scalar ($v1);Linear Algebra,Geometry
-Hn(x);Hermite Polynomial;Hermite polynomial, Hn (x) ($p1);<not implemented for mvp>;Probability,Combinatorics
-Iν (x);Modified Bessel Function 1;modified Bessel function of the first kind, Iν (x) = ($p1);<not implemented for mvp>;Differential Equations
-Im z;Imaginary Part of Complex Number;imaginary part of a complex number... if z=x+iy, then Im z =y ;the imaginary part of complex number ($v1);Complex Numbers
-inf A;Infinium;"infimum of a (numerical) set A... if A=(a,b) or A=[a,b) , then inf A=a 
-";the infinium of numerical set ($v1);Set Theory
-Jν (x);Bessel Function 1;Bessel function of the first kind ($p1);bessel function of ($v1);Functions & Equations
-Kν (x);Modified Bessel Function 2;Modified Bessel function of the second kind;modified bessel function of ($v1);Functions & Equations
-lim f (x) ($p1);Limit;limit of a function f(x) as x → a ;limited of function ($v1) as ($v1) approaches ($v2);Calculus & Mathematical Analysis,Functions & Equations
-ln x;Natural Logarithm;"natural logarithm (logarithm to base e) ";the result of the question ‘what to the power of 2.718281…(the irrational number ‘e’) gives ($v1)?’?;Universal,Logarithms
-loga x;Logarithm;logarithm to base a;the result the question ‘what power of ($v1) gives ($v2)?’;Universal,Logarithms
-max f (x) ($p1);Function Maximum;maximum of a function f (x) on the interval a ≤ x ≤ b ;the maximum result of of function ($v4) in the interval where ($v1) ≤ ($v2) ≤ ($v3);Functions & Equations,Calculus & Mathematical Analysis,Geometry
-min f (x) ($p1);Function Minimum;minimum of a function f (x) on the interval a ≤ x ≤ b;the minimum result of of function ($v4) in the interval where ($v1) ≤ ($v2) ≤ ($v3);Functions & Equations,Calculus & Mathematical Analysis,Geometry
-n!;Factorial;factorial: 0!=1!=1, n!=1⋅2⋅3...(n–1)n, n=2, 3, 4, ... =;the product of ($v1) and all integers below it;Combinatorics,Sequences
-ℝ;Set of Real Numbers;set of real numbers,ℝ={–∞<x<∞} ;the set of real numbers;Set theory
-Re z;Real Part of Complex Number;real part of a complex number... if z=x+iy, then Rez=x ;the real part of complex number ($v1);Complex Numbers
-r,ℵ, z;Cylindrical Coordinates;cylindrical coordinates, r=􏰑x2+y2 and x=rcosℵ, y=rsinℵ;cylindrical co-ordinates ($v1) and ($v2);Coordinates
-r,θ,ℵ;Spherical Coordinates;sphericalcoordinates, r=􏰑x2+y2+z2 and x=rsinθcosℵ, y=sinθsinℵ, z = rcosθ;spherical co-ordinates ($v1) and ($v2);Coordinates
-rank A;Rank;rank of a matrix A;the rank of matrix ($v1);Linear Algebra
-curl a;Curl;curl of a vector a, also denoted by rot a ;the curl of matrix ($v1);Linear Algebra
-sec x;Secant Function;secant, even trigonometric function of period 2π: sec x = ($p1);the secant function ($v1);Trigonometry,Physics,Functions & Equations
-sign x;Sign Function;'sign'function: it is equal to 1 if x>0, –1 if x<0, and 0 if x=0;the sign function ($v1);Physics,Functions & Equations
-sin x;Sine Function;sine, odd trigonometric function of period 2π;the sin function ($v1);Trigonometry,Physics,Functions & Equations
-sinh x;Hyperbolic Sine Function;hyperbolic sine, sinh x = 1 (ex – e–x);the hyberbolic sine function ($v1);Trigonometry,Physics,Functions & Equations
-sup A;Suprenum;supremum of a (numerical) set A... if A = (a,b) or A = (a,b], then sup A = b ;the suprenum of numerical set ($v1);Set Theory
-tan x;Tangent function;tangent, odd trigonometric function of period π, tan x = sin x/cos x ;the tangent function ($v1);Trigonometry,Physics,Functions & Equations
-tanh x;Hyperbolic Tangent;hyperbolic tangent, tanh x = sinh x/cosh x;the hyperbolic tangent function ($v1);Trigonometry,Physics,Functions & Equations
-x;Variable (or Argument);independent variable, argument ;variable (or argument) ($v1);Universal Symbols & Arithmetic,Calculus & Mathematical Analysis,Functions & Equations
-x,y,z;Cartesian Coordinates;spatial variables (Cartesian coordinates) ;cartesian co-ordinates ($v1), ($v2) and ($v3);Coordinates
-Yν (x);Bessel Function 2;Bessel function of the second kind... Yν (x) = ;bessel function of ($v1);Differential Equations
-y;Dependent Variable;dependent variable, function... one often writes y = y(x) or y = f(x) ;(dependent) variable ($v1);Universal Symbols & Arithmetic,Calculus & Mathematical Analysis,Functions & Equations
-y'x;First Derivative;first derivative of a function y = f(x), also denoted by y′, ($p1);first derivative of the function ($v1);Calculus & Mathematical Analysis,Functions & Equations
-y’'xx;Second Derivative;"second derivative of a function y = f(x), also denoted by y′′, ($p1)
-";second derivative of the function ($v1);Calculus & Mathematical Analysis,Functions & Equations
-($p1);nth Derivative;nth derivative of a function y = f(x), also denoted by  ($p2);nth derivative of the function ($v1);Calculus & Mathematical Analysis,Functions & Equations
-z=x+iy;Complex Number;complex number... x is the real part of z, y is the imaginary part of z,i =–1;<not implemented for mvp>;Complex Numbers
-z ̄=x–iy;Complex Conjugate Number;complex conjugate number, i2 = –1;<not implemented for mvp>;Complex Numbers
-|z|;Modulus;modulus of a complex number... if z=x+iy, then|z|= ;modulus of complex number ($v1);Complex Numbers
-Γ(α);Gamma Function;gamma function, Γ(α) = ;a gamma function;Complex Numbers,Functions & Equations,Probability,Combinatorics
-γ(α,x);Incomplete Gamma Function;incomplete gamma function, γ(α, x) = ;an incomplete gamma function;Complex Numbers,Functions & Equations,Probability,Combinatorics
-Φ(a,b...x);Degenerate Hypergeometric Function;degenerate hypergeometricfunction, Φ(a,b...x) ($p1);a degenerate hypergeometric function;Differential Equations
-Δ;Laplace Operator;Laplace operator... in the two dimensional case, ($p1);the laplace transform of;Differential Equations
-Δx;Increment of Argument;Increment of the argument;the increment of the argument ($v1);Calculus & Mathematical Analysis,Functions & Equations
-Δy;Increment of Function;increment of the function... if y = f(x), then Δy = f(x + Δx) – f(x) ;the increment of the function ($v1);Calculus & Mathematical Analysis,Functions & Equations
-π;Pi;the number 'pi' (ratio of the circumference to the diameter), π = 3.141592 . . .;3.141592…. (irrational number pi);Universal Symbols & Arithmetic,Geometry
+Symbol,Name,Meaning,Translation,Tags,Url
+=,Equals, equal to,is equal to,Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/Equals_sign
+≡,Identically Equals, identically equal to,is identically equal to,Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/Identity_(mathematics)
+≠,Not Equals, not equal to,is not equal to,Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/Equals_sign
+≈,Approximately Equals, approximately equal to,is approximately equal to,Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/Equals_sign#Approximately_equal
+∼,Tilde," of same order as (used in comparisons of infinitesimals or infinites) < less than... 'a less than b' is written as a < b (or, equivalently, b > a) ≤ less than or equal to...a less than or equal to b is written as a≤b",is of the same order as,Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/Tilde
+≪,Much Less Than, much less than... a much less than b is written as a ≪ b,is much less than,Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/Inequality_(mathematics)
+>,Greater Than," greater than... a greater than b is written as a > b (or, equivalently, b < a) ≥ greater than or equal to... a greater than or equal to b is written as a ≥ b",is greater than,Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/Greater-than_sign
+≫,Much Greater Than, much greater than... a much greater than b is written as a ≫ b,is much greater than,Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/Inequality_(mathematics)
++,Plus, plus sign... the sum of numbers a and b is denoted by a + b and has the property a+b=b+a,plus,Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/Addition
+–,Minus, minus sign... the difference of numbers a and b is denoted by a – b,minus,Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/Subtraction
+⋅,Product, multiplication sign... the product of numbers a and b is denoted by either ab or a ⋅ b (sometimes a × b) and has the property ab = ba... the inner product of vectors a and b is denoted by a ⋅ b,"multiplied by (or if vectors, the inner product of)","Universal Symbols & Arithmetic,Linear Algebra",https://en.wikipedia.org/wiki/Dot_product
+×,Product, multiplication sign... the product of numbers a and b is sometimes denoted by a × b... the cross-product of vectors a and b is denoted by a × b,multipled by,"Universal Symbols & Arithmetic,Linear Algebra",https://en.wikipedia.org/wiki/Multiplication
+:,Ratio, division sign... the ratio of numbers a and b is denoted by a : b or a/b,"ratio between (literally, ‘divided by’)",Universal Symbols & Arithmetic,https://www.mathsisfun.com/numbers/ratio.html
+!,Factorial,"factorial sign: 0!=1!=1, n!=1⋅2⋅3...(n–1)n, n=2, 3, 4, ...",factorial (the product of this number and all integers below it),Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/Factorial
+!!,Double Factorial,"double factorial sign: 0!! = 1!! = 1, (2n)!! = 2 ⋅ 4 ⋅ 6...(2n), (2n + 1)!! = 1⋅3⋅5…(2n+1),where n=1, 2, 3, …",double factorial (product of this number and all even numbers below it),Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/Double_factorial
+%,Percent,percent sign... 1% is one hundredth of the entire quantity,percent (1% is one hundreth of the entire quantity),Universal Symbols & Arithmetic,https://www.mathsisfun.com/percentage.html
+∞,Infinity, infinity,a number greater than any assignable quantity or countable number,"Universal Symbols & Arithmetic,Calculus & Mathematical Analysis",https://en.wikipedia.org/wiki/Infinity
+→,Arrow, tends (infinitely approaches) to... x → a means that x tends to a,infinitely approaches,"Universal Symbols & Arithmetic,Calculus & Mathematical Analysis",https://en.wikipedia.org/wiki/If_and_only_if
+⇒,Right Double Arrow,implies... consequently ,implies that,Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/If_and_only_if
+⇐⇒,Left Right Double Arrow,is equivalent to(if and only if...) ,is equivalent to,Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/If_and_only_if
+∀,Upside Down A,"for all, for any ",for all,Set Theory,https://stackoverflow.com/questions/1925979/unfamiliar-symbol-in-algorithm-what-does-%E2%88%80-mean
+∃,Existential Qualifier, there exists,there exists,Set Theory,https://en.wikipedia.org/wiki/Existential_quantification
+∈,Epsilon, 􏰁􏰁belongs to... a ∈ A means that a is an element of the set A,belongs to,Set Theory,https://en.wikipedia.org/wiki/Epsilon
+∉,Not An Element Of, does not belong to... a ∉􏰂 A means that a is not an element of the set A,does not belong to,Set Theory,https://en.wikipedia.org/wiki/Element_(mathematics)
+∪,Union, union (Boolean addition)... A ∪ B stands for the union of sets A and B,union of (the joining of),Set Theory,https://en.wikipedia.org/wiki/Union_(set_theory)
+∩,Intersection, intersection (Boolean multiplication)... A ∩ B stands for the intersection (common part) of sets A and B,the intersection of,Set Theory,https://en.wikipedia.org/wiki/Intersection_(set_theory)
+⊂,Inclusion, inclusion... A ⊂ B means that the set A is part of the set B,is a (proper) subset of,Set Theory,https://en.wikipedia.org/wiki/Subset
+⊆,Non-Strict Inclusion, nonstrict inclusion... A ⊆ B means that the set A is part of the set B or coincides with B ,is a subset of (and may or may not equal),Set Theory,https://en.wikipedia.org/wiki/Subset
+∅,Empty Set, empty set,for the empty set,Set Theory,https://en.wikipedia.org/wiki/Empty_set
+∑,Summation Operator,"sum, ($p1) ak = a1 + a2 + ... + an","evaluate the expression ($v4) ($v2)-($v1) times by starting at ($v3)  = ($v1), up until ($v3) = ($v2) , and summing the accumulated result each time.","Summation,Sequences",https://en.wikipedia.org/wiki/Summation
+∏,Product Operator,"product, ($p1) ak = a1 ⋅ a2 ⋅ ... ⋅ an","evaluate the expression ($v4) ($v2)-($v1) times by starting at ($v3)  = ($v1), up until ($v3) = ($v2) , and multiplying the accumulated result each time.","Product,Summation,Sequences",http://math.wikia.com/wiki/Product_operator
+∂,Partial Derivative, symbol used to denote partial derivatives and differential operators... ∂x is the operator of differentiation with respect to x,is the partial derivative of,Calculus & Mathematical Analysis,https://en.wikipedia.org/wiki/Partial_derivative
+∇,Nabla, vector differential operator 'nabla'... ∇a is the gradient of a scalar a,the gradient of,"Calculus & Mathematical Analysis,Geometry",https://en.wikipedia.org/wiki/Nabla_symbol
+∫,Integral,"integral... ($p1) f(x) dx is the integral of a function f(x) over the interval [a, b]",the integral,Calculus & Mathematical Analysis,https://en.wikipedia.org/wiki/Integral
+∮,Contour Integral, contour integral (denotes an integral over a closed contour),the contour integral,Calculus & Mathematical Analysis,https://en.wikipedia.org/wiki/Contour_integration
+⊥,Perpindicular, perpendicular,is perpendicular to,Geometry,https://en.wikipedia.org/wiki/Perpendicular
+∥,Parallel, parallel,is parallel to,Geometry,https://en.wikipedia.org/wiki/Parallel_(geometry)
+Argz,Argument,"argument of a complex number z = x + iy... by definition, tan(Arg z) = y/x ",the argument of complex number ($v1),Complex Numbers,https://en.wikipedia.org/wiki/Argument_(complex_analysis)
+arg z,Principle Argument,"principal value of Arg z... by definition, arg z = Arg z, where –π < Arg z ≤ π ",the principal value of the argument of complex number ($v1),Complex Numbers,https://en.wikipedia.org/wiki/Argument_(complex_analysis)
+√a,Square Root,"square root of a number a, defined by the property (√a )2 = a",divide ($v1) by itself once,Universal Symbols & Arithmetic,https://www.mathsisfun.com/square-root.html
+n√a,Nth Root,"nth root of a number a(n=2, 3, …,a≥0),defined by the property(n√ a)n=a",divide ($v1) by itself ($v2) times,Universal Symbols & Arithmetic,https://en.wikipedia.org/wiki/Nth_root
+a,Vector,"vector, a = {a1 , a2 , a3 }, where a1 , a2 , a3 are the vector components",<not implemented for mvp v1>,Linear Algebra,https://www.mathsisfun.com/algebra/vectors.html
+|a|,Modulus of Vector,"a⋅a modulus of a vector a, |a| = √ ($p1)",<not implemented for mvp v1>,Linear Algebra,https://en.wikipedia.org/wiki/Magnitude_(mathematics)
+a⋅b,Inner Product,"inner product of vectors a and b, denoted also by (a ⋅ b). Also known as the ‘dot product’.",multiply the corresponding co-ordinates of vectors ($v1) and ($v2) and add up their products to produce a total.,Linear Algebra,https://en.wikipedia.org/wiki/Inner_product_space
+a×b,Cross Product,cross-product of vectors a and b. Also known as ‘cartesian product’.,multiply vectors ($v1) and ($v2) by the sine of the angle (and the unit vector at right angles) between them.,Linear Algebra,https://en.wikipedia.org/wiki/Cross_product
+[abc],Triple Vector Product,"triple product of vectors a, b, c. Also known as mixed product, box product, or triple scalar product.","product of the 3 vectors ($v1), ($v2) and ($v3)",Linear Algebra,https://en.wikipedia.org/wiki/Triple_product
+"(a, b)",Open Interval,interval (open interval) a < x < b,"within the interval ranging from ($v1) to ($v2), where ($v1) and ($v2) are not included","Universal Symbols & Arithmetic,Set Theory",http://mathworld.wolfram.com/OpenInterval.html
+"(a, b]",Half Open Interval 1,half-open interval a < x ≤ b,"within the interval ranging from ($v1) to ($v2), where ($v1) is not included but ($v2) is included","Universal Symbols & Arithmetic,Set Theory",http://mathworld.wolfram.com/OpenInterval.html
+"[a, b)",Half Open Interval 2,half-open interval a ≤ x < b,"within the interval ranging from ($v1) to ($v2), where ($v1) is included but ($v2) is not included","Universal Symbols & Arithmetic,Set Theory",http://mathworld.wolfram.com/OpenInterval.html
+"[a, b]",Closed Interval,interval (closed interval) a ≤ x ≤ b,"within the interval ranging from ($v1) to ($v2), where ($v1) and ($v2) are both included","Universal Symbols & Arithmetic,Set Theory",http://mathworld.wolfram.com/OpenInterval.html
+arccos x,Arccosine Function,"arccosine, the inverse function of cosine: cos(arccos x) = x, |x| ≤ 1",the arccos function ($v1),"Trigonometry,Physics,Functions & Equations",https://www.rapidtables.com/math/trigonometry/arccos.html
+arccot x,Arccotangent Function,"arccotangent, the inverse function of cotangent: cot(arccot x) = x",the arccot function ($v1),"Trigonometry,Physics,Functions & Equations",https://en.wikipedia.org/wiki/Inverse_trigonometric_functions
+arcsin x,Arcsine Function,"arcsine, the inverse function of sine: sin(arcsin x) = x, |x| ≤ 1",the arcsin function ($v1),"Trigonometry,Physics,Functions & Equations",https://en.wikipedia.org/wiki/Inverse_trigonometric_functions
+arctan x,Arctangent Function,"arctangent, the inverse function of tangent: tan(arctan x) = x",the arctan function ($v1),"Trigonometry,Physics,Functions & Equations",https://en.wikipedia.org/wiki/Inverse_trigonometric_functions
+arccosh x,Hyberbolic Arccosine Function,"hyperbolic arccosine, the inverse function of hyperbolic cosine ",the arccosh function ($v1),"Trigonometry,Physics,Functions & Equations",https://en.wikipedia.org/wiki/Inverse_trigonometric_functions
+arccoth x,Hyperbolic Arccotangent Function,"hyperbolic arccotangent, the inverse function of hyperbolic cotangent ",the arccoth function ($v1),"Trigonometry,Physics,Functions & Equations",https://en.wikipedia.org/wiki/Inverse_trigonometric_functions
+arcsinh x,Hyperbolic Arcsine Function,"hyperbolic arcsine, the inverse function of hyperbolic sine ",the arcsinh function ($v1),"Trigonometry,Physics,Functions & Equations",https://en.wikipedia.org/wiki/Inverse_trigonometric_functions
+arctanh x,Hyperbolic Arctangent Function,"hyperbolic arctangent, the inverse function of hyperbolic tangent ",the arctanh function ($v1),"Trigonometry,Physics,Functions & Equations",https://en.wikipedia.org/wiki/Inverse_trigonometric_functions
+Cnk,Binomial Coefficients,"binomial coefficients, also denoted by ($p1)",the number of ways of picking ($v1) unordered outcomes from possibilities ($v2),Combinatorics,https://en.wikipedia.org/wiki/Binomial_coefficient
+C,Eulerconstant,Eulerconstant ($p1),<eulerconstant not implemented for mvp v1>,Calculus & Mathematical Analysis,https://en.wikipedia.org/wiki/E_(mathematical_constant)
+cos x,Cosine Function,"cosine, even trigonometric function of period 2π",the cos function ($v1),"Trigonometry,Physics,Functions & Equations",https://www.mathopenref.com/cosine.html
+cosec x,Cosecant Function,"cosecant, odd trigonometric function of period 2π: cosec ($p1)",the cosec function ($v1),"Trigonometry,Physics,Functions & Equations",https://www.mathopenref.com/cosecant.html
+cosh x,Hyperbolic Cosine Function,"hyperbolic cosine, cosh x = 1 (ex + e–x )",the cosh function ($v1),"Trigonometry,Physics,Functions & Equations",https://en.wikipedia.org/wiki/Hyperbolic_function
+cot x,Cotangent Function,"cotangent, odd trigonometric function of period π, cot x = cos x/sin x ",the cot function ($v1),"Trigonometry,Physics,Functions & Equations",http://functions.wolfram.com/ElementaryFunctions/Cot/introductions/Cot/ShowAll.html
+coth x,Hyperbolic Cotangent Function,"hyperbolic cotangent, coth x = cosh x/sinh x",the coth function ($v1),"Trigonometry,Physics,Functions & Equations",http://mathworld.wolfram.com/HyperbolicCotangent.html
+det A,Determinant,determinant of a matrix A = (aij ) ,the determinant of matrix ($v1),Linear Algebra,https://en.wikipedia.org/wiki/Determinant
+div a,Divergence,divergence of a vector a ,the divergence of vector ($v1),Linear Algebra,https://en.wikipedia.org/wiki/Divergence
+e,Euler’s Constant,"the number 'e' (base of natural logarithms), e = 2.718281 . . . ... definition: ($p1)",2.718281…(the irrational number ‘e’),Universal,https://www.mathsisfun.com/numbers/e-eulers-number.html
+erf x,Error Function,"Gauss error function, erf x = ($p1)",gaussian error (sigmoid error) function ($v1),"Statistics,Functions & Equations",https://en.wikipedia.org/wiki/Error_function
+erfc x,Complementary Error Function,"complementary error function, erfc x ($p1)",complementary error function ($v1),"Statistics,Functions & Equations",http://mathworld.wolfram.com/Erfc.html
+exp x,Exponential Function,"exponential (exponential function), denoted also by exp x = ex ",exponential function ($v1),"Exponents,Functions & Equations",https://en.wikipedia.org/wiki/Exponential_function
+grad a,Gradient,"gradient of a scalar a, denoted also by ∇a ",gradient of scalar ($v1),"Linear Algebra,Geometry",https://www.mathsisfun.com/gradient.html
+Hn(x),Hermite Polynomial,"Hermite polynomial, Hn (x) ($p1)",<not implemented for mvp>,"Probability,Combinatorics",http://mathworld.wolfram.com/HermitePolynomial.html
+Iν (x),Modified Bessel Function 1,"modified Bessel function of the first kind, Iν (x) = ($p1)",<not implemented for mvp>,Differential Equations,https://en.wikipedia.org/wiki/Bessel_function
+Im z,Imaginary Part of Complex Number,"imaginary part of a complex number... if z=x+iy, then Im z =y ",the imaginary part of complex number ($v1),Complex Numbers,https://en.wikipedia.org/wiki/Complex_number
+inf A,Infinium,"infimum of a (numerical) set A... if A=(a,b) or A=[a,b) , then inf A=a 
+",the infinium of numerical set ($v1),Set Theory,https://en.wikipedia.org/wiki/Infimum_and_supremum
+Jν (x),Bessel Function 1,Bessel function of the first kind ($p1),bessel function of ($v1),Functions & Equations,https://en.wikipedia.org/wiki/Bessel_function
+Kν (x),Modified Bessel Function 2,Modified Bessel function of the second kind,modified bessel function of ($v1),Functions & Equations,https://en.wikipedia.org/wiki/Bessel_function
+lim f (x) ($p1),Limit,limit of a function f(x) as x → a ,limited of function ($v1) as ($v1) approaches ($v2),"Calculus & Mathematical Analysis,Functions & Equations",https://en.wikipedia.org/wiki/Limit_(mathematics)
+ln x,Natural Logarithm,"natural logarithm (logarithm to base e) ",the result of the question ‘what to the power of 2.718281…(the irrational number ‘e’) gives ($v1)?’?,"Universal,Logarithms",https://en.wikipedia.org/wiki/Natural_logarithm
+loga x,Logarithm,logarithm to base a,the result the question ‘what power of ($v1) gives ($v2)?’,"Universal,Logarithms",https://en.wikipedia.org/wiki/Logarithm
+max f (x) ($p1),Function Maximum,maximum of a function f (x) on the interval a ≤ x ≤ b ,the maximum result of of function ($v4) in the interval where ($v1) ≤ ($v2) ≤ ($v3),"Functions & Equations,Calculus & Mathematical Analysis,Geometry",http://mathworld.wolfram.com/Maximum.html
+min f (x) ($p1),Function Minimum,minimum of a function f (x) on the interval a ≤ x ≤ b,the minimum result of of function ($v4) in the interval where ($v1) ≤ ($v2) ≤ ($v3),"Functions & Equations,Calculus & Mathematical Analysis,Geometry",http://mathworld.wolfram.com/Minimum.html
+n!,Factorial,"factorial: 0!=1!=1, n!=1⋅2⋅3...(n–1)n, n=2, 3, 4, ... =",the product of ($v1) and all integers below it,"Combinatorics,Sequences",https://en.wikipedia.org/wiki/Factorial
+ℝ,Set of Real Numbers,"set of real numbers,ℝ={–∞<x<∞} ",the set of real numbers,Set theory,https://en.wikipedia.org/wiki/Real_number
+Re z,Real Part of Complex Number,"real part of a complex number... if z=x+iy, then Rez=x ",the real part of complex number ($v1),Complex Numbers,http://mathworld.wolfram.com/RealPart.html
+"r,ℵ, z",Cylindrical Coordinates,"cylindrical coordinates, r=􏰑x2+y2 and x=rcosℵ, y=rsinℵ",cylindrical co-ordinates ($v1) and ($v2),Coordinates,http://tutorial.math.lamar.edu/Classes/CalcIII/CylindricalCoords.aspx
+"r,θ,ℵ",Spherical Coordinates,"sphericalcoordinates, r=􏰑x2+y2+z2 and x=rsinθcosℵ, y=sinθsinℵ, z = rcosθ",spherical co-ordinates ($v1) and ($v2),Coordinates,https://en.wikipedia.org/wiki/Spherical_coordinate_system
+rank A,Rank,rank of a matrix A,the rank of matrix ($v1),Linear Algebra,https://en.wikipedia.org/wiki/Rank_(linear_algebra)
+curl a,Curl,"curl of a vector a, also denoted by rot a ",the curl of matrix ($v1),Linear Algebra,https://en.wikipedia.org/wiki/Curl_(mathematics)
+sec x,Secant Function,"secant, even trigonometric function of period 2π: sec x = ($p1)",the secant function ($v1),"Trigonometry,Physics,Functions & Equations",https://www.mathopenref.com/trigsecant.html
+sign x,Sign Function,"'sign'function: it is equal to 1 if x>0, –1 if x<0, and 0 if x=0",the sign function ($v1),"Physics,Functions & Equations",https://en.wikipedia.org/wiki/Sign_function
+sin x,Sine Function,"sine, odd trigonometric function of period 2π",the sin function ($v1),"Trigonometry,Physics,Functions & Equations",https://en.wikipedia.org/wiki/Sine
+sinh x,Hyperbolic Sine Function,"hyperbolic sine, sinh x = 1 (ex – e–x)",the hyberbolic sine function ($v1),"Trigonometry,Physics,Functions & Equations",https://en.wikipedia.org/wiki/Hyperbolic_function
+sup A,Suprenum,"supremum of a (numerical) set A... if A = (a,b) or A = (a,b], then sup A = b ",the suprenum of numerical set ($v1),Set Theory,http://mathworld.wolfram.com/Supremum.html
+tan x,Tangent function,"tangent, odd trigonometric function of period π, tan x = sin x/cos x ",the tangent function ($v1),"Trigonometry,Physics,Functions & Equations",https://www.mathsisfun.com/definitions/tangent-function-.html
+tanh x,Hyperbolic Tangent,"hyperbolic tangent, tanh x = sinh x/cosh x",the hyperbolic tangent function ($v1),"Trigonometry,Physics,Functions & Equations",http://mathworld.wolfram.com/HyperbolicTangent.html
+x,Variable (or Argument),"independent variable, argument ",variable (or argument) ($v1),"Universal Symbols & Arithmetic,Calculus & Mathematical Analysis,Functions & Equations",https://en.wikipedia.org/wiki/Variable_(mathematics)
+"x,y,z",Cartesian Coordinates,spatial variables (Cartesian coordinates) ,"cartesian co-ordinates ($v1), ($v2) and ($v3)",Coordinates,https://en.wikipedia.org/wiki/Cartesian_coordinate_system
+Yν (x),Bessel Function 2,Bessel function of the second kind... Yν (x) = ,bessel function of ($v1),Differential Equations,https://www.encyclopediaofmath.org/index.php/Bessel_functions
+y,Dependent Variable,"dependent variable, function... one often writes y = y(x) or y = f(x) ",(dependent) variable ($v1),"Universal Symbols & Arithmetic,Calculus & Mathematical Analysis,Functions & Equations",https://www.mathsisfun.com/definitions/dependent-variable.html
+y'x,First Derivative,"first derivative of a function y = f(x), also denoted by y′, ($p1)",first derivative of the function ($v1),"Calculus & Mathematical Analysis,Functions & Equations",https://en.wikipedia.org/wiki/Derivative
+y’'xx,Second Derivative,"second derivative of a function y = f(x), also denoted by y′′, ($p1)",second derivative of the function ($v1),"Calculus & Mathematical Analysis,Functions & Equations",https://en.wikipedia.org/wiki/Second_derivative
+($p1),nth Derivative,"nth derivative of a function y = f(x), also denoted by  ($p2)",nth derivative of the function ($v1),"Calculus & Mathematical Analysis,Functions & Equations",https://en.wikipedia.org/wiki/Second_derivative
+z=x+iy,Complex Number,"complex number... x is the real part of z, y is the imaginary part of z,i =–1",<not implemented for mvp>,Complex Numbers,https://en.wikipedia.org/wiki/Complex_number
+z ̄=x–iy,Complex Conjugate Number,"complex conjugate number, i2 = –1",<not implemented for mvp>,Complex Numbers,https://en.wikipedia.org/wiki/Complex_conjugate
+|z|,Modulus,"modulus of a complex number... if z=x+iy, then|z|= ",modulus of complex number ($v1),Complex Numbers,https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic
+Γ(α),Gamma Function,"gamma function, Γ(α) = ",a gamma function,"Complex Numbers,Functions & Equations,Probability,Combinatorics",https://en.wikipedia.org/wiki/Gamma_function
+"γ(α,x)",Incomplete Gamma Function,"incomplete gamma function, γ(α, x) = ",an incomplete gamma function,"Complex Numbers,Functions & Equations,Probability,Combinatorics",http://mathworld.wolfram.com/IncompleteGammaFunction.html
+"Φ(a,b...x)",Degenerate Hypergeometric Function,"degenerate hypergeometricfunction, Φ(a,b...x) ($p1)",a degenerate hypergeometric function,Differential Equations,https://en.wikipedia.org/wiki/Confluent_hypergeometric_function
+Δ,Laplace Operator,"Laplace operator... in the two dimensional case, ($p1)",the laplace transform of,Differential Equations,https://en.wikipedia.org/wiki/Laplace_operator
+Δx,Increment of Argument,Increment of the argument,the increment of the argument ($v1),"Calculus & Mathematical Analysis,Functions & Equations",https://www.encyclopediaofmath.org/index.php/Total_increment
+Δy,Increment of Function,"increment of the function... if y = f(x), then Δy = f(x + Δx) – f(x) ",the increment of the function ($v1),"Calculus & Mathematical Analysis,Functions & Equations",https://en.wikipedia.org/wiki/Increment_theorem
+π,Pi,"the number 'pi' (ratio of the circumference to the diameter), π = 3.141592 . . .",3.141592…. (irrational number pi),"Universal Symbols & Arithmetic,Geometry",https://en.wikipedia.org/wiki/Pi
