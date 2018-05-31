@@ -93,4 +93,7 @@ class Formula: Comparable {
 }
 
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> master

@@ -20,9 +20,15 @@ class Dictionary: SourceData {
     var symbolDictionary: [String:Symbol] = [:]             //dictionaries to access symbol/formula properties by symbol/formula
     var formulaDictionary: [String:Formula] = [:]
     var symbolNameDictionary: [String:Symbol] = [:]         //dictionaries to access symbol/formula properties by symbol/formula name
+<<<<<<< HEAD
+    var FormulaNameDictionary: [String:Formula] = [:]
+    var categorySetDictionary: [String:[Symbol]] = [:]      //category set to store unique categories and their associated symbols
+                                                            //DEV Note: categorySetDictionary will be extended to include formulas
+=======
     var formulaNameDictionary: [String:Formula] = [:]
     var categorySetDictionary: [String:[Symbol]] = [:]      //category set to store unique categories and their associated symbols
     //DEV Note: categorySetDictionary will be extended to include formulas
+>>>>>>> master
     
     override init() {
         super.init()
@@ -62,6 +68,36 @@ class Dictionary: SourceData {
             }
             categorySetDictionary[category] = categorySymbols
         }
+        
+        //Create temporary category set used to create the category set dictionary)
+        var categorySet = Set<String>()
+        for symbol in symbolArray {
+            let separatedTags = separateTags(tagField: symbol.tags)
+            for tag in separatedTags {
+                categorySet.insert(tag)
+            }
+        }
+        
+        //Create category set dictionary
+        for category in categorySet {
+            var categorySymbols: [Symbol] = []
+            for symbol in symbolArray {
+                var counter = 0
+                let separatedTags = separateTags(tagField: symbol.tags)
+                for tag in separatedTags {
+                    if(tag == category) {
+                        categorySymbols.insert(symbol, at: counter)
+                        counter += counter
+                    }
+                }
+            }
+            categorySetDictionary[category] = categorySymbols
+        }
+    }
+    
+    func separateTags(tagField: String) -> [String] {
+        let separatedTags = tagField.components(separatedBy: ",")
+        return separatedTags
     }
     
     func separateTags(tagField: String) -> [String] {
@@ -94,6 +130,19 @@ class Dictionary: SourceData {
         return categories
     }
     
+<<<<<<< HEAD
+//    func getSymbolsInCategory(category: String) -> [String] {
+//        if let symbols = categorySetDictionary[category] {
+//            var symbolCharacters: [String] = []
+//            for symbol in symbols {
+//                symbolCharacters.append(symbol.symbol)
+//            }
+//            return symbolCharacters.sorted()
+//        } else {
+//            return []
+//        }
+//    }
+=======
     //    func getSymbolsInCategory(category: String) -> [String] {
     //        if let symbols = categorySetDictionary[category] {
     //            var symbolCharacters: [String] = []
@@ -105,6 +154,7 @@ class Dictionary: SourceData {
     //            return []
     //        }
     //    }
+>>>>>>> master
     
     //    func testAddData() {
     //Add new data sample
