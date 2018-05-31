@@ -11,7 +11,7 @@ import UIKit
 /**
  * In result detail view, the detail of clicked symbol will be shown
  */
-class ResultDetailViewController: UIViewController {
+class ResultDetailVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

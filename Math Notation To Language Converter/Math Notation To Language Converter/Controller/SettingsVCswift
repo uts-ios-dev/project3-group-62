@@ -10,7 +10,7 @@ import UIKit
 
 // Setting view controller
 // User can set language and ?
-class SettingViewController: UIViewController {
+class SettingsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

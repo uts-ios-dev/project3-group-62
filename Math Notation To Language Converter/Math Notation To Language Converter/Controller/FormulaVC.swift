@@ -10,7 +10,7 @@ import UIKit
 
 // User click a category and promot to CommmonFormula View
 // User input a Formula, click search button, promote to FormulaDetail View
-class FormulaViewController: UIViewController {
+class FormulaVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -11,7 +11,7 @@ import UIKit
 /**
  * In this view a list of favorite symbols and formulas will be shown
  */
-class FavoriteViewController: UIViewController {
+class FavoritesVC: UIViewController {
     @IBOutlet weak var keywordsSearchBar: UISearchBar!
     
     override func viewDidLoad() {

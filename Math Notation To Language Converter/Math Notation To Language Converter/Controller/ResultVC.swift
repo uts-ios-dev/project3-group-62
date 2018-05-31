@@ -14,7 +14,7 @@ import UIKit
  * In this view, for each symbol, only a short description will be shown.
  * User could click anyone of them to show the detail.
  */
-class ResultViewController: UIViewController {
+class ResultVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
