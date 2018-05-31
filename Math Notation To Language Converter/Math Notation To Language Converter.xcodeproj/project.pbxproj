@@ -17,6 +17,7 @@
 		7EDC969420A3C7550088D94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969320A3C7550088D94F /* Assets.xcassets */; };
 		7EDC969720A3C7550088D94F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969520A3C7550088D94F /* LaunchScreen.storyboard */; };
 		7EDC969F20A3C7B80088D94F /* Prototype Wireframe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */; };
+		A407F15220BF741900C8B443 /* OpenUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A407F15120BF741900C8B443 /* OpenUrl.swift */; };
 		A40E141720BCE5F2003E6775 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E140E20BCE5F1003E6775 /* FavoriteViewController.swift */; };
 		A40E141820BCE5F2003E6775 /* ResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E140F20BCE5F1003E6775 /* ResultDetailViewController.swift */; };
 		A40E141920BCE5F2003E6775 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E141020BCE5F1003E6775 /* SettingViewController.swift */; };
@@ -47,6 +48,7 @@
 		7EDC969620A3C7550088D94F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EDC969820A3C7550088D94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Prototype Wireframe.storyboard"; sourceTree = "<group>"; };
+		A407F15120BF741900C8B443 /* OpenUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenUrl.swift; sourceTree = "<group>"; };
 		A40E140E20BCE5F1003E6775 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		A40E140F20BCE5F1003E6775 /* ResultDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultDetailViewController.swift; sourceTree = "<group>"; };
 		A40E141020BCE5F1003E6775 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				7E37D8FF20BB95010039ADD5 /* Data */,
 				F3FC9DAC20BBF4ED00DDB0A1 /* Controller */,
 				7EDC968D20A3C7540088D94F /* Main.storyboard */,
+				A407F15120BF741900C8B443 /* OpenUrl.swift */,
 				7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */,
 				7EDC969320A3C7550088D94F /* Assets.xcassets */,
 				7EDC969520A3C7550088D94F /* LaunchScreen.storyboard */,
@@ -231,6 +234,7 @@
 				F33A9D2B20B640F600ABA011 /* Dictionary.swift in Sources */,
 				7E37D90120BB968D0039ADD5 /* Data.swift in Sources */,
 				A40E141920BCE5F2003E6775 /* SettingViewController.swift in Sources */,
+				A407F15220BF741900C8B443 /* OpenUrl.swift in Sources */,
 				A40E141C20BCE5F2003E6775 /* ResultViewController.swift in Sources */,
 				F318E4D820ACF2D5006523B1 /* Formula.swift in Sources */,
 				7EDC968A20A3C7540088D94F /* AppDelegate.swift in Sources */,

@@ -11,11 +11,12 @@ import UIKit
 // Show the detail of selected common formula, or the formula user inputed
 // if the formula textfield changed, defination and meaning will also be changed
 class FormulaDetailVC: UIViewController {
-
+    @IBOutlet weak var sourceLinkBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        sourceLinkBtn.setTitle("https://en.wikipedia.org/wiki/Bessel_function", for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,4 +29,8 @@ class FormulaDetailVC: UIViewController {
         // Change meaning and defination?
     }
     
+    // Function for user click souce link, app will open safari
+    @IBAction func sourceLinkClicked(_ sender: UIButton) {
+        openUrl(url: (sourceLinkBtn.titleLabel?.text)!)
+    }
 }
