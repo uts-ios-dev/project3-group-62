@@ -19,24 +19,23 @@ enum FormulaType {
     case isDynamic
 }
 
-class Formula: Comparable {
+class Formula: CustomStringConvertible, Comparable, SpecialMathObject {
     
     var dynamicFormula : [Symbol] = []
     var staticFormula: String = ""
     var name: String
     var tags : String
-    var description : String
-    var cat : Category
+    var info : String
     var imgs : [String] = []
     let formulaType: FormulaType
+    var description: String { return self.toString() }
     
     //Static Formula Initialiser
-    init(cat : Category, staticFormula: String, name: String, description : String, tag : String,img : String? = nil) {
-        self.cat = cat
+    init(staticFormula: String, name: String, info : String, tags : String, img : String? = nil) {
         self.staticFormula = staticFormula
         self.name = name
-        self.description = description
-        self.tags = tag
+        self.info = info
+        self.tags = tags
         if let picture = img {
             imgs.append(picture)
         }
@@ -44,12 +43,11 @@ class Formula: Comparable {
     }
     
     //Dynamic Formula Initialiser
-    init(cat : Category, symbol : Symbol, name: String, description : String, tag : String,img : String? = nil) {
+    init(symbol : Symbol, name: String, info : String, tag : String,img : String? = nil) {
         var dynamicFormula : [Symbol] = []
-        self.cat = cat
         dynamicFormula.append(symbol)
         self.name = name
-        self.description = description
+        self.info = info
         self.tags = tag
         if let picture = img {
             imgs.append(picture)
@@ -58,9 +56,8 @@ class Formula: Comparable {
     }
     
     func toString() -> String {
-        return "formula: \(getFormula()) type: tags\(tags) description: \(description) imgs:\(imgs)"
+        return "formula: \(getFormula()) type: \(tags) info: \(info) imgs:\(imgs)"
     }
-    
     
     func getFormula() -> String {
         switch formulaType {

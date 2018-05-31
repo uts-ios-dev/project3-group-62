@@ -21,11 +21,13 @@ class Dictionary: SourceData {
     var formulaDictionary: [String:Formula] = [:]
     var symbolNameDictionary: [String:Symbol] = [:]         //dictionaries to access symbol/formula properties by symbol/formula name
     var formulaNameDictionary: [String:Formula] = [:]
-    var categorySetDictionary: [String:[Symbol]] = [:]      //category set to store unique categories and their associated symbols
-    //DEV Note: categorySetDictionary will be extended to include formulas
+    var symbolCategorySetDictionary: [String:[Symbol]] = [:]      //category set to store unique symbol categories and their associated symbols
+    var formulaCategorySetDictionary: [String:[Formula]] = [:]      //category set to store unique formula categories
+
     
     override init() {
         super.init()
+        
         //Create Symbol Dictionaries
         for symbol in symbolArray {
             symbolDictionary[symbol.symbol] = symbol
@@ -38,30 +40,14 @@ class Dictionary: SourceData {
             formulaNameDictionary[formula.name] = formula
         }
         
-        //Create temporary category set used to create the category set dictionary)
-        var categorySet = Set<String>()
-        for symbol in symbolArray {
-            let separatedTags = separateTags(tagField: symbol.tags)
-            for tag in separatedTags {
-                categorySet.insert(tag)
-            }
-        }
+        //Create temporary symbol category set used to create the category set dictionary)
+        let tempSymbolSet = makeCategorySet(array: symbolArray)
+        let tempFormulaSet = makeCategorySet(array: formulaArray)
         
-        //Create category set dictionary
-        for category in categorySet {
-            var categorySymbols: [Symbol] = []
-            for symbol in symbolArray {
-                var counter = 0
-                let separatedTags = separateTags(tagField: symbol.tags)
-                for tag in separatedTags {
-                    if(tag == category) {
-                        categorySymbols.insert(symbol, at: counter)
-                        counter += counter
-                    }
-                }
-            }
-            categorySetDictionary[category] = categorySymbols
-        }
+        //Create symbol category set dictionary
+        symbolCategorySetDictionary = makeCategorySetDictionary(categorySet: tempSymbolSet, array: symbolArray) as! [String : [Symbol]]
+        formulaCategorySetDictionary = makeCategorySetDictionary(categorySet: tempFormulaSet, array: formulaArray) as! [String : [Formula]]
+
     }
     
     func separateTags(tagField: String) -> [String] {
@@ -85,51 +71,56 @@ class Dictionary: SourceData {
         return formulaNameDictionary[formulaName]
     }
     
-    func getCategories() -> [String] {
-        var categories: [String] = []
-        for category in categorySetDictionary {
-            categories.append(category.key)
+    func getSymbolCategories() -> [String] {
+        var symbolCategories: [String] = []
+        for symbolCategory in symbolCategorySetDictionary {
+            symbolCategories.append(symbolCategory.key)
         }
-        categories.sort()
-        return categories
+        symbolCategories.sort()
+        return symbolCategories
     }
     
-    //    func getSymbolsInCategory(category: String) -> [String] {
-    //        if let symbols = categorySetDictionary[category] {
-    //            var symbolCharacters: [String] = []
-    //            for symbol in symbols {
-    //                symbolCharacters.append(symbol.symbol)
-    //            }
-    //            return symbolCharacters.sorted()
-    //        } else {
-    //            return []
-    //        }
-    //    }
+    func getFormulaCategories() -> [String] {
+        var formulaCategories: [String] = []
+        for formulaCategory in formulaCategorySetDictionary {
+            formulaCategories.append(formulaCategory.key)
+        }
+        formulaCategories.sort()
+        return formulaCategories
+    }
     
-    //    func testAddData() {
-    //Add new data sample
+    //The below generic function is used to make category sets for different math class types (e.g. Formula, Symbol)
+    private func makeCategorySet<T: SpecialMathObject>(array: [T]) -> Set<String> {
+        var categorySet = Set<String>()
+        for item in array {
+            let separatedTags = separateTags(tagField: item.tags)
+            for tag in separatedTags {
+                categorySet.insert(tag)
+            }
+        }
+        return categorySet
+    }
     
-    //        //Symbol
-    //        let def = Definition(name: "plus", tag: "Basic", meaning: "add", translation: "", description: "1 + 1 = 2",url:"blog.sparrow.moe")
-    //        //Create and assign category & definition
-    //        let symbolCat = Category(name: "Basic Symbol")
-    //        let symbol = Symbol(cat: symbolCat, symbol: "+", definition: def)
-    //        //Finally add this symbol to dictioray array
-    //        symbols.append(symbol)
-    //        //Symbol 2
-    //        //Symbol
-    //        let defTwo = Definition(name: "minus", tag: "Basic", meaning: "minus", translation: "", description: "1 - 1 = 0",url:"blog.sparrow.moe")
-    //        //Create and assign category & definition
-    //        let symbolCatTwo = Category(name: "Basic Symbol")
-    //        let symbolTwo = Symbol(cat: symbolCatTwo, symbol: "-", definition: defTwo)
-    //        //Finally add this symbol to dictioray array
-    //        symbols.append(symbolTwo)
-    //
-    //        //Formula
-    //        let formulaCat = Category(name: "Basic Math")
-    //        let formula = Formula(cat: formulaCat, symbol: symbol, description: "Addition", tag: "Basic")
-    //        formulas.append(formula)
-    //    }
+    private func makeCategorySetDictionary<T: SpecialMathObject>(categorySet: Set<String>, array: [T]) -> [String:[SpecialMathObject]] {
+        var categorySetDictionary: [String:[SpecialMathObject]] = [:]
+        for category in categorySet {
+            var categoryItems: [SpecialMathObject] = []
+            for item in array {
+                var counter = 0
+                let separatedTags = separateTags(tagField: item.tags)
+                for tag in separatedTags {
+                    if(tag == category) {
+                        categoryItems.insert(item, at: counter)
+                        counter += counter
+                    }
+                }
+            }
+        categorySetDictionary[category] = categoryItems
+        }
+        return categorySetDictionary
+    }
+    
+    
 }
 
 

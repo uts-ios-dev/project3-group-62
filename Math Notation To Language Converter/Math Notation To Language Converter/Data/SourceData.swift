@@ -10,41 +10,68 @@ class SourceData {
     
     var symbolArray: [Symbol] = []                          //raw array of symbols & formulas
     var formulaArray: [Formula] = []
-    var dataImport: CSVHandler
+    var symbolImport: CSVHandler
+    var formulaImport: CSVHandler
     
     init() {
-        //Read CSV File
-        dataImport = CSVHandler(filename: "Symbols")
-        dataImport.loadData()
+        
+        //Create CSV File References
+        symbolImport = CSVHandler(filename: "Symbols")
+        formulaImport = CSVHandler(filename: "StaticFormulas")
+        
+        //Populate Symbol Array from CSV File
+        symbolImport.loadData()
         printNumberOfSymbolsImported()
-        populateModelObjects()
+        populateSymbolModelObjects()
+        
+        //Populate Formula Array from CSV File
+        formulaImport.loadData()
+        printNumberOfFormulasImported()
+        populateFormulaModelObjects()
+        
     }
     
-    func populateModelObjects() {
+    func populateSymbolModelObjects() {
         //Populate Data Model dictionary data structure
-        for i in 1..<dataImport.csvData.count {
+        for i in 1..<symbolImport.csvData.count {
             let newSymbol = Symbol(
-                symbol : dataImport.csvData[i]["Symbol"]!,
-                name : dataImport.csvData[i]["Name"]!,
-                meaning : dataImport.csvData[i]["Meaning"]!,
-                translation: dataImport.csvData[i]["Translation"]!,
+                symbol : symbolImport.csvData[i]["Symbol"]!,
+                name : symbolImport.csvData[i]["Name"]!,
+                meaning : symbolImport.csvData[i]["Meaning"]!,
+                translation: symbolImport.csvData[i]["Translation"]!,
                 img : nil,
-                tags : dataImport.csvData[i]["Tags"]!,
+                tags : symbolImport.csvData[i]["Tags"]!,
                 url : nil)
             symbolArray.append(newSymbol)
         }
     }
     
-    func printNumberOfSymbolsImported() {
-        print("\n Total Symbols Imported: \n \(dataImport.csvData.count) \n")
+    func populateFormulaModelObjects() {
+        //Populate Data Model dictionary data structure
+        for i in 1..<formulaImport.csvData.count {
+            let newFormula = Formula(
+                staticFormula: formulaImport.csvData[i]["Formula"]!,
+                name: formulaImport.csvData[i]["Name"]!,
+                info: formulaImport.csvData[i]["Info"]!,
+                tags: formulaImport.csvData[i]["Tags"]!)
+            formulaArray.append(newFormula)
+        }
     }
     
-    func printImportedData() {
+    func printNumberOfSymbolsImported() {
+        print("\n Total Symbols Imported: \n \(symbolImport.csvData.count) \n")
+    }
+    
+    func printNumberOfFormulasImported() {
+        print("\n Total Formulas Imported: \n \(formulaImport.csvData.count) \n")
+    }
+    
+    func printImportedSymbolData() {
         //Read in from CSV dictionary import structure (use to debug load)
-        for columnNo in 1..<dataImport.columnNames.count {
-            let columnName = dataImport.columnNames[columnNo]
-            for i in 1..<dataImport.csvData.count {
-                print("\(dataImport.csvData[i][columnName]!)")
+        for columnNo in 1..<symbolImport.columnNames.count {
+            let columnName = symbolImport.columnNames[columnNo]
+            for i in 1..<symbolImport.csvData.count {
+                print("\(symbolImport.csvData[i][columnName]!)")
             }
         }
     }

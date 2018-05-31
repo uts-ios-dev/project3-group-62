@@ -9,7 +9,7 @@
 
 import Foundation
 
-class Symbol: CustomStringConvertible, Comparable {
+class Symbol: CustomStringConvertible, Comparable, SpecialMathObject {
     
     var symbol : String
     var imgs : [String] = []
@@ -17,7 +17,7 @@ class Symbol: CustomStringConvertible, Comparable {
     var tags : String
     var meaning : String
     var translation: String
-    var description : String { return self.toString()}
+    var description : String { return self.toString() }
     var url : String?
     
     init(symbol : String, name : String,  meaning : String, translation: String, img : String? = nil, tags : String, url : String? = nil) {
@@ -31,14 +31,6 @@ class Symbol: CustomStringConvertible, Comparable {
         self.tags = tags
         self.url = url
     }
-    
-    //    func printAllDefs() ->String{
-    //        var output = ""
-    //        for def in definition {
-    //            output += def.toString()
-    //        }
-    //        return output
-    //    }
     
     static func < (lhs: Symbol, rhs: Symbol) -> Bool {      //implements comparable protocol for sorting by name asc
         return lhs.name < rhs.name
