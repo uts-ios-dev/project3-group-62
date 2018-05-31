@@ -19,7 +19,7 @@ enum FormulaType {
     case isDynamic
 }
 
-class Formula {
+class Formula: Comparable {
     
     var dynamicFormula : [Symbol] = []
     var staticFormula: String = ""
@@ -81,4 +81,15 @@ class Formula {
             case .isDynamic: return "Dynamic"
         }
     }
+    
+    static func < (lhs: Formula, rhs: Formula) -> Bool {      //implements comparable protocol for sorting by name asc
+        return lhs.name < rhs.name
+    }
+    
+    static func == (lhs: Formula, rhs: Formula) -> Bool {
+        return lhs.name == rhs.name
+    }
+    
 }
+
+

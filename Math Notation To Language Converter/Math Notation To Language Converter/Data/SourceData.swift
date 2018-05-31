@@ -14,7 +14,7 @@ class SourceData {
 
     init() {
         //Read CSV File
-        dataImport = CSVHandler(filename: "Dictionary")
+        dataImport = CSVHandler(filename: "Symbols")
         dataImport.loadData()
         printNumberOfSymbolsImported()
         populateModelObjects()
@@ -28,9 +28,8 @@ class SourceData {
                 name : dataImport.csvData[i]["Name"]!,
                 meaning : dataImport.csvData[i]["Meaning"]!,
                 translation: dataImport.csvData[i]["Translation"]!,
-                cat: Category(name: "NULL"),
                 img : nil,
-                tag : dataImport.csvData[i]["Tags"]!,
+                tags : dataImport.csvData[i]["Tags"]!,
                 url : nil)
             symbolArray.append(newSymbol)
         }

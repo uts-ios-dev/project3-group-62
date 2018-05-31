@@ -37,11 +37,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Symbol Translation: \n \(symbolTranslation) \n")
         }
         
-        //Test model data
-        //        let dictionary = Dictionary()
-        //        dictionary.testAddData()
-        //        dictionary.testRetrieveData()
+        //Retrieve all unique categories (in alphabetical order)
+        print("Categories in model: \n \(model.getCategories()) \n")
         
+        //Retrieve symbols for a category
+        if let symbolArray = model.categorySetDictionary["Linear Algebra"] {
+            print("Sorted Symbol from category: \n \(symbolArray.sorted()) \n")
+        } else {
+            print("Symbol Array not found")
+        }
         
         return true
     

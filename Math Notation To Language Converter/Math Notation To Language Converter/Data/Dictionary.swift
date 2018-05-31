@@ -21,6 +21,8 @@ class Dictionary: SourceData {
     var FormulaDictionary: [String:Formula] = [:]
     var symbolNameDictionary: [String:Symbol] = [:]         //dictionaries to access symbol/formula properties by symbol/formula name
     var FormulaNameDictionary: [String:Formula] = [:]
+    var categorySetDictionary: [String:[Symbol]] = [:]      //category set to store unique categories and their associated symbols
+                                                            //DEV Note: categorySetDictionary will be extended to include formulas
     
     override init() {
         super.init()
@@ -35,6 +37,36 @@ class Dictionary: SourceData {
             FormulaDictionary[formula.getFormula()] = formula
             FormulaNameDictionary[formula.name] = formula
         }
+        
+        //Create temporary category set used to create the category set dictionary)
+        var categorySet = Set<String>()
+        for symbol in symbolArray {
+            let separatedTags = separateTags(tagField: symbol.tags)
+            for tag in separatedTags {
+                categorySet.insert(tag)
+            }
+        }
+        
+        //Create category set dictionary
+        for category in categorySet {
+            var categorySymbols: [Symbol] = []
+            for symbol in symbolArray {
+                var counter = 0
+                let separatedTags = separateTags(tagField: symbol.tags)
+                for tag in separatedTags {
+                    if(tag == category) {
+                        categorySymbols.insert(symbol, at: counter)
+                        counter += counter
+                    }
+                }
+            }
+            categorySetDictionary[category] = categorySymbols
+        }
+    }
+    
+    func separateTags(tagField: String) -> [String] {
+        let separatedTags = tagField.components(separatedBy: ",")
+        return separatedTags
     }
 
     func getSymbolDataBySymbol(symbolCharacter: String) -> Symbol? {
@@ -52,6 +84,27 @@ class Dictionary: SourceData {
     func getFormulaDataByName(formulaName: String) -> Formula? {
         return FormulaNameDictionary[formulaName]
     }
+    
+    func getCategories() -> [String] {
+        var categories: [String] = []
+        for category in categorySetDictionary {
+            categories.append(category.key)
+        }
+        categories.sort()
+        return categories
+    }
+    
+//    func getSymbolsInCategory(category: String) -> [String] {
+//        if let symbols = categorySetDictionary[category] {
+//            var symbolCharacters: [String] = []
+//            for symbol in symbols {
+//                symbolCharacters.append(symbol.symbol)
+//            }
+//            return symbolCharacters.sorted()
+//        } else {
+//            return []
+//        }
+//    }
     
     //    func testAddData() {
     //Add new data sample
