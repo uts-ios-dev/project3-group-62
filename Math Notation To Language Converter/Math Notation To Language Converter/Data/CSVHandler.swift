@@ -1,5 +1,5 @@
 //
-//  Data.swift
+//  CSVHandler.swift
 //  Math Notation To Language Converter
 //
 //  Created by Peter Bower on 28/5/18.
@@ -9,11 +9,11 @@
 import Foundation
 
 struct CSVHandler {
-  
+    
     let filename: String
     var csvData: [[String:String]] = []
     var columnNames: [String] = []
-
+    
     init(filename: String) {                                                        //read file and convert it into tabular format
         self.filename = filename
     }
@@ -44,9 +44,9 @@ struct CSVHandler {
             for row in rows {
                 let fields = row.components(separatedBy: ";")
                 if fields.count != columnNames.count {continue}
-                    var csvDataRow = [String:String]()
-                    for (index,field) in fields.enumerated(){
-                        csvDataRow[columnNames[index]] = field
+                var csvDataRow = [String:String]()
+                for (index,field) in fields.enumerated(){
+                    csvDataRow[columnNames[index]] = field
                 }
                 csvData += [csvDataRow]
             }
@@ -101,4 +101,3 @@ struct CSVHandler {
     }
     
 }
-

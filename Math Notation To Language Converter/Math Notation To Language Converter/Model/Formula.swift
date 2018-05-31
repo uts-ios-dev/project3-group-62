@@ -29,7 +29,7 @@ class Formula: Comparable {
     var cat : Category
     var imgs : [String] = []
     let formulaType: FormulaType
-
+    
     //Static Formula Initialiser
     init(cat : Category, staticFormula: String, name: String, description : String, tag : String,img : String? = nil) {
         self.cat = cat
@@ -42,7 +42,7 @@ class Formula: Comparable {
         }
         formulaType = .isStatic
     }
-
+    
     //Dynamic Formula Initialiser
     init(cat : Category, symbol : Symbol, name: String, description : String, tag : String,img : String? = nil) {
         var dynamicFormula : [Symbol] = []
@@ -67,18 +67,18 @@ class Formula: Comparable {
         case .isDynamic:
             var str : String = " "
             for s in dynamicFormula {
-            str += s.toString()
+                str += s.toString()
             }
             return str
         case .isStatic:
             return staticFormula
         }
     }
- 
+    
     func getFormulaTypeName() -> String {
         switch formulaType {
-            case .isStatic:  return "Static"
-            case .isDynamic: return "Dynamic"
+        case .isStatic:  return "Static"
+        case .isDynamic: return "Dynamic"
         }
     }
     
@@ -93,3 +93,7 @@ class Formula: Comparable {
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master

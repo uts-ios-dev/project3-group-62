@@ -32,13 +32,21 @@ class Symbol: CustomStringConvertible, Comparable {
         self.url = url
     }
     
-//    func printAllDefs() ->String{
-//        var output = ""
-//        for def in definition {
-//            output += def.toString()
-//        }
-//        return output
-//    }
+    //    func printAllDefs() ->String{
+    //        var output = ""
+    //        for def in definition {
+    //            output += def.toString()
+    //        }
+    //        return output
+    //    }
+    
+    static func < (lhs: Symbol, rhs: Symbol) -> Bool {      //implements comparable protocol for sorting by name asc
+        return lhs.name < rhs.name
+    }
+    
+    static func == (lhs: Symbol, rhs: Symbol) -> Bool {
+        return lhs.name == rhs.name
+    }
     
     static func < (lhs: Symbol, rhs: Symbol) -> Bool {      //implements comparable protocol for sorting by name asc
         return lhs.name < rhs.name
@@ -52,3 +60,4 @@ class Symbol: CustomStringConvertible, Comparable {
         return "symbol: \(symbol) imgs:\(imgs) name :\(name) tags: \(tags) meaning: \(meaning) translation \(translation) URL: \(String(describing: url)) \n"
     }
 }
+
