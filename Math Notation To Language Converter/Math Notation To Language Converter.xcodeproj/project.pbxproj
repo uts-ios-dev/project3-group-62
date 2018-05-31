@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6615070820B6515F001DF875 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6615070720B6515F001DF875 /* Main.swift */; };
+		7E0DB2C620BFC148005B2BC6 /* StaticFormulas.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DB2C520BFC148005B2BC6 /* StaticFormulas.csv */; };
 		7E37D90120BB968D0039ADD5 /* CSVHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37D90020BB968D0039ADD5 /* CSVHandler.swift */; };
+		7E6DC2C920BFD16000E2632D /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DC2C820BFD16000E2632D /* Protocols.swift */; };
 		7EC802A220BE588100287017 /* SourceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC802A120BE588100287017 /* SourceData.swift */; };
 		7EDC968A20A3C7540088D94F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC968920A3C7540088D94F /* AppDelegate.swift */; };
 		7EDC968C20A3C7540088D94F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDC968B20A3C7540088D94F /* MainVC.swift */; };
@@ -37,7 +39,9 @@
 
 /* Begin PBXFileReference section */
 		6615070720B6515F001DF875 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Main.swift; path = "Math Notation To Language Converter/Model/Main.swift"; sourceTree = SOURCE_ROOT; };
+		7E0DB2C520BFC148005B2BC6 /* StaticFormulas.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StaticFormulas.csv; sourceTree = "<group>"; };
 		7E37D90020BB968D0039ADD5 /* CSVHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVHandler.swift; sourceTree = "<group>"; };
+		7E6DC2C820BFD16000E2632D /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		7EC802A120BE588100287017 /* SourceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceData.swift; sourceTree = "<group>"; };
 		7EDC968620A3C7530088D94F /* Math Notation To Language Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Notation To Language Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDC968920A3C7540088D94F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,7 +87,9 @@
 				7EDC968920A3C7540088D94F /* AppDelegate.swift */,
 				7EC802A120BE588100287017 /* SourceData.swift */,
 				F33A9D2A20B640F600ABA011 /* Dictionary.swift */,
+				7E6DC2C820BFD16000E2632D /* Protocols.swift */,
 				7E37D90020BB968D0039ADD5 /* CSVHandler.swift */,
+				7E0DB2C520BFC148005B2BC6 /* StaticFormulas.csv */,
 				A407F15320BF7AC300C8B443 /* Symbols.csv */,
 			);
 			path = Data;
@@ -211,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EDC969720A3C7550088D94F /* LaunchScreen.storyboard in Resources */,
+				7E0DB2C620BFC148005B2BC6 /* StaticFormulas.csv in Resources */,
 				7EDC969F20A3C7B80088D94F /* Prototype Wireframe.storyboard in Resources */,
 				7EDC969420A3C7550088D94F /* Assets.xcassets in Resources */,
 				A407F15420BF7AC300C8B443 /* Symbols.csv in Resources */,
@@ -228,6 +235,7 @@
 				7EDC968C20A3C7540088D94F /* MainVC.swift in Sources */,
 				A40E141A20BCE5F2003E6775 /* CommonFormulaVC.swift in Sources */,
 				A40E141B20BCE5F2003E6775 /* FormulaDetailVC.swift in Sources */,
+				7E6DC2C920BFD16000E2632D /* Protocols.swift in Sources */,
 				A40E141E20BCE5F2003E6775 /* CustomDefineVC.swift in Sources */,
 				F318E4D420ACF2A6006523B1 /* Symbol.swift in Sources */,
 				F318E4DC20ACF304006523B1 /* Settings.swift in Sources */,
