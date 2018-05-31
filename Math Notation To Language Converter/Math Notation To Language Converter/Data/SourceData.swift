@@ -1,5 +1,5 @@
 //
-//  PopulateModel.swift
+//  SourceData.swift
 //  Math Notation To Language Converter
 //
 //  Created by Peter Bower on 30/5/18.
@@ -11,10 +11,10 @@ class SourceData {
     var symbolArray: [Symbol] = []                          //raw array of symbols & formulas
     var formulaArray: [Formula] = []
     var dataImport: CSVHandler
-
+    
     init() {
         //Read CSV File
-        dataImport = CSVHandler(filename: "Dictionary")
+        dataImport = CSVHandler(filename: "Symbols")
         dataImport.loadData()
         printNumberOfSymbolsImported()
         populateModelObjects()
@@ -28,14 +28,13 @@ class SourceData {
                 name : dataImport.csvData[i]["Name"]!,
                 meaning : dataImport.csvData[i]["Meaning"]!,
                 translation: dataImport.csvData[i]["Translation"]!,
-                cat: Category(name: "NULL"),
                 img : nil,
-                tag : dataImport.csvData[i]["Tags"]!,
+                tags : dataImport.csvData[i]["Tags"]!,
                 url : nil)
             symbolArray.append(newSymbol)
         }
     }
-
+    
     func printNumberOfSymbolsImported() {
         print("\n Total Symbols Imported: \n \(dataImport.csvData.count) \n")
     }
@@ -72,7 +71,7 @@ class SourceData {
             print(symbol.toString())
         }
     }
-        
+    
     func printAllFormulas() {
         print("All formulas:")
         for formula in formulaArray {

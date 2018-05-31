@@ -9,39 +9,47 @@
 
 import Foundation
 
-class Symbol: CustomStringConvertible {
+class Symbol: CustomStringConvertible, Comparable {
+    
     var symbol : String
     var imgs : [String] = []
-    var cat : Category
     var name : String
-    var tag : String
+    var tags : String
     var meaning : String
     var translation: String
     var description : String { return self.toString()}
     var url : String?
     
-    init(symbol : String, name : String,  meaning : String, translation: String, cat : Category, img : String? = nil, tag : String, url : String? = nil) {
+    init(symbol : String, name : String,  meaning : String, translation: String, img : String? = nil, tags : String, url : String? = nil) {
         self.symbol = symbol
         self.name = name
         self.meaning = meaning
         self.translation = translation
-        self.cat = cat
         if let picture = img {
             imgs.append(picture)
         }
-        self.tag = tag
+        self.tags = tags
         self.url = url
     }
     
-//    func printAllDefs() ->String{
-//        var output = ""
-//        for def in definition {
-//            output += def.toString()
-//        }
-//        return output
-//    }
+    //    func printAllDefs() ->String{
+    //        var output = ""
+    //        for def in definition {
+    //            output += def.toString()
+    //        }
+    //        return output
+    //    }
+    
+    static func < (lhs: Symbol, rhs: Symbol) -> Bool {      //implements comparable protocol for sorting by name asc
+        return lhs.name < rhs.name
+    }
+    
+    static func == (lhs: Symbol, rhs: Symbol) -> Bool {
+        return lhs.name == rhs.name
+    }
     
     func toString() -> String {
-        return "symbol: \(symbol) imgs:\(imgs) cat: \(cat.toString()) name :\(name) tag: \(tag) meaning: \(meaning) translation \(translation) URL: \(String(describing: url)) \n"
+        return "symbol: \(symbol) imgs:\(imgs) name :\(name) tags: \(tags) meaning: \(meaning) translation \(translation) URL: \(String(describing: url)) \n"
     }
 }
+

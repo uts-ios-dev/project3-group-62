@@ -17,7 +17,7 @@
 		7EDC969420A3C7550088D94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969320A3C7550088D94F /* Assets.xcassets */; };
 		7EDC969720A3C7550088D94F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969520A3C7550088D94F /* LaunchScreen.storyboard */; };
 		7EDC969F20A3C7B80088D94F /* Prototype Wireframe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */; };
-		A407F15420BF7AC300C8B443 /* Dictionary.csv in Resources */ = {isa = PBXBuildFile; fileRef = A407F15320BF7AC300C8B443 /* Dictionary.csv */; };
+		A407F15420BF7AC300C8B443 /* Symbols.csv in Resources */ = {isa = PBXBuildFile; fileRef = A407F15320BF7AC300C8B443 /* Symbols.csv */; };
 		A407F15620BF7ACC00C8B443 /* OpenUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A407F15520BF7ACC00C8B443 /* OpenUrl.swift */; };
 		A40E141720BCE5F2003E6775 /* FavoritesViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E140E20BCE5F1003E6775 /* FavoritesViewVC.swift */; };
 		A40E141820BCE5F2003E6775 /* ResultDetailViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40E140F20BCE5F1003E6775 /* ResultDetailViewVC.swift */; };
@@ -31,7 +31,6 @@
 		F318E4D620ACF2C4006523B1 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4D520ACF2C4006523B1 /* Definition.swift */; };
 		F318E4D820ACF2D5006523B1 /* Formula.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4D720ACF2D5006523B1 /* Formula.swift */; };
 		F318E4DC20ACF304006523B1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4DB20ACF304006523B1 /* Settings.swift */; };
-		F318E4E020ACF669006523B1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4DF20ACF669006523B1 /* Category.swift */; };
 		F33A9D2B20B640F600ABA011 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A9D2A20B640F600ABA011 /* Dictionary.swift */; };
 		F3FC9DB220BD5F1700DDB0A1 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC9DB120BD5F1700DDB0A1 /* SearchVC.swift */; };
 /* End PBXBuildFile section */
@@ -49,7 +48,7 @@
 		7EDC969620A3C7550088D94F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EDC969820A3C7550088D94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EDC969E20A3C7B80088D94F /* Prototype Wireframe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Prototype Wireframe.storyboard"; sourceTree = "<group>"; };
-		A407F15320BF7AC300C8B443 /* Dictionary.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dictionary.csv; sourceTree = "<group>"; };
+		A407F15320BF7AC300C8B443 /* Symbols.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Symbols.csv; sourceTree = "<group>"; };
 		A407F15520BF7ACC00C8B443 /* OpenUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenUrl.swift; sourceTree = "<group>"; };
 		A40E140E20BCE5F1003E6775 /* FavoritesViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewVC.swift; sourceTree = "<group>"; };
 		A40E140F20BCE5F1003E6775 /* ResultDetailViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultDetailViewVC.swift; sourceTree = "<group>"; };
@@ -63,7 +62,6 @@
 		F318E4D520ACF2C4006523B1 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
 		F318E4D720ACF2D5006523B1 /* Formula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formula.swift; sourceTree = "<group>"; };
 		F318E4DB20ACF304006523B1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		F318E4DF20ACF669006523B1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F33A9D2A20B640F600ABA011 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		F3FC9DB120BD5F1700DDB0A1 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +84,7 @@
 				7EC802A120BE588100287017 /* SourceData.swift */,
 				F33A9D2A20B640F600ABA011 /* Dictionary.swift */,
 				7E37D90020BB968D0039ADD5 /* CSVHandler.swift */,
-				A407F15320BF7AC300C8B443 /* Dictionary.csv */,
+				A407F15320BF7AC300C8B443 /* Symbols.csv */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -129,7 +127,6 @@
 			children = (
 				F318E4D320ACF2A6006523B1 /* Symbol.swift */,
 				F318E4D520ACF2C4006523B1 /* Definition.swift */,
-				F318E4DF20ACF669006523B1 /* Category.swift */,
 				F318E4D720ACF2D5006523B1 /* Formula.swift */,
 				F318E4DB20ACF304006523B1 /* Settings.swift */,
 				6615070720B6515F001DF875 /* Main.swift */,
@@ -216,7 +213,7 @@
 				7EDC969720A3C7550088D94F /* LaunchScreen.storyboard in Resources */,
 				7EDC969F20A3C7B80088D94F /* Prototype Wireframe.storyboard in Resources */,
 				7EDC969420A3C7550088D94F /* Assets.xcassets in Resources */,
-				A407F15420BF7AC300C8B443 /* Dictionary.csv in Resources */,
+				A407F15420BF7AC300C8B443 /* Symbols.csv in Resources */,
 				7EDC968F20A3C7540088D94F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,7 +240,6 @@
 				7EDC968A20A3C7540088D94F /* AppDelegate.swift in Sources */,
 				F3FC9DB220BD5F1700DDB0A1 /* SearchVC.swift in Sources */,
 				6615070820B6515F001DF875 /* Main.swift in Sources */,
-				F318E4E020ACF669006523B1 /* Category.swift in Sources */,
 				A40E141F20BCE5F2003E6775 /* FormulaViewVC.swift in Sources */,
 				F318E4D620ACF2C4006523B1 /* Definition.swift in Sources */,
 				A40E141820BCE5F2003E6775 /* ResultDetailViewVC.swift in Sources */,

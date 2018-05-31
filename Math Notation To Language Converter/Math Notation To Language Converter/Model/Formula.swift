@@ -19,7 +19,7 @@ enum FormulaType {
     case isDynamic
 }
 
-class Formula {
+class Formula: Comparable {
     
     var dynamicFormula : [Symbol] = []
     var staticFormula: String = ""
@@ -29,7 +29,7 @@ class Formula {
     var cat : Category
     var imgs : [String] = []
     let formulaType: FormulaType
-
+    
     //Static Formula Initialiser
     init(cat : Category, staticFormula: String, name: String, description : String, tag : String,img : String? = nil) {
         self.cat = cat
@@ -42,7 +42,7 @@ class Formula {
         }
         formulaType = .isStatic
     }
-
+    
     //Dynamic Formula Initialiser
     init(cat : Category, symbol : Symbol, name: String, description : String, tag : String,img : String? = nil) {
         var dynamicFormula : [Symbol] = []
@@ -67,18 +67,30 @@ class Formula {
         case .isDynamic:
             var str : String = " "
             for s in dynamicFormula {
-            str += s.toString()
+                str += s.toString()
             }
             return str
         case .isStatic:
             return staticFormula
         }
     }
- 
+    
     func getFormulaTypeName() -> String {
         switch formulaType {
-            case .isStatic:  return "Static"
-            case .isDynamic: return "Dynamic"
+        case .isStatic:  return "Static"
+        case .isDynamic: return "Dynamic"
         }
     }
+    
+    static func < (lhs: Formula, rhs: Formula) -> Bool {      //implements comparable protocol for sorting by name asc
+        return lhs.name < rhs.name
+    }
+    
+    static func == (lhs: Formula, rhs: Formula) -> Bool {
+        return lhs.name == rhs.name
+    }
+    
 }
+
+
+
