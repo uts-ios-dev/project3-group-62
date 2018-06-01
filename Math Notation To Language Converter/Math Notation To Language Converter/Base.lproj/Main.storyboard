@@ -904,6 +904,7 @@
                         <outlet property="endValueSummation" destination="gSG-IW-pQU" id="Z1v-b6-FQk"/>
                         <outlet property="endValueTf" destination="9da-ds-HwF" id="7ui-bf-x2T"/>
                         <outlet property="formulaTv" destination="x6l-vX-YHv" id="F4B-ZP-ff1"/>
+                        <outlet property="humanReadableTf" destination="m8l-o3-rf7" id="oJG-aX-7fv"/>
                         <outlet property="sequenceTf" destination="5wb-SI-kKo" id="Qfb-CE-Jq8"/>
                         <outlet property="sequenceVariableTf" destination="NLN-mW-hSc" id="tcq-RB-QnF"/>
                         <outlet property="startValueSummation" destination="PbQ-SJ-t3I" id="hvn-Vt-N0W"/>

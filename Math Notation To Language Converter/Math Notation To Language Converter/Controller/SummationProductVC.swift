@@ -14,7 +14,7 @@ class SummationProductVC: UIViewController {
     var summation: MathSequence
     
     required init?(coder aDecoder: NSCoder) {
-        summation = MathSequence(sequenceVariable: "i", startValue: "1", endValue: "100", sequence: "")
+        summation = MathSequence(sequenceVariable: "i", startValue: "1", endValue: "100", sequence: "*2")
         super.init(coder: aDecoder)
     }
     
@@ -25,6 +25,7 @@ class SummationProductVC: UIViewController {
         endValueTf.text = summation.endValue
         formulaTv.text = summation.updateFormula(sequenceType: .summation)
         sequenceTf.text = summation.sequence
+        updateDynamicFields()
     }
     
     override func didReceiveMemoryWarning() {
@@ -47,7 +48,7 @@ class SummationProductVC: UIViewController {
             summation.sequenceVariable = "i"
         }
         startValueSummation.text = "\(sequenceVariableTf.text ?? "i")=\(startValueTf.text ?? "1")"
-        formulaTv.text = summation.updateFormula(sequenceType: .summation)
+        updateDynamicFields()
     }
     
     @IBAction func startValueUpdated(_ sender: UITextField) {
@@ -57,7 +58,7 @@ class SummationProductVC: UIViewController {
             summation.startValue = "i"
         }
         startValueSummation.text = "\(sequenceVariableTf.text ?? "i")=\(startValueTf.text ?? "1")"
-        formulaTv.text = summation.updateFormula(sequenceType: .summation)
+        updateDynamicFields()
     }
     
     
@@ -68,7 +69,7 @@ class SummationProductVC: UIViewController {
             summation.endValue = "100"
         }
         endValueSummation.text = endValueTf.text
-        formulaTv.text = summation.updateFormula(sequenceType: .summation)
+        updateDynamicFields()
     }
     
     @IBAction func sequenceUpdated(_ sender: UITextField) {
@@ -77,7 +78,12 @@ class SummationProductVC: UIViewController {
         } else {
             summation.sequence = "a"
         }
+        updateDynamicFields()
+    }
+    
+    func updateDynamicFields() {
         formulaTv.text = summation.updateFormula(sequenceType: .summation)
+        humanReadableTf.text = summation.convertSequenceToEnglish(sequenceType: .summation)
     }
     
     @IBOutlet weak var formulaTv: UITextView!
@@ -85,5 +91,6 @@ class SummationProductVC: UIViewController {
     @IBOutlet weak var startValueSummation: UITextField!
     @IBOutlet weak var endValueSummation: UITextField!
 
+    @IBOutlet weak var humanReadableTf: UITextView!
     
 }
