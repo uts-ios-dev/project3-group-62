@@ -16,36 +16,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        //Disabed debug print
         // Override point for customization after application launch.
-        let model = Dictionary()
-        
-        //DEV: Examples of Object Retrieval:
-        
-        //Retrieve symbol object
-        if let symbol = model.getSymbolDataByName(symbolName: "Plus") {
-            print("Symbol Object: \n \(symbol) \n")
-        } else {
-            print("Symbol not found.")
-        }
-        
-        //Retrieve symbol meaning
-        if let symbolMeaning = model.getSymbolDataByName(symbolName: "Plus")?.meaning {
-            print("Symbol Meaning: \n \(symbolMeaning) \n")
-        }
-        //Retrieve symbol translation
-        if let symbolTranslation = model.getSymbolDataByName(symbolName: "Plus")?.translation {
-            print("Symbol Translation: \n \(symbolTranslation) \n")
-        }
-        
-        //Retrieve all unique categories (in alphabetical order)
-        print("Categories in model: \n \(model.getCategories()) \n")
-        
-        //Retrieve symbols for a category
-        if let symbolArray = model.categorySetDictionary["Linear Algebra"] {
-            print("Sorted Symbol from category: \n \(symbolArray.sorted()) \n")
-        } else {
-            print("Symbol Array not found")
-        }
+//        let model = Dictionary()
+//
+//        //DEV: Examples of Object Retrieval:
+//
+//        //Retrieve symbol object
+//
+//        if let symbol = model.getSymbolDataByName(symbolName: "Plus") {
+//            print("Symbol Object: \n \(symbol) \n")
+//        } else {
+//            print("Symbol not found.")
+//        }
+//
+//        //Retrieve symbol meaning
+//        if let symbolMeaning = model.getSymbolDataByName(symbolName: "Plus")?.meaning {
+//            print("Symbol Meaning: \n \(symbolMeaning) \n")
+//        }
+//        //Retrieve symbol translation
+//        if let symbolTranslation = model.getSymbolDataByName(symbolName: "Plus")?.translation {
+//            print("Symbol Translation: \n \(symbolTranslation) \n")
+//        }
+//
+//        //Retrieve all unique categories (in alphabetical order)
+//        print("Categories in model: \n \(model.getCategories()) \n")
+//
+//        //Retrieve symbols for a category
+//        if let symbolArray = model.categorySetDictionary["Linear Algebra"] {
+//            print("Sorted Symbol from category: \n \(symbolArray.sorted()) \n")
+//        } else {
+//            print("Symbol Array not found")
+//        }
         
         return true
         
