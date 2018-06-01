@@ -7,29 +7,41 @@
 //
 
 import UIKit
+class SearchTableViewCell: UITableViewCell {
+    @IBOutlet weak var labelLeft: UILabel!
+    @IBOutlet weak var labelRight: UILabel!
+    
+}
 
 class SearchViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    
-    var data : [String] = []
-    var filterData = [String]()
+    //Data
+    let dictionary = Dictionary()
+   
+    var filterData = [Symbol]()
     var isSeaching = false
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isSeaching {
             return filterData.count
         }
-        return data.count
+        return dictionary.symbolArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SearchTableViewCell
         if isSeaching {
-            cell.textLabel?.text = filterData[indexPath.row]
+            cell.labelLeft.text = filterData[indexPath.row].symbol
+            cell.labelRight.text = filterData[indexPath.row].name.trunc(length: 15)
         } else {
-            cell.textLabel?.text = data[indexPath.row]
+            cell.labelLeft.text = dictionary.symbolArray[indexPath.row].symbol
+            cell.labelRight.text = dictionary.symbolArray[indexPath.row].name.trunc(length: 15)
+
+            //cell.labelLeft.text = "Hello world"
+            //cell.labelRight.text = "AAA"
+            
         }
         return cell
     }
@@ -41,7 +53,7 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
             tableView.reloadData()
         } else {
             isSeaching = true
-            filterData = data.filter({$0 == searchBar.text})
+            filterData = dictionary.symbolArray.filter({$0.symbol.lowercased().range(of:searchBar.text!.lowercased()) != nil || $0.name.lowercased().range(of:searchBar.text!.lowercased()) != nil})
             tableView.reloadData()
         }
     }
@@ -53,15 +65,15 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
         
-        //DEV COMMENTS: Model load has moved to the AppDelegate so we can switch the 'Initial View Controller' without affecting the source load
+      
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
+  
+   
    
 
 }
