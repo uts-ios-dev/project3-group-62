@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -106,13 +106,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLf-Qv-US0" userLabel="labelLeft">
-                                                    <rect key="frame" x="13" y="11" width="30" height="21"/>
+                                                    <rect key="frame" x="18" y="11" width="30" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLQ-3u-kQB" userLabel="labelRight">
-                                                    <rect key="frame" x="361" y="12" width="40" height="21"/>
+                                                    <rect key="frame" x="356" y="12" width="40" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -739,31 +739,29 @@
                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="aᵢ = a₁ + a₂ + a₃ + ... a₁₀₀" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ut-Gs-DVb">
-                                                <rect key="frame" x="72" y="52" width="302" height="31"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="302" id="WgJ-d6-opv"/>
-                                                </constraints>
-                                                <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" name="TimesNewRomanPS-ItalicMT" family="Times New Roman" pointSize="24"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="x6l-vX-YHv" userLabel="FormulaTv">
+                                                <rect key="frame" x="80" y="13" width="286" height="129"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="PbQ-SJ-t3I" secondAttribute="bottom" constant="16.670000000000002" id="0O4-MY-Jdr"/>
+                                            <constraint firstItem="x6l-vX-YHv" firstAttribute="top" secondItem="BrJ-Sb-bZ2" secondAttribute="top" constant="13" id="19b-6l-Jfc"/>
+                                            <constraint firstAttribute="trailing" secondItem="x6l-vX-YHv" secondAttribute="trailing" constant="8" id="2OA-BL-PR0"/>
                                             <constraint firstItem="2fD-pP-buu" firstAttribute="leading" secondItem="BrJ-Sb-bZ2" secondAttribute="leading" constant="8" id="3HK-sg-wwc"/>
-                                            <constraint firstAttribute="trailing" secondItem="1Ut-Gs-DVb" secondAttribute="trailing" id="EPb-4l-MSl"/>
                                             <constraint firstItem="PbQ-SJ-t3I" firstAttribute="leading" secondItem="BrJ-Sb-bZ2" secondAttribute="leading" constant="10" id="FO0-tO-ctg"/>
                                             <constraint firstItem="gSG-IW-pQU" firstAttribute="top" secondItem="BrJ-Sb-bZ2" secondAttribute="top" constant="8" id="INY-JF-Ih0"/>
                                             <constraint firstItem="PbQ-SJ-t3I" firstAttribute="top" secondItem="2fD-pP-buu" secondAttribute="bottom" constant="8" id="OUC-eH-UUo"/>
                                             <constraint firstItem="2fD-pP-buu" firstAttribute="top" secondItem="gSG-IW-pQU" secondAttribute="bottom" id="WtR-qh-Nrl"/>
                                             <constraint firstItem="gSG-IW-pQU" firstAttribute="leading" secondItem="BrJ-Sb-bZ2" secondAttribute="leading" constant="10" id="XJt-W4-D9S"/>
                                             <constraint firstItem="2fD-pP-buu" firstAttribute="trailing" secondItem="gSG-IW-pQU" secondAttribute="trailing" id="Z5V-yM-8tn"/>
-                                            <constraint firstItem="1Ut-Gs-DVb" firstAttribute="top" secondItem="BrJ-Sb-bZ2" secondAttribute="top" constant="52" id="bwD-m5-O9z"/>
                                             <constraint firstItem="2fD-pP-buu" firstAttribute="top" secondItem="gSG-IW-pQU" secondAttribute="bottom" id="eEP-qC-EFM"/>
-                                            <constraint firstItem="1Ut-Gs-DVb" firstAttribute="leading" secondItem="2fD-pP-buu" secondAttribute="trailing" constant="8" id="naY-yr-NQh"/>
-                                            <constraint firstAttribute="trailing" secondItem="1Ut-Gs-DVb" secondAttribute="trailing" id="syM-WL-v7y"/>
+                                            <constraint firstAttribute="bottom" secondItem="x6l-vX-YHv" secondAttribute="bottom" constant="17" id="edZ-p5-IbJ"/>
+                                            <constraint firstItem="x6l-vX-YHv" firstAttribute="leading" secondItem="2fD-pP-buu" secondAttribute="trailing" constant="16" id="ocu-A4-lsg"/>
                                         </constraints>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m8l-o3-rf7">
@@ -905,7 +903,7 @@
                     <connections>
                         <outlet property="endValueSummation" destination="gSG-IW-pQU" id="Z1v-b6-FQk"/>
                         <outlet property="endValueTf" destination="9da-ds-HwF" id="7ui-bf-x2T"/>
-                        <outlet property="formulaTf" destination="1Ut-Gs-DVb" id="Dh8-bm-VLX"/>
+                        <outlet property="formulaTv" destination="x6l-vX-YHv" id="F4B-ZP-ff1"/>
                         <outlet property="sequenceTf" destination="5wb-SI-kKo" id="Qfb-CE-Jq8"/>
                         <outlet property="sequenceVariableTf" destination="NLN-mW-hSc" id="tcq-RB-QnF"/>
                         <outlet property="startValueSummation" destination="PbQ-SJ-t3I" id="hvn-Vt-N0W"/>

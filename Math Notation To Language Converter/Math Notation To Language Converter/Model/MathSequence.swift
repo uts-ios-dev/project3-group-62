@@ -28,22 +28,64 @@ class MathSequence {
     }
     
     func updateFormula(sequenceType: MathSequenceType) -> String {
-        let formula = "\(sequence)\(valueToSubscript(valueToMap: sequenceVariable))"
+        var startValueInt: Int = 0
+        var endValueInt: Int = 0
+        if let int = Int(startValue) { startValueInt = int }
+        if let int = Int(endValue) { endValueInt = int }
+        
+        let formula = "\(sequenceVariable)"
             + " = "
-            + " (\(sequence))\(valueToSubscript(valueToMap: sequenceVariable))"
+            + " (\(startValue)\(sequence))"
             + " + "
-            + " (\(sequence))\(valueToSubscript(valueToMap: sequenceVariable))\(valueToSubscript(valueToMap: "+"))\(valueToSubscript(valueToMap: "1"))"
+            + " (\(String(startValueInt+1))\(sequence))"
             + " \(sequenceType.rawValue) "
-            + " (\(sequence))\(valueToSubscript(valueToMap: sequenceVariable))\(valueToSubscript(valueToMap: "+"))\(valueToSubscript(valueToMap: "2"))"
-            + " \(sequenceType.rawValue) "
-            + " (\(sequence))\(valueToSubscript(valueToMap: sequenceVariable))\(valueToSubscript(valueToMap: "+"))\(valueToSubscript(valueToMap: "3"))"
+            + " (\(String(startValueInt+2))\(sequence))"
             + " \(sequenceType.rawValue) "
             + " ... "
             + " \(sequenceType.rawValue) "
-            + " (\(sequence))\(valueToSubscript(valueToMap: sequenceVariable))\(valueToSubscript(valueToMap: "+"))\(valueToSubscript(valueToMap: endValue))"
+            + " (\(String(endValueInt))\(sequence))"
+            + "\n"
+            + "Result:\n"
+            + "\(calculateMathSequence(startValue: startValueInt, endValue: endValueInt, sequenceType: sequenceType, sequence: sequence) ?? 0)"
         return formula
     }
     
+    func calculateMathSequence(startValue: Int, endValue: Int, sequenceType: MathSequenceType, sequence: String) -> Int? {
+        var result: Int = 0
+        let start: Int
+        let end: Int
+        if endValue > startValue {
+            start = startValue
+            end = endValue
+        } else if endValue < startValue {
+            start = endValue
+            end = startValue
+        } else {
+            return nil
+        }
+        
+        for index in start...end {
+            switch sequenceType {
+            case .summation: result += evaluateExpression(expression: String(index)+sequence)
+            case .product: result *= evaluateExpression(expression: String(index)+sequence)
+            }
+        }
+        return result
+    }
+    
+    func evaluateExpression(expression: String) -> Int {
+        //Convert String expression to an actual expression to be evaluated
+        let expression = NSExpression(format: expression)
+        if let result = expression.expressionValue(with: nil, context: nil) as? Int {
+            return result
+        } else {
+            return 0
+        }
+    }
+    
+    func convertSequenceToEnglish(formula: String) {
+        
+    }
 }
 
     
