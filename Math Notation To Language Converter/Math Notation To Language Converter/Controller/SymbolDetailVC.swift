@@ -19,6 +19,14 @@ class SymbolDetailVC: UIViewController {
     @IBOutlet weak var meaningLabel: UITextView!
     
     @IBOutlet weak var translationLabel: UITextView!
+    
+    @IBOutlet weak var openUrlBtn: UIButton!
+    @IBAction func onUrlBtnPressed(_ sender: UIButton) {
+        if let url = symbol?.url {
+            openUrl(url: url)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         /*
@@ -31,6 +39,12 @@ class SymbolDetailVC: UIViewController {
             nameLabel.text = symbol.name
             meaningLabel.text = symbol.meaning
             translationLabel.text = symbol.translation
+        }
+        
+        if symbol?.url == nil {
+            openUrlBtn.isEnabled = false
+            openUrlBtn.backgroundColor = UIColor.gray
+            
         }
         
     }
