@@ -5,17 +5,17 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Copperplate.ttc">
+            <string>Copperplate</string>
+        </array>
         <array key="TimesNewRoman.ttf">
             <string>TimesNewRomanPSMT</string>
-        </array>
-        <array key="TimesNewRomanItalic.ttf">
-            <string>TimesNewRomanPS-ItalicMT</string>
         </array>
     </customFonts>
     <scenes>
@@ -182,13 +182,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLf-Qv-US0" userLabel="labelLeft">
-                                                    <rect key="frame" x="18" y="11" width="30" height="21"/>
+                                                    <rect key="frame" x="13" y="11" width="30" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLQ-3u-kQB" userLabel="labelRight">
-                                                    <rect key="frame" x="356" y="12" width="40" height="21"/>
+                                                    <rect key="frame" x="361" y="12" width="40" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -702,19 +702,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOMETHING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Z0-PP-V0F">
-                                <rect key="frame" x="20" y="113" width="374" height="60"/>
+                                <rect key="frame" x="20" y="69" width="374" height="60"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAy-rx-Zqq">
-                                <rect key="frame" x="20" y="181" width="374" height="21"/>
+                                <rect key="frame" x="20" y="137" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeA-eH-dJj">
-                                <rect key="frame" x="0.0" y="210" width="414" height="36"/>
+                                <rect key="frame" x="0.0" y="166" width="414" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1z-A2-9av">
                                         <rect key="frame" x="26" y="7" width="46" height="21"/>
@@ -730,7 +730,7 @@
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="077-Jo-2tp">
-                                <rect key="frame" x="0.0" y="245" width="414" height="491"/>
+                                <rect key="frame" x="0.0" y="201" width="414" height="535"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQK-14-MML">
                                         <rect key="frame" x="0.0" y="8" width="414" height="228"/>
@@ -788,17 +788,44 @@
                                             <constraint firstItem="AU8-7a-YBa" firstAttribute="top" secondItem="8Lt-m5-PMR" secondAttribute="topMargin" id="bIq-AM-hbU"/>
                                         </constraints>
                                     </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shP-Tm-zHh">
+                                        <rect key="frame" x="0.0" y="480" width="414" height="55"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDN-6j-OgT">
+                                                <rect key="frame" x="20" y="12" width="374" height="31"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                <state key="normal" title="OPEN URL">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onUrlBtnPressed:" destination="5Xw-cU-r1L" eventType="touchUpInside" id="Ge7-h8-mlh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="6bo-SA-kVT"/>
+                                            <constraint firstItem="pDN-6j-OgT" firstAttribute="top" secondItem="shP-Tm-zHh" secondAttribute="top" constant="12" id="CjW-9b-E5s"/>
+                                            <constraint firstItem="pDN-6j-OgT" firstAttribute="leading" secondItem="shP-Tm-zHh" secondAttribute="leading" constant="20" id="NrO-yV-Co1"/>
+                                            <constraint firstAttribute="trailing" secondItem="pDN-6j-OgT" secondAttribute="trailing" constant="20" id="UTV-lE-PLq"/>
+                                            <constraint firstAttribute="bottom" secondItem="pDN-6j-OgT" secondAttribute="bottom" constant="12" id="vXB-Io-BMo"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="shP-Tm-zHh" secondAttribute="trailing" id="2WW-tK-Yif"/>
                                     <constraint firstItem="aQK-14-MML" firstAttribute="trailing" secondItem="8Lt-m5-PMR" secondAttribute="trailing" id="GZb-ss-cPY"/>
                                     <constraint firstAttribute="trailing" secondItem="aQK-14-MML" secondAttribute="trailing" id="Uod-eY-8C8"/>
                                     <constraint firstItem="aQK-14-MML" firstAttribute="leading" secondItem="077-Jo-2tp" secondAttribute="leading" id="Z45-PG-xhl"/>
                                     <constraint firstItem="aQK-14-MML" firstAttribute="top" secondItem="077-Jo-2tp" secondAttribute="topMargin" id="gOa-qA-6cd"/>
                                     <constraint firstItem="8Lt-m5-PMR" firstAttribute="top" secondItem="aQK-14-MML" secondAttribute="bottom" constant="8" symbolic="YES" id="kc6-U5-1Ng"/>
+                                    <constraint firstItem="shP-Tm-zHh" firstAttribute="top" secondItem="8Lt-m5-PMR" secondAttribute="bottom" constant="8" symbolic="YES" id="mxw-Op-KMd"/>
                                     <constraint firstItem="aQK-14-MML" firstAttribute="leading" secondItem="8Lt-m5-PMR" secondAttribute="leading" id="nYG-mJ-4zM"/>
                                     <constraint firstItem="aQK-14-MML" firstAttribute="centerX" secondItem="077-Jo-2tp" secondAttribute="centerX" id="nZ3-l1-vtU"/>
-                                    <constraint firstAttribute="bottom" secondItem="8Lt-m5-PMR" secondAttribute="bottom" constant="19" id="sDZ-BZ-2RP"/>
+                                    <constraint firstAttribute="bottom" secondItem="shP-Tm-zHh" secondAttribute="bottom" id="pj7-wz-DQ3"/>
+                                    <constraint firstItem="shP-Tm-zHh" firstAttribute="leading" secondItem="077-Jo-2tp" secondAttribute="leading" id="qd9-UL-w5k"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -823,6 +850,7 @@
                     <connections>
                         <outlet property="meaningLabel" destination="xXT-3Y-NZb" id="2dM-la-pO4"/>
                         <outlet property="nameLabel" destination="JAy-rx-Zqq" id="k4j-QF-e0h"/>
+                        <outlet property="openUrlBtn" destination="pDN-6j-OgT" id="EnN-xj-TOF"/>
                         <outlet property="symbolLabel" destination="3Z0-PP-V0F" id="X8S-XH-Y6O"/>
                         <outlet property="translationLabel" destination="aL1-qo-hnC" id="7Gi-b2-l8z"/>
                     </connections>
