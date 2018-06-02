@@ -41,6 +41,7 @@
 		F318E4D820ACF2D5006523B1 /* Formula.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4D720ACF2D5006523B1 /* Formula.swift */; };
 		F318E4DC20ACF304006523B1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4DB20ACF304006523B1 /* Settings.swift */; };
 		F33A9D2B20B640F600ABA011 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A9D2A20B640F600ABA011 /* Dictionary.swift */; };
+		F356337120C2836C008CE35C /* SymbolDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356337020C2836C008CE35C /* SymbolDetailVC.swift */; };
 		F3B0030820C12BD3008FF40E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0030720C12BD3008FF40E /* String.swift */; };
 		F3FC9DB220BD5F1700DDB0A1 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC9DB120BD5F1700DDB0A1 /* SearchVC.swift */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,7 @@
 		F318E4D720ACF2D5006523B1 /* Formula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formula.swift; sourceTree = "<group>"; };
 		F318E4DB20ACF304006523B1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F33A9D2A20B640F600ABA011 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		F356337020C2836C008CE35C /* SymbolDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetailVC.swift; sourceTree = "<group>"; };
 		F3B0030720C12BD3008FF40E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		F3FC9DB120BD5F1700DDB0A1 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,6 +195,7 @@
 				A40E141120BCE5F2003E6775 /* CommonFormulaVC.swift */,
 				7EDC968B20A3C7540088D94F /* MainVC.swift */,
 				F3FC9DB120BD5F1700DDB0A1 /* SearchVC.swift */,
+				F356337020C2836C008CE35C /* SymbolDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				A407F15620BF7ACC00C8B443 /* OpenUrl.swift in Sources */,
 				A40E141720BCE5F2003E6775 /* FavoritesViewVC.swift in Sources */,
 				7EDC969220A3C7540088D94F /* Math_Notation_To_Language_Converter.xcdatamodeld in Sources */,
+				F356337120C2836C008CE35C /* SymbolDetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
