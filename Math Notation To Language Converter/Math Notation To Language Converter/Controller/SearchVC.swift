@@ -10,6 +10,7 @@ import UIKit
 class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var labelLeft: UILabel!
     @IBOutlet weak var labelRight: UILabel!
+    var symbol : Symbol?
     
 }
 
@@ -29,18 +30,28 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         }
         return dictionary.symbolArray.count
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var symbolDetailVC: SymbolDetailVC
+        symbolDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "symbolDetail") as! SymbolDetailVC
+        //let symbolDetailVC = SymbolDetailVC()
+        if isSeaching {
+            symbolDetailVC.symbol = filterData[indexPath.row]
+        } else {
+            symbolDetailVC.symbol = dictionary.symbolArray[indexPath.row]
+        }
+        navigationController?.pushViewController(symbolDetailVC,animated:true)
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SearchTableViewCell
         if isSeaching {
             cell.labelLeft.text = filterData[indexPath.row].symbol
             cell.labelRight.text = filterData[indexPath.row].name.trunc(length: 15)
+            cell.symbol = filterData[indexPath.row]
         } else {
             cell.labelLeft.text = dictionary.symbolArray[indexPath.row].symbol
             cell.labelRight.text = dictionary.symbolArray[indexPath.row].name.trunc(length: 15)
-
-            //cell.labelLeft.text = "Hello world"
-            //cell.labelRight.text = "AAA"
+            cell.symbol = dictionary.symbolArray[indexPath.row]
             
         }
         return cell
