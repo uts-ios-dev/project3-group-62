@@ -22,7 +22,7 @@ class MathSequenceView {
     var sequence: MathSequence
     var sequenceType: MathSequenceType
     
-    init(sequenceView: SequenceViewProtocol) {
+    init(sequenceView: MSVCProtocol) {
         startValueDisplayTf = sequenceView.startValueDisplayTf
         endValueDisplayTf = sequenceView.endValueDisplayTf
         formulaTv = sequenceView.formulaTv

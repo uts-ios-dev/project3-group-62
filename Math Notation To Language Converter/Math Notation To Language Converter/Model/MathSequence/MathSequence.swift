@@ -8,11 +8,6 @@
 
 import Foundation
 
-enum MathSequenceType: String {
-    case summation = "+"
-    case product = "x"
-}
-
 class MathSequence {
   
     var sequenceVariable: String

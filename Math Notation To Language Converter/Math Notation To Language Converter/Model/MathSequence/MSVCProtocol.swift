@@ -1,5 +1,5 @@
 //
-//  SequenceViewProtocol.swift
+//  MSVCProtocol.swift
 //  Math Notation To Language Converter
 //
 //  Created by Peter Bower on 2/6/18.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol SequenceViewProtocol {
+protocol MSVCProtocol {     //Math Sequence View Controller (MSVC) Protocol
     
     var startValueDisplayTf:UITextField! { get set }
     var endValueDisplayTf:UITextField! { get set }
