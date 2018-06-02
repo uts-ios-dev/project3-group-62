@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         //Disabed debug print
         // Override point for customization after application launch.
+        
         let model = Dictionary()
         
         //DEV: Examples of Object Retrieval:
