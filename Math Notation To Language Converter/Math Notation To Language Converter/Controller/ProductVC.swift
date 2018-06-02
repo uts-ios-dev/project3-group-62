@@ -1,5 +1,5 @@
 //
-//  SummationProductVC.swift
+//  ProductVC.swift
 //  Math Notation To Language Converter
 //
 //  Created by Peter Bower on 31/5/18.
@@ -9,22 +9,22 @@
 import Foundation
 import UIKit
 
-class SummationProductVC: UIViewController {
+class ProductVC: UIViewController {
     
-    var summation: MathSequence
+    var product: MathSequence
     
     required init?(coder aDecoder: NSCoder) {
-        summation = MathSequence(sequenceVariable: "i", startValue: "1", endValue: "100", sequence: "*2")
+        product = MathSequence(sequenceVariable: "i", startValue: "1", endValue: "100", sequence: "*2")
         super.init(coder: aDecoder)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sequenceVariableTf.text = summation.sequenceVariable
-        startValueTf.text = summation.startValue
-        endValueTf.text = summation.endValue
-        formulaTv.text = summation.updateFormula(sequenceType: .summation)
-        sequenceTf.text = summation.sequence
+        sequenceVariableTf.text = product.sequenceVariable
+        startValueTf.text = product.startValue
+        endValueTf.text = product.endValue
+        formulaTv.text = product.updateFormula(sequenceType: .product)
+        sequenceTf.text = product.sequence
         updateDynamicFields()
     }
     
@@ -36,61 +36,60 @@ class SummationProductVC: UIViewController {
     @IBOutlet weak var sequenceVariableTf: UITextField!
     
     @IBOutlet weak var startValueTf: UITextField!
-    
     @IBOutlet weak var endValueTf: UITextField!
     
     @IBOutlet weak var sequenceTf: UITextField!
     
     @IBAction func sequenceVariableUpdated(_ sender: UITextField) {
         if let newText = sequenceVariableTf.text {
-            summation.sequenceVariable = newText
+            product.sequenceVariable = newText
         } else {
-            summation.sequenceVariable = "i"
+            product.sequenceVariable = "i"
         }
-        startValueSummation.text = "\(sequenceVariableTf.text ?? "i")=\(startValueTf.text ?? "1")"
+        startValueDisplayTf.text = "\(sequenceVariableTf.text ?? "i")=\(startValueTf.text ?? "1")"
         updateDynamicFields()
     }
     
     @IBAction func startValueUpdated(_ sender: UITextField) {
         if let newText = startValueTf.text {
-            summation.startValue = newText
+            product.startValue = newText
         } else {
-            summation.startValue = "i"
+            product.startValue = "i"
         }
-        startValueSummation.text = "\(sequenceVariableTf.text ?? "i")=\(startValueTf.text ?? "1")"
+        startValueDisplayTf.text = "\(sequenceVariableTf.text ?? "i")=\(startValueTf.text ?? "1")"
         updateDynamicFields()
     }
     
     
     @IBAction func endValueUpdated(_ sender: UITextField) {
         if let newText = endValueTf.text {
-            summation.endValue = newText
+            product.endValue = newText
         } else {
-            summation.endValue = "100"
+            product.endValue = "100"
         }
-        endValueSummation.text = endValueTf.text
+        endValueDisplayTf.text = endValueTf.text
         updateDynamicFields()
     }
     
     @IBAction func sequenceUpdated(_ sender: UITextField) {
         if let newText = sequenceTf.text {
-            summation.sequence = newText
+            product.sequence = newText
         } else {
-            summation.sequence = "a"
+            product.sequence = "a"
         }
         updateDynamicFields()
     }
     
     func updateDynamicFields() {
-        formulaTv.text = summation.updateFormula(sequenceType: .summation)
-        humanReadableTf.text = summation.convertSequenceToEnglish(sequenceType: .summation)
+        formulaTv.text = product.updateFormula(sequenceType: .product)
+        humanReadableTf.text = product.convertSequenceToEnglish(sequenceType: .product)
     }
     
     @IBOutlet weak var formulaTv: UITextView!
     
-    @IBOutlet weak var startValueSummation: UITextField!
-    @IBOutlet weak var endValueSummation: UITextField!
-
+    @IBOutlet weak var startValueDisplayTf: UITextField!
+    @IBOutlet weak var endValueDisplayTf: UITextField!
+    
     @IBOutlet weak var humanReadableTf: UITextView!
     
 }
