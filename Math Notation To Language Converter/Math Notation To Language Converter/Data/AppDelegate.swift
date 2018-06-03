@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         //Disabed debug print
         // Override point for customization after application launch.
+        FirebaseApp.configure()
         
         let model = Dictionary()
         
@@ -70,7 +72,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             print("Formula Array not found")
         }
-
+        
+        
         
         return true
         

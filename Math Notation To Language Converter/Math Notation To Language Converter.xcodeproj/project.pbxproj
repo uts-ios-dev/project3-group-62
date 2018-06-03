@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6615070820B6515F001DF875 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6615070720B6515F001DF875 /* Main.swift */; };
+		6B591F3375C2D39ABFC06EF6 /* Pods_Math_Notation_To_Language_Converter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F7DBAACCFDD9636726BFD9 /* Pods_Math_Notation_To_Language_Converter.framework */; };
 		7E0DB2C620BFC148005B2BC6 /* StaticFormulas.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DB2C520BFC148005B2BC6 /* StaticFormulas.csv */; };
 		7E37D90120BB968D0039ADD5 /* CSVHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37D90020BB968D0039ADD5 /* CSVHandler.swift */; };
 		7E6DC2C920BFD16000E2632D /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DC2C820BFD16000E2632D /* Protocols.swift */; };
@@ -42,12 +43,14 @@
 		F318E4DC20ACF304006523B1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4DB20ACF304006523B1 /* Settings.swift */; };
 		F33A9D2B20B640F600ABA011 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A9D2A20B640F600ABA011 /* Dictionary.swift */; };
 		F356337120C2836C008CE35C /* SymbolDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356337020C2836C008CE35C /* SymbolDetailVC.swift */; };
+		F39ED98420C3D9890007753E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F39ED98320C3D9880007753E /* GoogleService-Info.plist */; };
 		F3B0030820C12BD3008FF40E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B0030720C12BD3008FF40E /* String.swift */; };
 		F3FC9DB220BD5F1700DDB0A1 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FC9DB120BD5F1700DDB0A1 /* SearchVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6615070720B6515F001DF875 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Main.swift; path = "Math Notation To Language Converter/Model/Main.swift"; sourceTree = SOURCE_ROOT; };
+		79F7DBAACCFDD9636726BFD9 /* Pods_Math_Notation_To_Language_Converter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Math_Notation_To_Language_Converter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0DB2C520BFC148005B2BC6 /* StaticFormulas.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StaticFormulas.csv; sourceTree = "<group>"; };
 		7E37D90020BB968D0039ADD5 /* CSVHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVHandler.swift; sourceTree = "<group>"; };
 		7E6DC2C820BFD16000E2632D /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 		7EDF4C8F20C22E1700D4009D /* MSVCProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSVCProtocol.swift; sourceTree = "<group>"; };
 		7EDF4C9120C231A300D4009D /* MathSequenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathSequenceView.swift; sourceTree = "<group>"; };
 		7EDF4C9320C239FF00D4009D /* MathSequenceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathSequenceType.swift; sourceTree = "<group>"; };
+		93D9BD594982ABBE1B4DB19E /* Pods-Math Notation To Language Converter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Math Notation To Language Converter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Math Notation To Language Converter/Pods-Math Notation To Language Converter.release.xcconfig"; sourceTree = "<group>"; };
+		96B02AB6840F37DBBC04DE98 /* Pods-Math Notation To Language Converter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Math Notation To Language Converter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Math Notation To Language Converter/Pods-Math Notation To Language Converter.debug.xcconfig"; sourceTree = "<group>"; };
 		A407F15320BF7AC300C8B443 /* Symbols.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Symbols.csv; sourceTree = "<group>"; };
 		A407F15520BF7ACC00C8B443 /* OpenUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenUrl.swift; sourceTree = "<group>"; };
 		A40E140E20BCE5F1003E6775 /* FavoritesViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewVC.swift; sourceTree = "<group>"; };
@@ -84,6 +89,7 @@
 		F318E4DB20ACF304006523B1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F33A9D2A20B640F600ABA011 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		F356337020C2836C008CE35C /* SymbolDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetailVC.swift; sourceTree = "<group>"; };
+		F39ED98320C3D9880007753E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3B0030720C12BD3008FF40E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		F3FC9DB120BD5F1700DDB0A1 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,12 +99,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B591F3375C2D39ABFC06EF6 /* Pods_Math_Notation_To_Language_Converter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79EC838295B93DCEDA502465 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96B02AB6840F37DBBC04DE98 /* Pods-Math Notation To Language Converter.debug.xcconfig */,
+				93D9BD594982ABBE1B4DB19E /* Pods-Math Notation To Language Converter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7E37D8FF20BB95010039ADD5 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +135,8 @@
 			children = (
 				7EDC968820A3C7530088D94F /* Math Notation To Language Converter */,
 				7EDC968720A3C7530088D94F /* Products */,
+				79EC838295B93DCEDA502465 /* Pods */,
+				C79369462877CD656142F57D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +161,7 @@
 				7EDC969320A3C7550088D94F /* Assets.xcassets */,
 				7EDC969520A3C7550088D94F /* LaunchScreen.storyboard */,
 				7EDC969820A3C7550088D94F /* Info.plist */,
+				F39ED98320C3D9880007753E /* GoogleService-Info.plist */,
 				7EDC969020A3C7540088D94F /* Math_Notation_To_Language_Converter.xcdatamodeld */,
 			);
 			path = "Math Notation To Language Converter";
@@ -157,6 +176,14 @@
 				7EDF4C9120C231A300D4009D /* MathSequenceView.swift */,
 			);
 			path = MathSequence;
+			sourceTree = "<group>";
+		};
+		C79369462877CD656142F57D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79F7DBAACCFDD9636726BFD9 /* Pods_Math_Notation_To_Language_Converter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F33A9D2E20B64A9700ABA011 /* Model */ = {
@@ -207,9 +234,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EDC969B20A3C7550088D94F /* Build configuration list for PBXNativeTarget "Math Notation To Language Converter" */;
 			buildPhases = (
+				65B51E5612C0F971277A3CB8 /* [CP] Check Pods Manifest.lock */,
 				7EDC968220A3C7530088D94F /* Sources */,
 				7EDC968320A3C7530088D94F /* Frameworks */,
 				7EDC968420A3C7530088D94F /* Resources */,
+				9BD76F90FBBD3FB90B17B53D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,10 +294,52 @@
 				7EDC969420A3C7550088D94F /* Assets.xcassets in Resources */,
 				A407F15420BF7AC300C8B443 /* Symbols.csv in Resources */,
 				7EDC968F20A3C7540088D94F /* Main.storyboard in Resources */,
+				F39ED98420C3D9890007753E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65B51E5612C0F971277A3CB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Math Notation To Language Converter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BD76F90FBBD3FB90B17B53D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Math Notation To Language Converter/Pods-Math Notation To Language Converter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Math Notation To Language Converter/Pods-Math Notation To Language Converter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7EDC968220A3C7530088D94F /* Sources */ = {
@@ -446,15 +517,17 @@
 		};
 		7EDC969C20A3C7550088D94F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96B02AB6840F37DBBC04DE98 /* Pods-Math Notation To Language Converter.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4975ZZV574;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Math Notation To Language Converter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Summer-Studios.Math-Notation-To-Language-Converter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,15 +535,17 @@
 		};
 		7EDC969D20A3C7550088D94F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D9BD594982ABBE1B4DB19E /* Pods-Math Notation To Language Converter.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4975ZZV574;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Math Notation To Language Converter/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Summer-Studios.Math-Notation-To-Language-Converter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
