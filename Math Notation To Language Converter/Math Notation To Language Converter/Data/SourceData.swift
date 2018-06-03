@@ -41,7 +41,7 @@ class SourceData {
                 translation: symbolImport.csvData[i]["Translation"]!,
                 img : nil,
                 tags : symbolImport.csvData[i]["Tags"]!,
-                url : nil)
+                url : symbolImport.csvData[i]["Url"]!)
             symbolArray.append(newSymbol)
         }
     }
