@@ -113,7 +113,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="940.57971014492762" y="-173.64130434782609"/>
+            <point key="canvasLocation" x="1374" y="-444"/>
         </scene>
         <!--Home-->
         <scene sceneID="ge2-bO-7Zd">
@@ -1386,6 +1386,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lG-ak-dit" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="467" y="-174"/>
         </scene>
     </scenes>
     <resources>
