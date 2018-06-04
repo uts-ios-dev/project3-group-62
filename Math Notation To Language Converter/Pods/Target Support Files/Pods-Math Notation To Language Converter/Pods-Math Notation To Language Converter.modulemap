@@ -1,0 +1,6 @@
+framework module Pods_Math_Notation_To_Language_Converter {
+  umbrella header "Pods-Math Notation To Language Converter-umbrella.h"
+
+  export *
+  module * { export * }
+}

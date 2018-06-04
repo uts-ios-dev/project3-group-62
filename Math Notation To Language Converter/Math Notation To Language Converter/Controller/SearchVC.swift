@@ -19,7 +19,7 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
     @IBOutlet weak var searchBar: UISearchBar!
     
     //Data
-    let dictionary = Dictionary()
+    var dictionary : Dictionary?
    
     var filterData = [Symbol]()
     var isSeaching = false
@@ -28,7 +28,10 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         if isSeaching {
             return filterData.count
         }
-        return dictionary.symbolArray.count
+        if let dic = dictionary {
+            return dic.symbolArray.count
+        }
+        return 0
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var symbolDetailVC: SymbolDetailVC
@@ -37,23 +40,29 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         if isSeaching {
             symbolDetailVC.symbol = filterData[indexPath.row]
         } else {
-            symbolDetailVC.symbol = dictionary.symbolArray[indexPath.row]
+            if let dic = dictionary {
+                symbolDetailVC.symbol = dic.symbolArray[indexPath.row]
+            }
+            
         }
         navigationController?.pushViewController(symbolDetailVC,animated:true)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SearchTableViewCell
-        if isSeaching {
-            cell.labelLeft.text = filterData[indexPath.row].symbol
-            cell.labelRight.text = filterData[indexPath.row].name.trunc(length: 15)
-            cell.symbol = filterData[indexPath.row]
-        } else {
-            cell.labelLeft.text = dictionary.symbolArray[indexPath.row].symbol
-            cell.labelRight.text = dictionary.symbolArray[indexPath.row].name.trunc(length: 15)
-            cell.symbol = dictionary.symbolArray[indexPath.row]
-            
+        if let dic = dictionary {
+            if isSeaching {
+                cell.labelLeft.text = filterData[indexPath.row].symbol
+                cell.labelRight.text = filterData[indexPath.row].name.trunc(length: 15)
+                cell.symbol = filterData[indexPath.row]
+            } else {
+                cell.labelLeft.text = dic.symbolArray[indexPath.row].symbol
+                cell.labelRight.text = dic.symbolArray[indexPath.row].name.trunc(length: 15)
+                cell.symbol = dic.symbolArray[indexPath.row]
+                
+            }
         }
+        
         return cell
     }
     
@@ -64,7 +73,10 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
             tableView.reloadData()
         } else {
             isSeaching = true
-            filterData = dictionary.symbolArray.filter({$0.symbol.lowercased().range(of:searchBar.text!.lowercased()) != nil || $0.name.lowercased().range(of:searchBar.text!.lowercased()) != nil})
+            if let dic = dictionary {
+                filterData = dic.symbolArray.filter({$0.symbol.lowercased().range(of:searchBar.text!.lowercased()) != nil || $0.name.lowercased().range(of:searchBar.text!.lowercased()) != nil})
+            }
+            
             tableView.reloadData()
         }
     }
@@ -76,6 +88,8 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
         
+        //Init dictionary
+        dictionary = Dictionary()
       
     }
 

@@ -22,8 +22,8 @@ class SymbolDetailVC: UIViewController {
     
     @IBOutlet weak var openUrlBtn: UIButton!
     @IBAction func onUrlBtnPressed(_ sender: UIButton) {
-        if let url = symbol?.url {
-            openUrl(url: url)
+        if let u = symbol?.url! {
+            openUrl(url: u)
         }
     }
     
@@ -40,13 +40,11 @@ class SymbolDetailVC: UIViewController {
             meaningLabel.text = symbol.meaning
             translationLabel.text = symbol.translation
         }
-        
-        if symbol?.url == nil {
+       
+        if symbol!.url == nil  {
             openUrlBtn.isEnabled = false
             openUrlBtn.backgroundColor = UIColor.gray
-            
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
