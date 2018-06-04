@@ -36,6 +36,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             print("Symbol not found.")
         }
+        
+        if let symbol = model.getSymbolDataBySymbol(symbolCharacter: ""){
+            print("Symbol Object: \n \(symbol) \n")
+        } else {
+            print("Symbol not found.")
+        }
 
         //Retrieve symbol meaning
         if let symbolMeaning = model.getSymbolDataByName(symbolName: "Plus")?.meaning {

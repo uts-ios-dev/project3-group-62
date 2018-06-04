@@ -12,7 +12,13 @@ import UIKit
 // if the formula textfield changed, defination and meaning will also be changed
 class FormulaDetailVC: UIViewController {
     @IBOutlet weak var sourceLinkBtn: UIButton!
+    @IBOutlet weak var formulaInputEt: UITextField!
+    @IBOutlet weak var translationTv: UITextView!
+    @IBOutlet weak var meaningT: UITextView!
     
+    let dictionary = Dictionary()
+    var formulaInput: String = "";
+
     override func viewDidLoad() {
         super.viewDidLoad()
         sourceLinkBtn.setTitle("https://en.wikipedia.org/wiki/Bessel_function", for: .normal)
@@ -25,10 +31,64 @@ class FormulaDetailVC: UIViewController {
     }
     
     // Function for text changed in formula textfield?
-    @IBAction func formulaChanged(_ sender: UITextField) {
-        // Change meaning and defination?
+    @IBAction func textDidchange(_ sender: UITextField) {
+        formulaInput = sender.text!
+        print("formula input changed")
+        if sender.text == "" {
+            translationTv.text = "Input your formula"
+        }
+        let formulaArray: [String] = getFormulaArray(formula: formulaInput)
+        
+        updateMeaningTv(formulaArray: formulaArray)
+        updateTranslate(formulaArray: formulaArray)
     }
     
+    // Sepreate symbols and values in formula into string array
+    func getFormulaArray (formula: String) -> [String] {
+        var formulaArray: [String] = []
+        for charVal in formula {
+            if (charVal != " ") {
+                formulaArray.append(String(charVal))
+            }
+        }
+        return formulaArray
+    }
+    
+    // Update meanning text view
+    func updateMeaningTv(formulaArray: [String]) {
+        var meaning: String = ""
+        for singleItem in formulaArray {
+            let symbolInFormula = dictionary.getSymbolDataBySymbol(symbolCharacter: singleItem)
+            if symbolInFormula != nil {
+                print(symbolInFormula?.meaning ?? "No meaning found")
+                meaning.append((symbolInFormula?.symbol)! + ": " + (symbolInFormula?.meaning)! + "\n")
+            } else {
+                meaning.append(singleItem)
+                if Int(singleItem) != nil {
+                    meaning.append(": value ")
+                } else {
+                    meaning.append(": charactor ");
+                }
+                meaning.append(singleItem + "\n");
+            }
+        }
+        meaningT.text = meaning
+    }
+    
+    func updateTranslate(formulaArray: [String]) {
+        var translation: String = ""
+        for singleItem in formulaArray {
+            let symbolInformula = dictionary.getSymbolDataBySymbol(symbolCharacter: singleItem)
+            if symbolInformula != nil {
+                translation.append((symbolInformula?.translation)! + " ")
+            } else {
+                translation.append(singleItem + " ")
+            }
+        }
+        print(translation)
+        translationTv.text = translation
+    }
+
     // Function for source link clicked, call openUrl function to open it
     @IBAction func sourceLinkClicked(_ sender: UIButton) {
         openUrl(url: (sourceLinkBtn.titleLabel?.text)!)
