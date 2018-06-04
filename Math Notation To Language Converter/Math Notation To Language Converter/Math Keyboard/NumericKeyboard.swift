@@ -23,7 +23,7 @@ private let kDLNumericKeyboardPressedImage = UIImage(named: "pressedNumericKeyBa
 
 class NumericKeyboard: UIView {
 
-    //create All Keyboard Button Outlets
+    //symbols
     @IBOutlet weak var identicallyEqualsBtn: UIButton!
     @IBOutlet weak var notEqualsBtn: UIButton!
     @IBOutlet weak var approxEqualsBtn: UIButton!
@@ -132,7 +132,7 @@ class NumericKeyboard: UIView {
     // appearance variables
     var normalBackgroundImage = kDLNumericKeyboardNormalImage { didSet { updateButtonsAppearance() } }
     var pressedBackgroundImage = kDLNumericKeyboardPressedImage { didSet { updateButtonsAppearance() } }
-    var normalFontColor = UIColor.black { didSet { updateButtonsAppearance() } }
+    var normalFontColor = UIColor.white { didSet { updateButtonsAppearance() } }
     var pressedFontColor = UIColor.white { didSet { updateButtonsAppearance() } }
     
     // MARK: - Initialization and lifecycle.
@@ -171,7 +171,10 @@ class NumericKeyboard: UIView {
     
     // MARK: - Button actions
     @IBAction func numericButtonPressed(_ sender: UIButton) {
-        self.delegate?.numericKeyPressed(key: sender.tag)
+        //self.delegate?.numericKeyPressed(key: sender.tag)
+        if let symbol = sender.titleLabel?.text, symbol.characters.count > 0 {
+            self.delegate?.numericSymbolPressed(symbol: symbol)
+        }
     }
 
     @IBAction func backspacePressed(_ sender: AnyObject) {
