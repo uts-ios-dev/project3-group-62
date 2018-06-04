@@ -1,5 +1,5 @@
 //
-//  Defination.swift
+//  Definition.swift
 //  Math Notation To Language Converter
 //
 //  Created by サイラク on 2018/5/17.
@@ -29,3 +29,4 @@ class Definition {
         return "name :\(name) tag: \(tag) meaning: \(meaning) translation \(translation) description: \(description) URL: \(String(describing: url))"
     }
 }
+

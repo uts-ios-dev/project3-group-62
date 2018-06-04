@@ -8,65 +8,104 @@
 
 import UIKit
 
+enum AboutImgAnimation: Int {
+    
+    case style1 = 1
+    case style2 = 2
+    case style3 = 3
+    case style4 = 4
+
+    mutating func next() {
+        if self == .style1 {
+            self = .style2
+        } else if self == .style2 {
+            self = .style3
+        } else if self == .style3 {
+            self = .style4
+        } else if self == .style4 {
+            self = .style1
+        }
+    }
+}
+
+
 class MainVC: UIViewController {
 
+    @IBOutlet weak var aboutImg: UIImageView!
+    @IBOutlet weak var aboutImgView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        //Test model data
-//        let dictionary = Dictionary()
-//        dictionary.testAddData()
-//        dictionary.testRetrieveData()
-        
-        //DEV COMMENT   28/5/2018: Test Import of actual dictionary in CSV format
-        //This is currently working and maintaining a properly delimited file format when re-writing.
-        
-        let dictionary = ReadCSV(filename: "Dictionary")
-        dictionary.printData()
-        if (dictionary.writeDataToFile(file: "transcribed")) {
-            print(
-                "File Successfully Written")
-        } else {
-            print("File could not be written")
+        var style: AboutImgAnimation = .style1
+        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { timer in
+            self.aboutImg.animationImages = self.getAnimationFrames(animationStyle: style)
+            self.aboutImg.animationDuration = 2        //setup the animation properties
+            self.aboutImg.animationRepeatCount = 1
+            self.aboutImg.startAnimating()
+            style.next()
         }
-        
-        print("\n Total CSV Rows Imported: \n \(dictionary.csvData.count) \n")
-
-        //Test Read in from the dictionary data structure
-        for columnNo in 1..<dictionary.columnNames.count {
-            let columnName = dictionary.columnNames[columnNo]
-            for i in 1..<dictionary.csvData.count {
-                print("\(dictionary.csvData[i][columnName]!)")
-            }
-        }
-        
-        var dataModel: [Symbol] = []
-        //Populate Data Model dictionary data structure
-        for i in 1..<dictionary.csvData.count {
-           
-            let newSymbol = Symbol(
-                cat: Category(name: "NULL"),
-                symbol : dictionary.csvData[i]["Symbol"]!,
-                definition : Definition(
-                    name : dictionary.csvData[i]["Name"]!,
-                    tag : dictionary.csvData[i]["Tags"]!,
-                    meaning : dictionary.csvData[i]["Meaning"]!,
-                    translation: dictionary.csvData[i]["Translation"]!,
-                    description : "NULL",                                           //Suggest we import the description from 3rd party website e.g. Simple Wikipedia
-                    url : nil),
-                img : nil)
-            dataModel.append(newSymbol)
-        }
-        
     }
     
-    
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func getAnimationFrames(animationStyle: AboutImgAnimation) -> [UIImage]? {
+        let images: [UIImage]?
+        switch animationStyle {
+        case .style1:
+            images = [        //create the array of images for the animation
+                UIImage(named: "AS1-1.png"),
+                UIImage(named: "AS1-2.png"),
+                UIImage(named: "AS1-3.png"),
+                UIImage(named: "AS1-4.png"),
+                UIImage(named: "AS1-5.png"),
+                UIImage(named: "AS1-6.png"),
+                UIImage(named: "AS1-7.png"),
+                UIImage(named: "AS1-8.png")
+            ] as? [UIImage]
+        case .style2:
+            images = [
+                UIImage(named: "AS2-1.png"),
+                UIImage(named: "AS2-2.png"),
+                UIImage(named: "AS2-3.png"),
+                UIImage(named: "AS2-4.png"),
+                UIImage(named: "AS2-5.png"),
+                UIImage(named: "AS2-6.png"),
+                UIImage(named: "AS2-7.png"),
+                UIImage(named: "AS2-8.png")
+            ] as? [UIImage]
+        case .style3:
+            images = [
+                UIImage(named: "AS3-1.png"),
+                UIImage(named: "AS3-2.png"),
+                UIImage(named: "AS3-3.png"),
+                UIImage(named: "AS3-4.png"),
+                UIImage(named: "AS3-5.png"),
+                UIImage(named: "AS3-6.png"),
+                UIImage(named: "AS3-7.png"),
+                UIImage(named: "AS3-8.png"),
+                UIImage(named: "AS3-9.png"),
+                UIImage(named: "AS3-10.png"),
+                UIImage(named: "AS3-11.png"),
+                UIImage(named: "AS3-12.png"),
+                UIImage(named: "AS3-13.png"),
+                UIImage(named: "AS3-14.png")
+            ] as? [UIImage]
+        case .style4:
+            images = [
+                UIImage(named: "AS4-1.png"),
+                UIImage(named: "AS4-2.png"),
+                UIImage(named: "AS4-3.png"),
+                UIImage(named: "AS4-4.png"),
+                UIImage(named: "AS4-5.png"),
+                UIImage(named: "AS4-6.png"),
+                UIImage(named: "AS4-7.png"),
+                UIImage(named: "AS4-8.png"),
+                UIImage(named: "AS4-9.png"),
+                UIImage(named: "AS4-10.png"),
+                UIImage(named: "AS4-11.png"),
+                UIImage(named: "AS4-12.png"),
+                UIImage(named: "AS4-13.png")
+            ] as? [UIImage]
+        }
+        return images
     }
-
-
 }
 
