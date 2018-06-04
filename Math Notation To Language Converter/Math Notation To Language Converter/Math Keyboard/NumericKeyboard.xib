@@ -11,30 +11,60 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NumericKeyboard" customModule="Math_Notation_To_Language_Converter" customModuleProvider="target">
             <connections>
+                <outlet property="alphaBtn" destination="Ky4-oB-Cns" id="ll0-9h-0Ef"/>
                 <outlet property="approxEqualsBtn" destination="t7h-us-FEz" id="xxp-jm-5Jp"/>
-                <outlet property="buttonKey0" destination="qFv-RM-QZN" id="2RT-2i-IgF"/>
-                <outlet property="buttonKey1" destination="j0z-4V-tl3" id="NIY-dd-Sd0"/>
-                <outlet property="buttonKey2" destination="T2h-hv-0V3" id="iKP-q1-tgD"/>
-                <outlet property="buttonKey3" destination="MvY-EM-bmu" id="cQt-QL-vNY"/>
-                <outlet property="buttonKey4" destination="UpR-iq-PU2" id="qw6-8i-Sbd"/>
-                <outlet property="buttonKey5" destination="cj1-dP-xO5" id="ein-Ko-yvN"/>
-                <outlet property="buttonKey6" destination="MSk-PV-hqa" id="O0Z-WH-NyN"/>
-                <outlet property="buttonKey7" destination="5XK-0b-s1U" id="QK9-9h-wJa"/>
-                <outlet property="buttonKey8" destination="Jfl-tO-a9T" id="x93-qc-808"/>
-                <outlet property="buttonKey9" destination="aFe-IH-XqW" id="8Wh-m4-2K6"/>
+                <outlet property="arrowBtn" destination="soy-Aq-Sgh" id="fo1-Wj-1df"/>
                 <outlet property="buttonKeyComma" destination="7oI-uf-5oC" id="el2-iI-qS4"/>
                 <outlet property="buttonKeyHyphen" destination="dZE-wv-t3v" id="bMb-or-cKE"/>
                 <outlet property="buttonKeyLeftParenthesis" destination="aiT-0Y-dkR" id="chy-St-xEG"/>
                 <outlet property="buttonKeyPoint" destination="cgh-Lq-4Di" id="Y6E-TR-4iT"/>
                 <outlet property="buttonKeyRightParenthesis" destination="Tx1-3Z-SyE" id="6Xh-HZ-ai6"/>
+                <outlet property="contourIntegralBtn" destination="Jfl-tO-a9T" id="bYp-7q-mmp"/>
+                <outlet property="cosBtn" destination="quj-yF-c8P" id="vbB-z4-jqQ"/>
+                <outlet property="cylindricalBtn" destination="gdJ-kT-70P" id="KVK-cL-gcp"/>
+                <outlet property="degenerateBtn" destination="gXS-rF-7VK" id="dA1-Qv-ViU"/>
                 <outlet property="dotProductBtn" destination="aEh-Ub-Pmd" id="J7v-ZN-1ZF"/>
+                <outlet property="emptySetBtn" destination="T2h-hv-0V3" id="jQn-Lm-6he"/>
+                <outlet property="epsilonBtn" destination="loX-cR-Lwa" id="dfk-KV-v5q"/>
+                <outlet property="existentialBtn" destination="rFZ-ff-pM4" id="wYb-yE-fiA"/>
+                <outlet property="factorialBtn" destination="7oI-uf-5oC" id="FcP-Y2-hLS"/>
+                <outlet property="functionXBtn" destination="cgh-Lq-4Di" id="KJf-JT-6HM"/>
+                <outlet property="gammaBtn" destination="Ky4-oB-Cns" id="7EF-Tf-ZbF"/>
                 <outlet property="greaterThanBtn" destination="P3X-oZ-fNi" id="wPa-Ed-sS1"/>
                 <outlet property="identicallyEqualsBtn" destination="3wy-Xk-aS2" id="KYJ-Oo-v23"/>
+                <outlet property="inclusionBtn" destination="qFv-RM-QZN" id="4cR-ji-QYS"/>
+                <outlet property="incompleteGammaBtn" destination="Wds-uT-Sx4" id="uor-OE-iok"/>
+                <outlet property="infBtn" destination="eBu-zn-DzW" id="o9d-VI-OVM"/>
+                <outlet property="infinityBtn" destination="UzJ-VO-5OP" id="WnD-BF-vzM"/>
+                <outlet property="integralBtn" destination="5XK-0b-s1U" id="cTV-7a-hNh"/>
+                <outlet property="intersectionBtn" destination="KCi-tk-7aN" id="Dwk-h5-buS"/>
+                <outlet property="laplaceBtn" destination="aDp-ga-agN" id="5f4-XL-vFM"/>
+                <outlet property="leftDoubleArrowBtn" destination="maL-vJ-xso" id="bAn-35-YxF"/>
                 <outlet property="lessThanBtn" destination="B8L-Cp-jB4" id="rD0-V3-lze"/>
+                <outlet property="limBtn" destination="aHR-Xh-abR" id="wPk-n4-tox"/>
+                <outlet property="modulusBtn" destination="Tx1-3Z-SyE" id="fwQ-VX-ZwH"/>
                 <outlet property="muchGreaterThanBtn" destination="IlV-Iz-2l8" id="YGr-lp-OZy"/>
                 <outlet property="muchLessThanBtn" destination="9wz-92-WrG" id="Tfp-JO-HGE"/>
+                <outlet property="nablaBtn" destination="MSk-PV-hqa" id="6Sd-xE-4xd"/>
+                <outlet property="nonStrictInclusionBtn" destination="j0z-4V-tl3" id="gtA-9o-x3n"/>
+                <outlet property="notAnElementOfBtn" destination="c1G-ca-Mcc" id="ac3-ll-dfZ"/>
                 <outlet property="notEqualsBtn" destination="2g3-0f-b1M" id="GeA-oH-1OM"/>
+                <outlet property="nthRootBtn" destination="aiT-0Y-dkR" id="xDp-Et-VKt"/>
+                <outlet property="parallelBtn" destination="ZS7-w3-8Fs" id="HF7-hr-zko"/>
+                <outlet property="partialDerivativeBtn" destination="cj1-dP-xO5" id="xhL-i4-Pk6"/>
+                <outlet property="perpindicularBtn" destination="aFe-IH-XqW" id="xh7-jd-3Vn"/>
+                <outlet property="piBtn" destination="aJ4-gp-Xjg" id="yYj-nW-iwU"/>
+                <outlet property="productBtn" destination="UpR-iq-PU2" id="NS9-RW-Ze4"/>
+                <outlet property="realNumbersBtn" destination="dZE-wv-t3v" id="chm-Mq-Co8"/>
+                <outlet property="rightDoubleArrowBtn" destination="2vA-JH-C7O" id="CQD-am-2Wb"/>
+                <outlet property="sinBtn" destination="lpN-ht-Bpk" id="Bba-MA-iAz"/>
+                <outlet property="squareRootBtn" destination="SDN-PY-syg" id="dCz-fN-I4N"/>
+                <outlet property="summationBtn" destination="MvY-EM-bmu" id="h5A-QD-K5o"/>
+                <outlet property="tanBtn" destination="Gqv-HD-Fzf" id="eXX-fU-Kmy"/>
+                <outlet property="thetaBtn" destination="par-81-4s0" id="0mH-el-Igc"/>
                 <outlet property="tildeBtn" destination="Hcl-h3-ecY" id="dSu-YM-gxm"/>
+                <outlet property="unionBtn" destination="GF7-9c-Mjy" id="xdo-WJ-ZPh"/>
+                <outlet property="upsideDownABtn" destination="sDv-oQ-Yfk" id="bTa-jQ-7S1"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

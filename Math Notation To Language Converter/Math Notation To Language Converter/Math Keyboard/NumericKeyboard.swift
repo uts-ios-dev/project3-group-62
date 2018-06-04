@@ -22,9 +22,8 @@ private let kDLNumericKeyboardPressedImage = UIImage(named: "pressedNumericKeyBa
 }
 
 class NumericKeyboard: UIView {
-    // MARK: - outlets
-    // numbers
 
+    //create All Keyboard Button Outlets
     @IBOutlet weak var identicallyEqualsBtn: UIButton!
     @IBOutlet weak var notEqualsBtn: UIButton!
     @IBOutlet weak var approxEqualsBtn: UIButton!
@@ -34,11 +33,98 @@ class NumericKeyboard: UIView {
     @IBOutlet weak var lessThanBtn: UIButton!
     @IBOutlet weak var greaterThanBtn: UIButton!
     @IBOutlet weak var dotProductBtn: UIButton!
+    @IBOutlet weak var infinityBtn: UIButton!
+    @IBOutlet weak var arrowBtn: UIButton!
+    @IBOutlet weak var rightDoubleArrowBtn: UIButton!
+    @IBOutlet weak var leftDoubleArrowBtn: UIButton!
+    @IBOutlet weak var upsideDownABtn: UIButton!
+    @IBOutlet weak var existentialBtn: UIButton!
+    @IBOutlet weak var epsilonBtn: UIButton!
+    @IBOutlet weak var notAnElementOfBtn: UIButton!
+    @IBOutlet weak var unionBtn: UIButton!
+    @IBOutlet weak var intersectionBtn: UIButton!
+    @IBOutlet weak var inclusionBtn: UIButton!
+    @IBOutlet weak var nonStrictInclusionBtn: UIButton!
+    @IBOutlet weak var emptySetBtn: UIButton!
+    @IBOutlet weak var summationBtn: UIButton!
+    @IBOutlet weak var productBtn: UIButton!
+    @IBOutlet weak var partialDerivativeBtn: UIButton!
+    @IBOutlet weak var nablaBtn: UIButton!
+    @IBOutlet weak var integralBtn: UIButton!
+    @IBOutlet weak var contourIntegralBtn: UIButton!
+    @IBOutlet weak var perpindicularBtn: UIButton!
+    @IBOutlet weak var parallelBtn: UIButton!
+    @IBOutlet weak var squareRootBtn: UIButton!
+    @IBOutlet weak var nthRootBtn: UIButton!
+    @IBOutlet weak var modulusBtn: UIButton!
+    @IBOutlet weak var functionXBtn: UIButton!
+    @IBOutlet weak var factorialBtn: UIButton!
+    @IBOutlet weak var realNumbersBtn: UIButton!
+    @IBOutlet weak var cylindricalBtn: UIButton!
+    @IBOutlet weak var thetaBtn: UIButton!
+    @IBOutlet weak var gammaBtn: UIButton!
+    @IBOutlet weak var incompleteGammaBtn: UIButton!
+    @IBOutlet weak var degenerateBtn: UIButton!
+    @IBOutlet weak var laplaceBtn: UIButton!
+    @IBOutlet weak var piBtn: UIButton!
+    @IBOutlet weak var sinBtn: UIButton!
+    @IBOutlet weak var cosBtn: UIButton!
+    @IBOutlet weak var tanBtn: UIButton!
+    @IBOutlet weak var limBtn: UIButton!
+    @IBOutlet weak var infBtn: UIButton!
     
     
-    
-    // all button outlets
-    var allButtons: [UIButton] { return [buttonKey0, buttonKey1, buttonKey2, buttonKey3, buttonKey4, buttonKey5, buttonKey6, buttonKey7, buttonKey8, buttonKey9, buttonKeyLeftParenthesis, buttonKeyRightParenthesis, buttonKeyPoint, buttonKeyComma, buttonKeyHyphen] }
+    //create variable of all Keyboard Buttons
+    var allButtons: [UIButton] { return [
+        identicallyEqualsBtn,
+        notEqualsBtn,
+        approxEqualsBtn,
+        tildeBtn,
+        muchLessThanBtn,
+        muchGreaterThanBtn,
+        lessThanBtn,
+        greaterThanBtn,
+        dotProductBtn,
+        infinityBtn,
+        arrowBtn,
+        rightDoubleArrowBtn,
+        leftDoubleArrowBtn,
+        upsideDownABtn,
+        existentialBtn,
+        epsilonBtn,
+        notAnElementOfBtn,
+        unionBtn,
+        intersectionBtn,
+        inclusionBtn,
+        nonStrictInclusionBtn,
+        emptySetBtn,
+        summationBtn,
+        productBtn,
+        partialDerivativeBtn,
+        nablaBtn,
+        integralBtn,
+        contourIntegralBtn,
+        perpindicularBtn,
+        parallelBtn,
+        squareRootBtn,
+        nthRootBtn,
+        modulusBtn,
+        functionXBtn,
+        factorialBtn,
+        realNumbersBtn,
+        cylindricalBtn,
+        thetaBtn,
+        gammaBtn,
+        incompleteGammaBtn,
+        degenerateBtn,
+        laplaceBtn,
+        piBtn,
+        sinBtn,
+        cosBtn,
+        tanBtn,
+        limBtn,
+        infBtn]
+    }
     
     // data
     weak var delegate: NumericKeyboardDelegate?
