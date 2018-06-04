@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreData
+import Firebase
+import FirebaseDatabase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +20,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Disabed debug print
         // Override point for customization after application launch.
         
+        //Init the configuration for firebase
+        FirebaseApp.configure()
+        Database.database().isPersistenceEnabled = true
+        print("config firebase")
+        
+        /*
         let model = Dictionary()
         
         //DEV: Examples of Object Retrieval:
@@ -77,7 +85,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Formula Array not found")
         }
 
-        
+        */
         return true
         
     }
