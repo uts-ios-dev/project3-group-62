@@ -24,25 +24,18 @@ private let kDLNumericKeyboardPressedImage = UIImage(named: "pressedNumericKeyBa
 class NumericKeyboard: UIView {
     // MARK: - outlets
     // numbers
-    @IBOutlet weak var buttonKey0: UIButton!
-    @IBOutlet weak var buttonKey1: UIButton!
-    @IBOutlet weak var buttonKey2: UIButton!
-    @IBOutlet weak var buttonKey3: UIButton!
-    @IBOutlet weak var buttonKey4: UIButton!
-    @IBOutlet weak var buttonKey5: UIButton!
-    @IBOutlet weak var buttonKey6: UIButton!
-    @IBOutlet weak var buttonKey7: UIButton!
-    @IBOutlet weak var buttonKey8: UIButton!
-    @IBOutlet weak var buttonKey9: UIButton!
-    // backspace
-    @IBOutlet weak var buttonKeyBackspace: UIButton!
+
+    @IBOutlet weak var identicallyEqualsBtn: UIButton!
+    @IBOutlet weak var notEqualsBtn: UIButton!
+    @IBOutlet weak var approxEqualsBtn: UIButton!
+    @IBOutlet weak var tildeBtn: UIButton!
+    @IBOutlet weak var muchLessThanBtn: UIButton!
+    @IBOutlet weak var muchGreaterThanBtn: UIButton!
+    @IBOutlet weak var lessThanBtn: UIButton!
+    @IBOutlet weak var greaterThanBtn: UIButton!
+    @IBOutlet weak var dotProductBtn: UIButton!
     
-    // symbols
-    @IBOutlet weak var buttonKeyLeftParenthesis: UIButton!
-    @IBOutlet weak var buttonKeyRightParenthesis: UIButton!
-    @IBOutlet weak var buttonKeyPoint: UIButton!
-    @IBOutlet weak var buttonKeyComma: UIButton!
-    @IBOutlet weak var buttonKeyHyphen: UIButton!
+    
     
     // all button outlets
     var allButtons: [UIButton] { return [buttonKey0, buttonKey1, buttonKey2, buttonKey3, buttonKey4, buttonKey5, buttonKey6, buttonKey7, buttonKey8, buttonKey9, buttonKeyLeftParenthesis, buttonKeyRightParenthesis, buttonKeyPoint, buttonKeyComma, buttonKeyHyphen] }
