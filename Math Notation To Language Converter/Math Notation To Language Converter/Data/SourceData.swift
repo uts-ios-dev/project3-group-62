@@ -19,13 +19,58 @@ class SourceData {
     var ref : DatabaseReference?
     var dbHandle : DatabaseHandle?
     
-    func firebaseInit() {
-       
+   
+    init() {
+    
+        print("SourceData Called")
+        //Create CSV File References
+        symbolImport = CSVHandler(filename: "Symbols")
+        formulaImport = CSVHandler(filename: "StaticFormulas")
+        
+        //Populate Symbol Array from CSV File
+        symbolImport.loadData()
+        printNumberOfSymbolsImported()
+        populateSymbolModelObjects()
+        
+        //Populate Formula Array from CSV File
+        formulaImport.loadData()
+        printNumberOfFormulasImported()
+        populateFormulaModelObjects()
+        //load addtional symbols & formulas from firebase
+        populateModelFromFireBase()
+    }
+    
+    func populateSymbolModelObjects() {
+        //Populate Data Model dictionary data structure
+        for i in 1..<symbolImport.csvData.count {
+            let newSymbol = Symbol(
+                symbol : symbolImport.csvData[i]["Symbol"]!,
+                name : symbolImport.csvData[i]["Name"]!,
+                meaning : symbolImport.csvData[i]["Meaning"]!,
+                translation: symbolImport.csvData[i]["Translation"]!,
+                img : nil,
+                tags : symbolImport.csvData[i]["Tags"]!,
+                url : symbolImport.csvData[i]["Url"]!)
+            symbolArray.append(newSymbol)
+        }
+    }
+    
+    func populateFormulaModelObjects() {
+        //Populate Data Model dictionary data structure
+        for i in 1..<formulaImport.csvData.count {
+            let newFormula = Formula(
+                staticFormula: formulaImport.csvData[i]["Formula"]!,
+                name: formulaImport.csvData[i]["Name"]!,
+                info: formulaImport.csvData[i]["Info"]!,
+                tags: formulaImport.csvData[i]["Tags"]!)
+            formulaArray.append(newFormula)
+        }
+    }
+    
+    func populateModelFromFireBase() {
         print("config firebase")
-        print("load from db")
-        
         ref = Database.database().reference()
-        
+        ////////////////// Load for Symbols ///////////////////
         //Sync the data when an new item is inserted into the firebase
         print("Data from firebase:")
         dbHandle = ref?.child("symbols").observe(.childAdded, with: { (snapshot) in
@@ -42,9 +87,6 @@ class SourceData {
             } else {
                 url = nil
             }
-           
-    
-           
             
             let newSymbol = Symbol(
                 symbol : symbol,
@@ -85,7 +127,7 @@ class SourceData {
                     toSearchSymbol.url = url
                 }
             }
-
+            
         }) { (error) in
             print(error.localizedDescription)
         }
@@ -93,7 +135,7 @@ class SourceData {
         ref?.child("symbols").observe(.childRemoved, with: { (snapshot) in
             //Take the value from snapshot
             let symbol = snapshot.key
- 
+            
             for (i,toSearchSymbol) in self.symbolArray.enumerated() {
                 if toSearchSymbol.symbol == symbol {
                     self.symbolArray.remove(at: i)
@@ -103,56 +145,61 @@ class SourceData {
         }) { (error) in
             print(error.localizedDescription)
         }
-    }
-    init() {
-    
-        print("SourceData Called")
-        //Create CSV File References
-        symbolImport = CSVHandler(filename: "Symbols")
-        formulaImport = CSVHandler(filename: "StaticFormulas")
-        
-        //Populate Symbol Array from CSV File
-        symbolImport.loadData()
-        printNumberOfSymbolsImported()
-        populateSymbolModelObjects()
-        
-        //Populate Formula Array from CSV File
-        formulaImport.loadData()
-        printNumberOfFormulasImported()
-        populateFormulaModelObjects()
-        
-        //Init symbols from firebase
-        firebaseInit()
-        
-    }
-    
-    func populateSymbolModelObjects() {
-        //Populate Data Model dictionary data structure
-        for i in 1..<symbolImport.csvData.count {
-            let newSymbol = Symbol(
-                symbol : symbolImport.csvData[i]["Symbol"]!,
-                name : symbolImport.csvData[i]["Name"]!,
-                meaning : symbolImport.csvData[i]["Meaning"]!,
-                translation: symbolImport.csvData[i]["Translation"]!,
-                img : nil,
-                tags : symbolImport.csvData[i]["Tags"]!,
-                url : symbolImport.csvData[i]["Url"]!)
-            symbolArray.append(newSymbol)
-        }
-    }
-    
-    func populateFormulaModelObjects() {
-        //Populate Data Model dictionary data structure
-        for i in 1..<formulaImport.csvData.count {
+        ////////////////// Load for Formulas ///////////////////
+        print("formulas from firebase:")
+        dbHandle = ref?.child("formulas").observe(.childAdded, with: { (snapshot) in
+            //Take the value from snapshot
+            let staticformulas = snapshot.key
+            let data = snapshot.value as? [String:Any]
+            let name = String(describing: data?["name"] ?? "" )
+            let info = String(describing: data?["info"] ?? "" )
+            let tags = String(describing: data?["tags"] ?? "" )
+            
             let newFormula = Formula(
-                staticFormula: formulaImport.csvData[i]["Formula"]!,
-                name: formulaImport.csvData[i]["Name"]!,
-                info: formulaImport.csvData[i]["Info"]!,
-                tags: formulaImport.csvData[i]["Tags"]!)
-            formulaArray.append(newFormula)
+                staticFormula: staticformulas,
+                name: name,
+                info: info,
+                tags: tags)
+            self.formulaArray.append(newFormula)
+            //print("symbol: \(symbol) data :\n \(data)")
+            
+        }) { (error) in
+            print(error.localizedDescription)
         }
+        //Sync update data when the firebase is data is changed
+        ref?.child("formulas").observe(.childChanged, with: { (snapshot) in
+            //Take the value from snapshot
+            let staticformulas = snapshot.key
+            let data = snapshot.value as? [String:Any]
+            let name = String(describing: data?["name"] ?? "" )
+            let info = String(describing: data?["info"] ?? "" )
+            let tags = String(describing: data?["tags"] ?? "" )
+        
+            for toSearchFormulas in self.formulaArray {
+                if toSearchFormulas.staticFormula == staticformulas {
+                    toSearchFormulas.name = name
+                    toSearchFormulas.info = info
+                    toSearchFormulas.tags = tags
+                }
+            }
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        //Sync the data when an item is deleted in the firebase
+        ref?.child("formulas").observe(.childRemoved, with: { (snapshot) in
+            //Take the value from snapshot
+            let staticformulas = snapshot.key
+            for (i,toSearchFormulas) in self.formulaArray.enumerated() {
+                if toSearchFormulas.staticFormula == staticformulas {
+                    self.formulaArray.remove(at: i)
+                }
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
     }
-    
     func printNumberOfSymbolsImported() {
         print("\n Total Symbols Imported: \n \(symbolImport.csvData.count) \n")
     }
