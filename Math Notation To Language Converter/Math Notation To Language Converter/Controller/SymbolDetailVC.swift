@@ -54,6 +54,20 @@ class SymbolDetailVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-
+    @IBAction func likeSymbol(_ sender: UIButton) {
+        var symbols: [Symbol] = []
+        var encodeData: Data;
+        
+        if (UserDefaults.standard.object(forKey: "favSymbols") != nil) {
+            encodeData = UserDefaults.standard.object(forKey: "favSymbols") as! Data
+            symbols = NSKeyedUnarchiver.unarchiveObject(with: encodeData) as! [Symbol]
+        }
+        symbols.append(symbol!)
+        
+        // encode
+        encodeData = NSKeyedArchiver.archivedData(withRootObject: symbols)
+        UserDefaults.standard.set(encodeData, forKey: "favSymbols")
+        UserDefaults.standard.synchronize()
+    }
+    
 }

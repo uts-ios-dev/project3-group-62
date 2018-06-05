@@ -30,6 +30,7 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         }
         return dictionary.symbolArray.count
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var symbolDetailVC: SymbolDetailVC
         symbolDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "symbolDetail") as! SymbolDetailVC
