@@ -10,7 +10,7 @@
 import Foundation
 
 class Symbol: NSObject, Comparable, SpecialMathObject, NSCoding {
-
+    
     var symbol : String
     var imgs : [String] = []
     var name : String

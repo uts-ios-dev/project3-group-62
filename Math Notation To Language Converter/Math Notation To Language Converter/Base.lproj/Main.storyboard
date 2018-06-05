@@ -292,13 +292,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RML-Tb-RPk" userLabel="Summation">
-                                <rect key="frame" x="152" y="298" width="78" height="30"/>
-                                <state key="normal" title="Summation"/>
-                                <connections>
-                                    <segue destination="9TF-fu-ii7" kind="show" id="wfA-c4-vqq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wge-xl-scI" userLabel="Summation">
                                 <rect key="frame" x="179.66666666666666" y="321" width="55" height="30"/>
                                 <state key="normal" title="Product"/>
@@ -310,7 +303,7 @@
                                 <rect key="frame" x="142" y="245" width="130" height="30"/>
                                 <state key="normal" title="Common Formulas"/>
                                 <connections>
-                                    <segue destination="IZM-jx-BDv" kind="show" id="LYl-sD-R9x"/>
+                                    <segue destination="IZM-jx-BDv" kind="show" id="Rtb-jL-KQ0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="il4-Yx-WYQ">
@@ -318,6 +311,13 @@
                                 <state key="normal" title="Formula Dictionary"/>
                                 <connections>
                                     <segue destination="eJK-eS-F7X" kind="show" id="BW0-8K-2BB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RML-Tb-RPk" userLabel="Summation">
+                                <rect key="frame" x="168" y="283" width="78" height="30"/>
+                                <state key="normal" title="Summation"/>
+                                <connections>
+                                    <segue destination="9TF-fu-ii7" kind="show" id="wfA-c4-vqq"/>
                                 </connections>
                             </button>
                         </subviews>

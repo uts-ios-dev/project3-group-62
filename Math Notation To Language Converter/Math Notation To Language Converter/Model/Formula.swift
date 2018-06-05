@@ -20,7 +20,7 @@ enum FormulaType {
 }
 
 class Formula: NSObject, Comparable, SpecialMathObject, NSCoding {
-
+    
     var dynamicFormula : [Symbol] = []
     var staticFormula: String = ""
     var name: String

@@ -9,9 +9,9 @@
 import UIKit
 
 class SymbolDetailVC: UIViewController {
-
+    
     var symbol : Symbol?
-    //Ui Elements 
+    //Ui Elements
     @IBOutlet weak var symbolLabel: UILabel!
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -22,16 +22,16 @@ class SymbolDetailVC: UIViewController {
     
     @IBOutlet weak var openUrlBtn: UIButton!
     @IBAction func onUrlBtnPressed(_ sender: UIButton) {
-        if let u = symbol?.url! {
-            openUrl(url: u)
+        if let url = symbol?.url {
+            openUrl(url: url)
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         /*
-        let dic = Dictionary()
-        self.symbol = dic.symbolArray[31]
+         let dic = Dictionary()
+         self.symbol = dic.symbolArray[31]
          */
         //Fetch & display the data to the view
         if let symbol = self.symbol {
@@ -40,13 +40,15 @@ class SymbolDetailVC: UIViewController {
             meaningLabel.text = symbol.meaning
             translationLabel.text = symbol.translation
         }
-       
-        if symbol!.url == nil  {
+        
+        if symbol?.url == nil {
             openUrlBtn.isEnabled = false
             openUrlBtn.backgroundColor = UIColor.gray
+            
         }
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -69,3 +71,4 @@ class SymbolDetailVC: UIViewController {
     }
     
 }
+

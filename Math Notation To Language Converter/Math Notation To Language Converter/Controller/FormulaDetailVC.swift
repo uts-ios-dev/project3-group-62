@@ -22,7 +22,7 @@ class FormulaDetailVC: UIViewController {
     
     let dictionary = Dictionary()
     var formulaInput: String = "";
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sourceLinkBtn.setTitle("https://en.wikipedia.org/wiki/Bessel_function", for: .normal)
@@ -36,7 +36,7 @@ class FormulaDetailVC: UIViewController {
             print("dynamic formula")
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -107,7 +107,7 @@ class FormulaDetailVC: UIViewController {
         print(translation)
         translationTv.text = translation
     }
-
+    
     // Function for source link clicked, call openUrl function to open it
     @IBAction func sourceLinkClicked(_ sender: UIButton) {
         openUrl(url: (sourceLinkBtn.titleLabel?.text)!)
@@ -131,3 +131,4 @@ class FormulaDetailVC: UIViewController {
         UserDefaults.standard.synchronize()
     }
 }
+
