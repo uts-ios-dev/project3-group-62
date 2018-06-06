@@ -46,7 +46,7 @@ class FormulaDetailVC: UIViewController {
             for item in favFors {
                 if item.getFormula() == formulaInputEt.text {
                     likeBtn.isEnabled = false
-                    likeBtn.setImage(#imageLiteral(resourceName: "star-ful.png"), for: .normal)
+                    likeBtn.setTitleColor(UIColor(red: 187/255, green: 222/255, blue: 251/255, alpha: 1), for: UIControlState.disabled)
                     break
                 }
             }
@@ -82,7 +82,7 @@ class FormulaDetailVC: UIViewController {
         for item in favFors {
             if item.getFormula() == formulaInputEt.text {
                 likeBtn.isEnabled = false
-                likeBtn.setImage(#imageLiteral(resourceName: "star-ful.png"), for: .normal)
+                likeBtn.setTitleColor(UIColor(red: 187/255, green: 222/255, blue: 251/255, alpha: 1), for: UIControlState.disabled)
                 break
             }
         }
@@ -157,7 +157,7 @@ class FormulaDetailVC: UIViewController {
         UserDefaults.standard.synchronize()
         
         likeBtn.isEnabled = false
-        likeBtn.setImage(#imageLiteral(resourceName: "star-ful.png"), for: .normal)
+        likeBtn.setTitleColor(UIColor(red: 187/255, green: 222/255, blue: 251/255, alpha: 1), for: UIControlState.disabled)
     }
 }
 

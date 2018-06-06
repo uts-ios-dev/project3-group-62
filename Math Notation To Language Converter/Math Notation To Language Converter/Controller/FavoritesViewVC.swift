@@ -22,8 +22,11 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
     var favList: [Any] = []
     var originalList: [Any] = []
     
+    var dictionary: Dictionary?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        dictionary = Dictionary()
         // Do any additional setup after loading the view.
         
         if (UserDefaults.standard.object(forKey: "favFors") != nil) {
@@ -42,7 +45,10 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
             
             // test content
             for item in favSymbols {
-                favList.append(item)
+                if let dic = dictionary {
+                    print(dic.getSymbolDataBySymbol(symbolCharacter: item.symbol)!)
+                    favList.append(dic.getSymbolDataBySymbol(symbolCharacter: item.symbol)!)
+                }
             }
         }
         originalList = favList
@@ -118,7 +124,10 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
             
             // test content
             for item in favSymbols {
-                favList.append(item)
+                if let dic = dictionary {
+                    print(dic.getSymbolDataBySymbol(symbolCharacter: item.symbol)!)
+                    favList.append(dic.getSymbolDataBySymbol(symbolCharacter: item.symbol)!)
+                }
             }
         }
         favTable.reloadData()

@@ -58,7 +58,7 @@ class SymbolDetailVC: UIViewController {
             for item in favSymbols {
                 if item.symbol == symbol?.symbol {
                     likeBtn.isEnabled = false
-                    likeBtn.setImage(#imageLiteral(resourceName: "star-ful.png"), for: .normal)
+                    likeBtn.setTitleColor(UIColor(red: 187/255, green: 222/255, blue: 251/255, alpha: 1), for: UIControlState.disabled)
                     break
                 }
             }
@@ -86,7 +86,7 @@ class SymbolDetailVC: UIViewController {
         UserDefaults.standard.set(encodeData, forKey: "favSymbols")
         UserDefaults.standard.synchronize()
         likeBtn.isEnabled = false
-        likeBtn.setImage(#imageLiteral(resourceName: "star-ful.png"), for: .normal)
+        likeBtn.setTitleColor(UIColor(red: 187/255, green: 222/255, blue: 251/255, alpha: 1), for: UIControlState.disabled)
     }
     
 }
