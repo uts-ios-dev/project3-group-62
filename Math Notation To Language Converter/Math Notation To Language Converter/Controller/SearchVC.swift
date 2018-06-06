@@ -13,7 +13,7 @@ class SearchTableViewCell: UITableViewCell {
     
 }
 
-class SearchViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate {
+class SearchViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate, MathKeyboardDelegate {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -21,10 +21,10 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
     var dictionary : Dictionary?
     
     var filterData = [Symbol]()
-    var isSeaching = false
+    var isSearching = false
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if isSeaching {
+        if isSearching {
             return filterData.count
         }
         if let dic = dictionary {
@@ -36,7 +36,7 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         var symbolDetailVC: SymbolDetailVC
         symbolDetailVC = self.storyboard?.instantiateViewController(withIdentifier: "symbolDetail") as! SymbolDetailVC
         //let symbolDetailVC = SymbolDetailVC()
-        if isSeaching {
+        if isSearching {
             symbolDetailVC.symbol = filterData[indexPath.row]
         } else {
             if let dic = dictionary {
@@ -50,7 +50,7 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SearchTableViewCell
         if let dic = dictionary {
-            if isSeaching {
+            if isSearching {
                 cell.labelLeft.text = filterData[indexPath.row].symbol
                 cell.labelRight.text = filterData[indexPath.row].name.trunc(length: 15)
                 cell.symbol = filterData[indexPath.row]
@@ -67,11 +67,11 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     func searchBar (_ searchBar : UISearchBar,textDidChange searchText : String) {
         if searchBar.text == nil || searchBar.text == "" {
-            isSeaching = false
+            isSearching = false
             view.endEditing(true)
             tableView.reloadData()
         } else {
-            isSeaching = true
+            isSearching = true
             if let dic = dictionary {
                 filterData = dic.symbolArray.filter({$0.symbol.lowercased().range(of:searchBar.text!.lowercased()) != nil || $0.name.lowercased().range(of:searchBar.text!.lowercased()) != nil})
             }
@@ -86,18 +86,35 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         tableView.dataSource = self
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
+        searchBar.setAsMathKeyboard(delegate: self)
         
         //Init dictionary
         dictionary = Dictionary()
         
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
+    func mathSymbolPressed(symbol: String) {
+        search(text: symbol)
+    }
     
+    func numericButtonPressed(symbol: String) {
+        search(text: symbol)
+    }
     
+    func search(text : String?) {
+        if text == nil || text == "" {
+            isSearching = false
+            view.endEditing(true)
+            tableView.reloadData()
+        } else {
+            isSearching = true
+            filterData = (dictionary?.symbolArray.filter({$0.symbol.lowercased().range(of:searchBar.text!.lowercased()) != nil || $0.name.lowercased().range(of:searchBar.text!.lowercased()) != nil}))!
+            tableView.reloadData()
+        }
+    }
     
 }
