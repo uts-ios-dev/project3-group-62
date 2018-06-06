@@ -5,6 +5,8 @@
 //  Created by Peter Bower on 30/5/18.
 //  Copyright © 2018 Summer Studios. All rights reserved.
 //
+import Firebase
+import FirebaseDatabase
 
 class SourceData {
     
@@ -13,8 +15,14 @@ class SourceData {
     var symbolImport: CSVHandler
     var formulaImport: CSVHandler
     
+    //Firebase
+    var ref : DatabaseReference?
+    var dbHandle : DatabaseHandle?
+    
+   
     init() {
-        
+    
+        print("SourceData Called")
         //Create CSV File References
         symbolImport = CSVHandler(filename: "Symbols")
         formulaImport = CSVHandler(filename: "StaticFormulas")
@@ -28,7 +36,8 @@ class SourceData {
         formulaImport.loadData()
         printNumberOfFormulasImported()
         populateFormulaModelObjects()
-        
+        //load addtional symbols & formulas from firebase
+        populateModelFromFireBase()
     }
     
     func populateSymbolModelObjects() {
@@ -58,6 +67,139 @@ class SourceData {
         }
     }
     
+    func populateModelFromFireBase() {
+        print("config firebase")
+        ref = Database.database().reference()
+        ////////////////// Load for Symbols ///////////////////
+        //Sync the data when an new item is inserted into the firebase
+        print("Data from firebase:")
+        dbHandle = ref?.child("symbols").observe(.childAdded, with: { (snapshot) in
+            //Take the value from snapshot
+            let symbol = snapshot.key
+            let data = snapshot.value as? [String:Any]
+            let name = String(describing: data?["name"] ?? "" )
+            let meaning = String(describing: data?["meaning"] ?? "" )
+            let translation = String(describing: data?["translation"] ?? "" )
+            let tags = String(describing: data?["tags"] ?? "" )
+            let url : String?
+            if let u = data?["url"] {
+                url = String(describing: u)
+            } else {
+                url = nil
+            }
+            
+            let newSymbol = Symbol(
+                symbol : symbol,
+                name : name,
+                meaning : meaning,
+                translation: translation,
+                img : nil,
+                tags : tags,
+                url : url)
+            self.symbolArray.append(newSymbol)
+            //print("symbol: \(symbol) data :\n \(data)")
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        //Sync update data when the firebase is data is changed
+        ref?.child("symbols").observe(.childChanged, with: { (snapshot) in
+            //Take the value from snapshot
+            let symbol = snapshot.key
+            let data = snapshot.value as? [String:Any]
+            let name = String(describing: data?["name"] ?? "" )
+            let meaning = String(describing: data?["meaning"] ?? "" )
+            let translation = String(describing: data?["translation"] ?? "" )
+            let tags = String(describing: data?["tags"] ?? "" )
+            let url : String?
+            if let u = data?["url"] {
+                url = String(describing: u)
+            } else {
+                url = nil
+            }
+            
+            for toSearchSymbol in self.symbolArray {
+                if toSearchSymbol.symbol == symbol {
+                    toSearchSymbol.name = name
+                    toSearchSymbol.meaning = meaning
+                    toSearchSymbol.translation = translation
+                    toSearchSymbol.tags = tags
+                    toSearchSymbol.url = url
+                }
+            }
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        //Sync the data when an item is deleted in the firebase
+        ref?.child("symbols").observe(.childRemoved, with: { (snapshot) in
+            //Take the value from snapshot
+            let symbol = snapshot.key
+            
+            for (i,toSearchSymbol) in self.symbolArray.enumerated() {
+                if toSearchSymbol.symbol == symbol {
+                    self.symbolArray.remove(at: i)
+                }
+            }
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        ////////////////// Load for Formulas ///////////////////
+        print("formulas from firebase:")
+        dbHandle = ref?.child("formulas").observe(.childAdded, with: { (snapshot) in
+            //Take the value from snapshot
+            let staticformulas = snapshot.key
+            let data = snapshot.value as? [String:Any]
+            let name = String(describing: data?["name"] ?? "" )
+            let info = String(describing: data?["info"] ?? "" )
+            let tags = String(describing: data?["tags"] ?? "" )
+            
+            let newFormula = Formula(
+                staticFormula: staticformulas,
+                name: name,
+                info: info,
+                tags: tags)
+            self.formulaArray.append(newFormula)
+            //print("symbol: \(symbol) data :\n \(data)")
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        //Sync update data when the firebase is data is changed
+        ref?.child("formulas").observe(.childChanged, with: { (snapshot) in
+            //Take the value from snapshot
+            let staticformulas = snapshot.key
+            let data = snapshot.value as? [String:Any]
+            let name = String(describing: data?["name"] ?? "" )
+            let info = String(describing: data?["info"] ?? "" )
+            let tags = String(describing: data?["tags"] ?? "" )
+        
+            for toSearchFormulas in self.formulaArray {
+                if toSearchFormulas.staticFormula == staticformulas {
+                    toSearchFormulas.name = name
+                    toSearchFormulas.info = info
+                    toSearchFormulas.tags = tags
+                }
+            }
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        //Sync the data when an item is deleted in the firebase
+        ref?.child("formulas").observe(.childRemoved, with: { (snapshot) in
+            //Take the value from snapshot
+            let staticformulas = snapshot.key
+            for (i,toSearchFormulas) in self.formulaArray.enumerated() {
+                if toSearchFormulas.staticFormula == staticformulas {
+                    self.formulaArray.remove(at: i)
+                }
+            }
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+    }
     func printNumberOfSymbolsImported() {
         print("\n Total Symbols Imported: \n \(symbolImport.csvData.count) \n")
     }

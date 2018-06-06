@@ -9,7 +9,7 @@
 
 import Foundation
 
-class Symbol: CustomStringConvertible, Comparable, SpecialMathObject {
+class Symbol: NSObject, Comparable, SpecialMathObject, NSCoding {
     
     var symbol : String
     var imgs : [String] = []
@@ -17,7 +17,7 @@ class Symbol: CustomStringConvertible, Comparable, SpecialMathObject {
     var tags : String
     var meaning : String
     var translation: String
-    var description : String { return self.toString() }
+    override var description : String { return self.toString() }
     var url : String?
     
     init(symbol : String, name : String,  meaning : String, translation: String, img : String? = nil, tags : String, url : String? = nil) {
@@ -30,6 +30,24 @@ class Symbol: CustomStringConvertible, Comparable, SpecialMathObject {
         }
         self.tags = tags
         self.url = url
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(symbol, forKey: "symbol")
+        aCoder.encode(name, forKey: "name")
+        aCoder.encode(tags, forKey: "tags")
+        aCoder.encode(meaning, forKey: "meaning")
+        aCoder.encode(translation, forKey: "translation")
+        
+    }
+    
+    required convenience init?(coder aDecoder: NSCoder) {
+        let symbol = aDecoder.decodeObject(forKey: "symbol") as! String
+        let name = aDecoder.decodeObject(forKey: "name") as! String
+        let tags = aDecoder.decodeObject(forKey: "tags") as! String
+        let meaning = aDecoder.decodeObject(forKey: "meaning") as! String
+        let translation = aDecoder.decodeObject(forKey: "translation") as! String
+        self.init(symbol: symbol, name: name, meaning: meaning, translation: translation, tags: tags)
     }
     
     static func < (lhs: Symbol, rhs: Symbol) -> Bool {      //implements comparable protocol for sorting by name asc

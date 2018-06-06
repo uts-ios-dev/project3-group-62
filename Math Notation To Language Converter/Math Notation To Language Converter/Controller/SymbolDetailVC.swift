@@ -9,9 +9,9 @@
 import UIKit
 
 class SymbolDetailVC: UIViewController {
-
+    
     var symbol : Symbol?
-    //Ui Elements 
+    //Ui Elements
     @IBOutlet weak var symbolLabel: UILabel!
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -30,8 +30,8 @@ class SymbolDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         /*
-        let dic = Dictionary()
-        self.symbol = dic.symbolArray[31]
+         let dic = Dictionary()
+         self.symbol = dic.symbolArray[31]
          */
         //Fetch & display the data to the view
         if let symbol = self.symbol {
@@ -48,12 +48,27 @@ class SymbolDetailVC: UIViewController {
         }
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-
+    @IBAction func likeSymbol(_ sender: UIButton) {
+        var symbols: [Symbol] = []
+        var encodeData: Data;
+        
+        if (UserDefaults.standard.object(forKey: "favSymbols") != nil) {
+            encodeData = UserDefaults.standard.object(forKey: "favSymbols") as! Data
+            symbols = NSKeyedUnarchiver.unarchiveObject(with: encodeData) as! [Symbol]
+        }
+        symbols.append(symbol!)
+        
+        // encode
+        encodeData = NSKeyedArchiver.archivedData(withRootObject: symbols)
+        UserDefaults.standard.set(encodeData, forKey: "favSymbols")
+        UserDefaults.standard.synchronize()
+    }
+    
 }
+
