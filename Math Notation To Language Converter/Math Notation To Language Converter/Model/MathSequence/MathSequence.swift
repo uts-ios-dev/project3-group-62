@@ -41,44 +41,34 @@ class MathSequence {
         if totalIterations >= 4 {
             formula += " \(sequenceType.rawValue)  ...  \(sequenceType.rawValue)  (\(String(endValueInt))\(sequence))"
         }
-        formula += "\n\nResult:\n\n\(calculateMathSequence(startValue: startValueInt, endValue: endValueInt, sequenceType: sequenceType, sequence: sequence))"
+        formula += "\n\nResult:\n\n\(calculateMathSequence(startValue: startValueInt, endValue: endValueInt, sequenceType: sequenceType, sequence: sequence) ?? 0)"
         return formula
     }
     
-    func calculateMathSequence(startValue: Int, endValue: Int, sequenceType: MathSequenceType, sequence: String) -> Int {
-        var accumResult: Int
+    func calculateMathSequence(startValue: Int, endValue: Int, sequenceType: MathSequenceType, sequence: String) -> Int? {
+        var result: Int = 0
         let start: Int
         let end: Int
-        
-        switch sequenceType {
-        case .summation: accumResult = 0
-        case .product: accumResult = 1
-        }
-        
-        if endValue > startValue || endValue == startValue{
+        if endValue > startValue {
             start = startValue
             end = endValue
         } else if endValue < startValue {
             start = endValue
             end = startValue
         } else {
-            return 0
+            return nil
         }
         
         for index in start...end {
-            do {
-                switch sequenceType {
-                case .summation: try accumResult += evaluateExpression(expression: String(index)+sequence)
-                case .product: try accumResult *= evaluateExpression(expression: String(index)+sequence)
-                }
-            } catch {
-                    print("Out of range.")
+            switch sequenceType {
+            case .summation: result += evaluateExpression(expression: String(index)+sequence)
+            case .product: result *= evaluateExpression(expression: String(index)+sequence)
             }
         }
-        return accumResult
+        return result
     }
     
-    func evaluateExpression(expression: String) throws -> Int {
+    func evaluateExpression(expression: String) -> Int {
         //Convert String expression to an actual expression to be evaluated
         let expression = NSExpression(format: expression)
         if let result = expression.expressionValue(with: nil, context: nil) as? Int {

@@ -25,7 +25,7 @@ class ProductVC: UIViewController, MSVCProtocol {           //Adopts Math Sequen
     var sequenceType: MathSequenceType = .product
 
     required init?(coder aDecoder: NSCoder) {               //Initialise with a default math sequence object
-        sequence = MathSequence(sequenceVariable: "i", startValue: "1", endValue: "5", sequence: "+2")
+        sequence = MathSequence(sequenceVariable: "i", startValue: "1", endValue: "100", sequence: "*2")
         super.init(coder: aDecoder)
     }
     //Create sequenceView object that passes info to MathSequenceView, a type that handles changes for all math sequence view controllers
@@ -41,10 +41,8 @@ class ProductVC: UIViewController, MSVCProtocol {           //Adopts Math Sequen
     }
     //Handle view updates by passing them back to the math sequence view object
     @IBAction func sequenceVariableUpdated(_ sender: UITextField) { sequenceView?.sequenceVariableUpdated(sender) }
-    @IBAction func startValueUpdated(_ sender: UITextField)
-        { sequenceView?.startValueUpdated(sender) }
-    @IBAction func endValueUpdated(_ sender: UITextField)
-        { sequenceView?.endValueUpdated(sender) }
-    @IBAction func sequenceUpdated(_ sender: UITextField)
-        { sequenceView?.sequenceUpdated(sender) }
+    @IBAction func startValueUpdated(_ sender: UITextField) { sequenceView?.sequenceVariableUpdated(sender) }
+    @IBAction func endValueUpdated(_ sender: UITextField) { sequenceView?.endValueUpdated(sender) }
+    @IBAction func sequenceUpdated(_ sender: UITextField) { sequenceView?.sequenceUpdated(sender) }
+    
 }

@@ -41,7 +41,7 @@ class SummationVC: UIViewController, MSVCProtocol {              //Adopts Math S
     }
     //Handle view updates by passing them back to the math sequence view object
     @IBAction func sequenceVariableUpdated(_ sender: UITextField) { sequenceView?.sequenceVariableUpdated(sender) }
-    @IBAction func startValueUpdated(_ sender: UITextField) { sequenceView?.startValueUpdated(sender) }
+    @IBAction func startValueUpdated(_ sender: UITextField) { sequenceView?.sequenceVariableUpdated(sender) }
     @IBAction func endValueUpdated(_ sender: UITextField) { sequenceView?.endValueUpdated(sender) }
     @IBAction func sequenceUpdated(_ sender: UITextField) { sequenceView?.sequenceUpdated(sender) }
 }

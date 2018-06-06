@@ -19,7 +19,7 @@ enum FormulaType {
     case isDynamic
 }
 
-class Formula: CustomStringConvertible, Comparable, SpecialMathObject {
+class Formula: NSObject, Comparable, SpecialMathObject, NSCoding {
     
     var dynamicFormula : [Symbol] = []
     var staticFormula: String = ""
@@ -28,7 +28,7 @@ class Formula: CustomStringConvertible, Comparable, SpecialMathObject {
     var info : String
     var imgs : [String] = []
     let formulaType: FormulaType
-    var description: String { return self.toString() }
+    override var description: String { return self.toString() }
     
     //Static Formula Initialiser
     init(staticFormula: String, name: String, info : String, tags : String, img : String? = nil) {
@@ -53,6 +53,21 @@ class Formula: CustomStringConvertible, Comparable, SpecialMathObject {
             imgs.append(picture)
         }
         formulaType = .isDynamic
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(staticFormula, forKey: "staticFormula")
+        aCoder.encode(name, forKey: "name")
+        aCoder.encode(info, forKey: "info")
+        aCoder.encode(tags, forKey: "tags")
+    }
+    
+    required convenience init?(coder aDecoder: NSCoder) {
+        let staticFormula = aDecoder.decodeObject(forKey: "staticFormula") as! String
+        let name = aDecoder.decodeObject(forKey: "name") as! String
+        let info = aDecoder.decodeObject(forKey: "info") as! String
+        let tags = aDecoder.decodeObject(forKey: "tags") as! String
+        self.init(staticFormula: staticFormula, name: name, info: info, tags: tags)
     }
     
     func toString() -> String {
