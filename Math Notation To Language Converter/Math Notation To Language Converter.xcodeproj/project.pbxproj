@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6615070820B6515F001DF875 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6615070720B6515F001DF875 /* Main.swift */; };
 		7E0DB2C620BFC148005B2BC6 /* StaticFormulas.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DB2C520BFC148005B2BC6 /* StaticFormulas.csv */; };
 		7E37D90120BB968D0039ADD5 /* CSVHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37D90020BB968D0039ADD5 /* CSVHandler.swift */; };
 		7E6DC2C920BFD16000E2632D /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DC2C820BFD16000E2632D /* Protocols.swift */; };
@@ -45,7 +44,6 @@
 		F318E4D420ACF2A6006523B1 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4D320ACF2A6006523B1 /* Symbol.swift */; };
 		F318E4D620ACF2C4006523B1 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4D520ACF2C4006523B1 /* Definition.swift */; };
 		F318E4D820ACF2D5006523B1 /* Formula.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4D720ACF2D5006523B1 /* Formula.swift */; };
-		F318E4DC20ACF304006523B1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F318E4DB20ACF304006523B1 /* Settings.swift */; };
 		F328A3ED24E901285508F7D7 /* Pods_Math_Notation_To_Language_Converter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1040360A709A0AF6431931 /* Pods_Math_Notation_To_Language_Converter.framework */; };
 		F33A9D2B20B640F600ABA011 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33A9D2A20B640F600ABA011 /* Dictionary.swift */; };
 		F356337120C2836C008CE35C /* SymbolDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F356337020C2836C008CE35C /* SymbolDetailVC.swift */; };
@@ -58,7 +56,6 @@
 		2018C06B67A36881D95028C4 /* Pods-Math Notation To Language Converter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Math Notation To Language Converter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Math Notation To Language Converter/Pods-Math Notation To Language Converter.release.xcconfig"; sourceTree = "<group>"; };
 		3C16387A042D594A23E968F8 /* Pods-Math Notation To Language Converter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Math Notation To Language Converter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Math Notation To Language Converter/Pods-Math Notation To Language Converter.debug.xcconfig"; sourceTree = "<group>"; };
 		5B1040360A709A0AF6431931 /* Pods_Math_Notation_To_Language_Converter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Math_Notation_To_Language_Converter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6615070720B6515F001DF875 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Main.swift; path = "Math Notation To Language Converter/Model/Main.swift"; sourceTree = SOURCE_ROOT; };
 		7E0DB2C520BFC148005B2BC6 /* StaticFormulas.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StaticFormulas.csv; sourceTree = "<group>"; };
 		7E37D90020BB968D0039ADD5 /* CSVHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVHandler.swift; sourceTree = "<group>"; };
 		7E6DC2C820BFD16000E2632D /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
@@ -98,7 +95,6 @@
 		F318E4D320ACF2A6006523B1 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		F318E4D520ACF2C4006523B1 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
 		F318E4D720ACF2D5006523B1 /* Formula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formula.swift; sourceTree = "<group>"; };
-		F318E4DB20ACF304006523B1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		F33A9D2A20B640F600ABA011 /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		F356337020C2836C008CE35C /* SymbolDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetailVC.swift; sourceTree = "<group>"; };
 		F39ED98720C51DE30007753E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -161,7 +157,6 @@
 				7EDC968D20A3C7540088D94F /* Main.storyboard */,
 				A45AF1B220C79D2E0057C8A0 /* star-border.png */,
 				A45AF1B120C79D2E0057C8A0 /* star-ful.png */,
-				A407F15120BF741900C8B443 /* OpenUrl.swift */,
 				7EDC969320A3C7550088D94F /* Assets.xcassets */,
 				7EDC969520A3C7550088D94F /* LaunchScreen.storyboard */,
 				7EDC969820A3C7550088D94F /* Info.plist */,
@@ -216,8 +211,6 @@
 				7EDF4C9520C23A2900D4009D /* MathSequence */,
 				F318E4D520ACF2C4006523B1 /* Definition.swift */,
 				F318E4D720ACF2D5006523B1 /* Formula.swift */,
-				F318E4DB20ACF304006523B1 /* Settings.swift */,
-				6615070720B6515F001DF875 /* Main.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				7EDFDC8120C7DB55008A6327 /* MathKeyboard */,
+				A407F15120BF741900C8B443 /* OpenUrl.swift */,
 				F3B0030720C12BD3008FF40E /* String.swift */,
 				7EDFDC7B20C7DB43008A6327 /* UISearchBarMathKb.swift */,
 				7EDFDC7C20C7DB43008A6327 /* UITextFieldMathKb.swift */,
@@ -387,7 +381,6 @@
 				7EDF4C8E20C2296B00D4009D /* ProductVC.swift in Sources */,
 				7E6DC2CB20BFE8E200E2632D /* SummationVC.swift in Sources */,
 				7EDFDC7E20C7DB43008A6327 /* UITextFieldMathKb.swift in Sources */,
-				F318E4DC20ACF304006523B1 /* Settings.swift in Sources */,
 				F33A9D2B20B640F600ABA011 /* Dictionary.swift in Sources */,
 				7E37D90120BB968D0039ADD5 /* CSVHandler.swift in Sources */,
 				A40E141920BCE5F2003E6775 /* SettingViewVC.swift in Sources */,
@@ -401,7 +394,6 @@
 				F3B0030820C12BD3008FF40E /* String.swift in Sources */,
 				7EDC968A20A3C7540088D94F /* AppDelegate.swift in Sources */,
 				F3FC9DB220BD5F1700DDB0A1 /* SearchVC.swift in Sources */,
-				6615070820B6515F001DF875 /* Main.swift in Sources */,
 				A40E141F20BCE5F2003E6775 /* FormulaViewVC.swift in Sources */,
 				F318E4D620ACF2C4006523B1 /* Definition.swift in Sources */,
 				A40E141820BCE5F2003E6775 /* ResultDetailViewVC.swift in Sources */,
