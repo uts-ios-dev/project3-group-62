@@ -46,7 +46,7 @@ class MathSequence {
     }
     
     func calculateMathSequence(startValue: Int, endValue: Int, sequenceType: MathSequenceType, sequence: String) -> Int? {
-        var result: Int = 0
+        var result: Int = sequenceType == .product ? 1 : 0
         let start: Int
         let end: Int
         if endValue > startValue {
@@ -58,19 +58,22 @@ class MathSequence {
         } else {
             return nil
         }
-        
+       
         for index in start...end {
             switch sequenceType {
             case .summation: result += evaluateExpression(expression: String(index)+sequence)
             case .product: result *= evaluateExpression(expression: String(index)+sequence)
             }
+            
         }
+        //print("Result = \(result)")
         return result
     }
     
     func evaluateExpression(expression: String) -> Int {
         //Convert String expression to an actual expression to be evaluated
         let expression = NSExpression(format: expression)
+        
         if let result = expression.expressionValue(with: nil, context: nil) as? Int {
             return result
         } else {
