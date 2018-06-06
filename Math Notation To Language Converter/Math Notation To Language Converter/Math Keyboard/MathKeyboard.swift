@@ -105,21 +105,21 @@ class MathKeyboard: UIView {        //setup Button outlets for all mathKeyboard 
         squareRootBtn,
         nthRootBtn,
         modulusBtn,
-        functionXBtn,
-        factorialBtn,
+        //functionXBtn,
+        //factorialBtn,
         realNumbersBtn,
-        cylindricalBtn,
+        //cylindricalBtn,
         thetaBtn,
         gammaBtn,
         incompleteGammaBtn,
         degenerateBtn,
         laplaceBtn,
-        piBtn,
-        sinBtn,
-        cosBtn,
-        tanBtn,
-        limBtn,
-        infBtn]
+        piBtn]//,
+        //sinBtn,
+        //cosBtn,
+        //tanBtn,
+        //limBtn,
+        //infBtn]
     }
     
     weak var delegate: MathKeyboardDelegate?        // Setup data
