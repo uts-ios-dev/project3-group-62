@@ -1244,7 +1244,7 @@
                                 <rect key="frame" x="0.0" y="204" width="414" height="468"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNT-AA-WKL">
-                                        <rect key="frame" x="0.0" y="8" width="414" height="203"/>
+                                        <rect key="frame" x="0.0" y="16" width="414" height="203"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start Value:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vxm-Gz-EoH">
                                                 <rect key="frame" x="36" y="43" width="89" height="20"/>
@@ -1328,7 +1328,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDM-BE-Ukq">
-                                        <rect key="frame" x="0.0" y="219" width="414" height="179"/>
+                                        <rect key="frame" x="0.0" y="227" width="414" height="179"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[Calculation]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMP-fc-ZrQ">
                                                 <rect key="frame" x="27" y="8" width="106" height="21"/>
@@ -1382,7 +1382,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYd-UR-mEg">
-                                        <rect key="frame" x="0.0" y="406" width="414" height="184"/>
+                                        <rect key="frame" x="0.0" y="414" width="414" height="184"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U43-ow-P1x">
                                                 <rect key="frame" x="27" y="37" width="361" height="139"/>
@@ -1408,16 +1408,16 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="uYd-UR-mEg" secondAttribute="bottom" constant="8" id="42r-Qr-dRJ"/>
                                     <constraint firstItem="BNT-AA-WKL" firstAttribute="trailing" secondItem="XDM-BE-Ukq" secondAttribute="trailing" id="439-Pp-fQu"/>
                                     <constraint firstItem="XDM-BE-Ukq" firstAttribute="top" secondItem="BNT-AA-WKL" secondAttribute="bottom" constant="8" symbolic="YES" id="98S-W7-jas"/>
-                                    <constraint firstItem="uYd-UR-mEg" firstAttribute="top" secondItem="XDM-BE-Ukq" secondAttribute="bottom" constant="8" symbolic="YES" id="BW0-Eb-Lr1"/>
+                                    <constraint firstItem="uYd-UR-mEg" firstAttribute="top" secondItem="XDM-BE-Ukq" secondAttribute="bottom" constant="8" id="BW0-Eb-Lr1"/>
                                     <constraint firstItem="XDM-BE-Ukq" firstAttribute="leading" secondItem="uYd-UR-mEg" secondAttribute="leading" id="G3y-c7-UeI"/>
-                                    <constraint firstItem="BNT-AA-WKL" firstAttribute="top" secondItem="OIy-4j-baw" secondAttribute="topMargin" id="G6v-4c-Loh"/>
+                                    <constraint firstItem="BNT-AA-WKL" firstAttribute="top" secondItem="OIy-4j-baw" secondAttribute="topMargin" constant="8" id="G6v-4c-Loh"/>
                                     <constraint firstItem="XDM-BE-Ukq" firstAttribute="trailing" secondItem="uYd-UR-mEg" secondAttribute="trailing" id="IbI-mH-qej"/>
                                     <constraint firstItem="BNT-AA-WKL" firstAttribute="leading" secondItem="OIy-4j-baw" secondAttribute="leading" id="KgD-EL-gQN"/>
                                     <constraint firstAttribute="trailing" secondItem="BNT-AA-WKL" secondAttribute="trailing" id="YHJ-Ga-zKe"/>
                                     <constraint firstItem="BNT-AA-WKL" firstAttribute="centerX" secondItem="OIy-4j-baw" secondAttribute="centerX" id="Ztd-bR-Kkv"/>
-                                    <constraint firstAttribute="bottom" secondItem="XDM-BE-Ukq" secondAttribute="bottom" constant="70" id="buf-yK-yVR"/>
                                     <constraint firstItem="BNT-AA-WKL" firstAttribute="leading" secondItem="XDM-BE-Ukq" secondAttribute="leading" id="qGZ-cA-asy"/>
                                 </constraints>
                             </scrollView>
