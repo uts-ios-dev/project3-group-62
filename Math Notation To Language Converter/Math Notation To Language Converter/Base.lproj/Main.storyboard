@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eZb-5E-GWW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eZb-5E-GWW">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Copperplate.ttc">
-            <string>Copperplate</string>
-        </array>
-        <array key="TimesNewRoman.ttf">
-            <string>TimesNewRomanPSMT</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Math Notation Helper (Home)-->
         <scene sceneID="tne-QT-ifu">
@@ -187,13 +179,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLf-Qv-US0" userLabel="labelLeft">
-                                                    <rect key="frame" x="13" y="11" width="30" height="21"/>
+                                                    <rect key="frame" x="18" y="11" width="30" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLQ-3u-kQB" userLabel="labelRight">
-                                                    <rect key="frame" x="361" y="12" width="40" height="21"/>
+                                                    <rect key="frame" x="356" y="12" width="40" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -246,6 +238,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X8t-IH-1wp">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -270,8 +263,24 @@
                                     <outlet property="delegate" destination="A0A-9s-kGb" id="a7o-54-AmN"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="X8t-IH-1wp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="A0A-9s-kGb" id="SSd-zl-WJq"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FQD-kp-ufb" firstAttribute="top" secondItem="X8t-IH-1wp" secondAttribute="bottom" id="4XA-Yx-Bfs"/>
+                            <constraint firstAttribute="trailing" secondItem="X8t-IH-1wp" secondAttribute="trailing" id="6Wt-PF-KaS"/>
+                            <constraint firstItem="FQD-kp-ufb" firstAttribute="bottom" secondItem="Hju-Ps-9iR" secondAttribute="bottom" id="JRN-IT-tAE"/>
+                            <constraint firstItem="X8t-IH-1wp" firstAttribute="trailing" secondItem="FQD-kp-ufb" secondAttribute="trailing" id="jQX-DB-5bv"/>
+                            <constraint firstItem="X8t-IH-1wp" firstAttribute="leading" secondItem="ucN-aK-Mz3" secondAttribute="leading" id="uqG-TJ-hRD"/>
+                            <constraint firstItem="X8t-IH-1wp" firstAttribute="leading" secondItem="FQD-kp-ufb" secondAttribute="leading" id="vv0-8C-QBd"/>
+                            <constraint firstItem="X8t-IH-1wp" firstAttribute="top" secondItem="Hju-Ps-9iR" secondAttribute="top" id="wCW-5X-Vo3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hju-Ps-9iR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Favorite" image="star" id="79h-iI-zid"/>
@@ -376,6 +385,13 @@
                                     <outlet property="delegate" destination="IZM-jx-BDv" id="1rR-n6-n80"/>
                                 </connections>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Wys-Ju-ZA4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="IZM-jx-BDv" id="eyF-wN-1bU"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -1017,15 +1033,17 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="likeSymbol:" destination="5Xw-cU-r1L" eventType="touchUpInside" id="eg9-nn-8JF"/>
+                                    <action selector="likeSymbol:" destination="5Xw-cU-r1L" eventType="touchUpInside" id="nMS-xg-pK6"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.12941176470588234" green="0.58823529411764708" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="aeA-eH-dJj" firstAttribute="top" secondItem="bJ1-vm-ZnE" secondAttribute="bottom" constant="8" symbolic="YES" id="1va-KH-j11"/>
                             <constraint firstItem="aeA-eH-dJj" firstAttribute="leading" secondItem="077-Jo-2tp" secondAttribute="leading" id="8oR-hV-KnC"/>
                             <constraint firstItem="JAy-rx-Zqq" firstAttribute="top" secondItem="3Z0-PP-V0F" secondAttribute="bottom" constant="8" symbolic="YES" id="AR3-Gq-UCu"/>
                             <constraint firstItem="3Z0-PP-V0F" firstAttribute="leading" secondItem="Tim-AX-RqO" secondAttribute="leadingMargin" id="Bjx-TY-jHr"/>
+                            <constraint firstItem="bJ1-vm-ZnE" firstAttribute="trailing" secondItem="JAy-rx-Zqq" secondAttribute="trailing" id="Geg-ex-UOr"/>
                             <constraint firstItem="aeA-eH-dJj" firstAttribute="leading" secondItem="Tim-AX-RqO" secondAttribute="leading" id="I4O-hm-XzR"/>
                             <constraint firstItem="aeA-eH-dJj" firstAttribute="top" secondItem="JAy-rx-Zqq" secondAttribute="bottom" constant="8" symbolic="YES" id="LTI-mF-oHf"/>
                             <constraint firstItem="3Z0-PP-V0F" firstAttribute="leading" secondItem="JAy-rx-Zqq" secondAttribute="leading" id="OQ4-at-70I"/>
@@ -1042,6 +1060,7 @@
                         <viewLayoutGuide key="safeArea" id="x31-XM-gZh"/>
                     </view>
                     <connections>
+                        <outlet property="likeBtn" destination="bJ1-vm-ZnE" id="c3j-Y8-7eJ"/>
                         <outlet property="meaningLabel" destination="xXT-3Y-NZb" id="2dM-la-pO4"/>
                         <outlet property="nameLabel" destination="JAy-rx-Zqq" id="k4j-QF-e0h"/>
                         <outlet property="openUrlBtn" destination="pDN-6j-OgT" id="EnN-xj-TOF"/>
@@ -1821,5 +1840,6 @@
         <image name="home" width="30" height="30"/>
         <image name="search" width="30" height="30"/>
         <image name="star" width="30" height="30"/>
+        <image name="star-border.png" width="50" height="50"/>
     </resources>
 </document>

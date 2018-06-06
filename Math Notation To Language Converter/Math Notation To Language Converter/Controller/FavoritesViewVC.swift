@@ -11,7 +11,7 @@ import UIKit
 /**
  * In this view a list of favorite symbols and formulas will be shown
  */
-class FavoriteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FavoriteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
     @IBOutlet weak var favSearchBar: UISearchBar!
     @IBOutlet weak var favTable: UITableView!
@@ -20,6 +20,7 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
     var favSymbols: [Symbol] = []
     
     var favList: [Any] = []
+    var originalList: [Any] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +45,7 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
                 favList.append(item)
             }
         }
+        originalList = favList
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -76,7 +78,31 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText != "" {
+            var filteredList: [Any] = []
+            for item in favList {
+                if let symbolItem = item as? Symbol {
+                    if symbolItem.symbol.lowercased().contains(searchText) || symbolItem.name.lowercased().contains(searchText) {
+                        filteredList.append(symbolItem)
+                    }
+                }
+                if let formulaItem = item as? Formula {
+                    if formulaItem.getFormula().lowercased().contains(searchText) || formulaItem.name.contains(searchText) {
+                        filteredList.append(formulaItem)
+                    }
+                }
+            }
+            favList = filteredList
+        } else {
+            favList = originalList
+        }
+        
+        favTable.reloadData()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
+        favSearchBar.text = ""
         favList = []
         if (UserDefaults.standard.object(forKey: "favFors") != nil) {
             let decode = UserDefaults.standard.object(forKey: "favFors") as! Data
