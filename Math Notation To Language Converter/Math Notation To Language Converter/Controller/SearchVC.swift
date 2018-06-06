@@ -52,11 +52,11 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         if let dic = dictionary {
             if isSearching {
                 cell.labelLeft.text = filterData[indexPath.row].symbol
-                cell.labelRight.text = filterData[indexPath.row].name.trunc(length: 15)
+                cell.labelRight.text = filterData[indexPath.row].name.trunc(length: 20)
                 cell.symbol = filterData[indexPath.row]
             } else {
                 cell.labelLeft.text = dic.symbolArray[indexPath.row].symbol
-                cell.labelRight.text = dic.symbolArray[indexPath.row].name.trunc(length: 15)
+                cell.labelRight.text = dic.symbolArray[indexPath.row].name.trunc(length: 20)
                 cell.symbol = dic.symbolArray[indexPath.row]
                 
             }
@@ -91,10 +91,6 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         //Init dictionary
         dictionary = Dictionary()
         
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
     }
     
     func mathSymbolPressed(symbol: String) {
