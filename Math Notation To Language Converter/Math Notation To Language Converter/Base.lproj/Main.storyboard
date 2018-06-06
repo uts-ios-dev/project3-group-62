@@ -174,9 +174,8 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Zg-p4-H89">
                                                 <rect key="frame" x="8" y="8" width="398" height="60"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Math Notation helper is your trusty companion for:" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMA-dd-6fg">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Math Notation helper is your trusty companion for:" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMA-dd-6fg">
                                                         <rect key="frame" x="8" y="8" width="382" height="45"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -184,15 +183,18 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="hMA-dd-6fg" secondAttribute="trailing" constant="8" id="3tW-IR-1w3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="hMA-dd-6fg" secondAttribute="bottom" constant="7" id="9Xy-5V-8Vq"/>
+                                                    <constraint firstItem="hMA-dd-6fg" firstAttribute="leading" secondItem="5Zg-p4-H89" secondAttribute="leading" constant="8" id="P3u-Eh-vmh"/>
                                                     <constraint firstAttribute="height" constant="60" id="aTa-bF-O3B"/>
+                                                    <constraint firstItem="hMA-dd-6fg" firstAttribute="top" secondItem="5Zg-p4-H89" secondAttribute="top" constant="8" id="o2a-bl-q3E"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NeO-Jb-MLH">
                                                 <rect key="frame" x="8" y="76" width="398" height="60"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="1. Understanding complicated Math symbols" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23e-6H-mEd">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="1. Understanding complicated Math symbols" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23e-6H-mEd">
                                                         <rect key="frame" x="8" y="8" width="382" height="45"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -200,15 +202,18 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="23e-6H-mEd" secondAttribute="bottom" constant="7" id="7l8-Rq-szx"/>
+                                                    <constraint firstAttribute="trailing" secondItem="23e-6H-mEd" secondAttribute="trailing" constant="8" id="8Aj-dI-fC1"/>
                                                     <constraint firstAttribute="height" constant="60" id="BRX-MG-soF"/>
+                                                    <constraint firstItem="23e-6H-mEd" firstAttribute="top" secondItem="NeO-Jb-MLH" secondAttribute="top" constant="8" id="EUm-96-ok1"/>
+                                                    <constraint firstItem="23e-6H-mEd" firstAttribute="leading" secondItem="NeO-Jb-MLH" secondAttribute="leading" constant="8" id="Oz4-UZ-VWJ"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ofk-cF-zOX">
                                                 <rect key="frame" x="8" y="144" width="398" height="60"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="2. Translating Math to Words" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0M-vs-LEY">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="2. Translating Math to Words" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0M-vs-LEY">
                                                         <rect key="frame" x="8" y="8" width="382" height="45"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -216,15 +221,18 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="J0M-vs-LEY" firstAttribute="leading" secondItem="Ofk-cF-zOX" secondAttribute="leading" constant="8" id="DJR-NX-TfQ"/>
+                                                    <constraint firstItem="J0M-vs-LEY" firstAttribute="top" secondItem="Ofk-cF-zOX" secondAttribute="top" constant="8" id="QfH-sr-ZH2"/>
                                                     <constraint firstAttribute="height" constant="60" id="RbU-4Y-TC7"/>
+                                                    <constraint firstAttribute="bottom" secondItem="J0M-vs-LEY" secondAttribute="bottom" constant="7" id="vaf-8g-j4T"/>
+                                                    <constraint firstAttribute="trailing" secondItem="J0M-vs-LEY" secondAttribute="trailing" constant="8" id="xqe-ew-fnH"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksM-9i-vOZ">
                                                 <rect key="frame" x="8" y="212" width="398" height="60"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="3. Looking up common formula definitions" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImL-yb-VfO">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="3. Looking up common formula definitions" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ImL-yb-VfO">
                                                         <rect key="frame" x="8" y="8" width="382" height="45"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -232,7 +240,11 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="ImL-yb-VfO" secondAttribute="bottom" constant="7" id="7ye-Z2-BgL"/>
+                                                    <constraint firstItem="ImL-yb-VfO" firstAttribute="leading" secondItem="ksM-9i-vOZ" secondAttribute="leading" constant="8" id="Gzn-jU-7gc"/>
                                                     <constraint firstAttribute="height" constant="60" id="Nv0-17-8AG"/>
+                                                    <constraint firstItem="ImL-yb-VfO" firstAttribute="top" secondItem="ksM-9i-vOZ" secondAttribute="top" constant="8" id="lBO-p0-CaJ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ImL-yb-VfO" secondAttribute="trailing" constant="8" id="zGY-MU-ILE"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
