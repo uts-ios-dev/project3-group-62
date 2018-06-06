@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7E0DB2C620BFC148005B2BC6 /* StaticFormulas.csv in Resources */ = {isa = PBXBuildFile; fileRef = 7E0DB2C520BFC148005B2BC6 /* StaticFormulas.csv */; };
 		7E37D90120BB968D0039ADD5 /* CSVHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E37D90020BB968D0039ADD5 /* CSVHandler.swift */; };
+		7E50E27F20C8068500E8822B /* UIVCDismissKb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E50E27E20C8068500E8822B /* UIVCDismissKb.swift */; };
 		7E6DC2C920BFD16000E2632D /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DC2C820BFD16000E2632D /* Protocols.swift */; };
 		7E6DC2CB20BFE8E200E2632D /* SummationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DC2CA20BFE8E200E2632D /* SummationVC.swift */; };
 		7E6DC2CD20BFF08300E2632D /* SubscriptMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6DC2CC20BFF08300E2632D /* SubscriptMapping.swift */; };
@@ -58,6 +59,7 @@
 		5B1040360A709A0AF6431931 /* Pods_Math_Notation_To_Language_Converter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Math_Notation_To_Language_Converter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E0DB2C520BFC148005B2BC6 /* StaticFormulas.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StaticFormulas.csv; sourceTree = "<group>"; };
 		7E37D90020BB968D0039ADD5 /* CSVHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVHandler.swift; sourceTree = "<group>"; };
+		7E50E27E20C8068500E8822B /* UIVCDismissKb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVCDismissKb.swift; sourceTree = "<group>"; };
 		7E6DC2C820BFD16000E2632D /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		7E6DC2CA20BFE8E200E2632D /* SummationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummationVC.swift; sourceTree = "<group>"; };
 		7E6DC2CC20BFF08300E2632D /* SubscriptMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SubscriptMapping.swift; path = "Math Notation To Language Converter/Assets.xcassets/SubscriptMapping.swift"; sourceTree = SOURCE_ROOT; };
@@ -223,6 +225,7 @@
 				F3B0030720C12BD3008FF40E /* String.swift */,
 				7EDFDC7B20C7DB43008A6327 /* UISearchBarMathKb.swift */,
 				7EDFDC7C20C7DB43008A6327 /* UITextFieldMathKb.swift */,
+				7E50E27E20C8068500E8822B /* UIVCDismissKb.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				A40E141A20BCE5F2003E6775 /* CommonFormulaVC.swift in Sources */,
 				A40E141B20BCE5F2003E6775 /* FormulaDetailVC.swift in Sources */,
 				7E6DC2C920BFD16000E2632D /* Protocols.swift in Sources */,
+				7E50E27F20C8068500E8822B /* UIVCDismissKb.swift in Sources */,
 				7EDFDC8520C7DB5D008A6327 /* MathKeyboard.swift in Sources */,
 				A40E141E20BCE5F2003E6775 /* CustomDefineVC.swift in Sources */,
 				F318E4D420ACF2A6006523B1 /* Symbol.swift in Sources */,
