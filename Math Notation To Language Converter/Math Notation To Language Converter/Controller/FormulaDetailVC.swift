@@ -23,6 +23,8 @@ class FormulaDetailVC: UIViewController {
     let dictionary = Dictionary()
     var formulaInput: String = "";
     
+    var favFors: [Formula] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         sourceLinkBtn.setTitle("https://en.wikipedia.org/wiki/Bessel_function", for: .normal)
@@ -34,6 +36,20 @@ class FormulaDetailVC: UIViewController {
             meaningT.text = formulaToShow?.info
         } else {
             print("dynamic formula")
+        }
+        
+        if (UserDefaults.standard.object(forKey: "favFors") != nil) {
+            let decode = UserDefaults.standard.object(forKey: "favFors") as! Data
+            favFors = NSKeyedUnarchiver.unarchiveObject(with: decode) as! [Formula]
+            
+            // test content
+            for item in favFors {
+                if item.getFormula() == formulaInputEt.text {
+                    likeBtn.isEnabled = false
+                    likeBtn.setImage(#imageLiteral(resourceName: "star-ful.png"), for: .normal)
+                    break
+                }
+            }
         }
     }
     
@@ -59,6 +75,16 @@ class FormulaDetailVC: UIViewController {
             
             updateMeaningTv(formulaArray: formulaArray)
             updateTranslate(formulaArray: formulaArray)
+        }
+        
+        likeBtn.setImage(#imageLiteral(resourceName: "star-border.png"), for: .normal)
+        likeBtn.isEnabled = true
+        for item in favFors {
+            if item.getFormula() == formulaInputEt.text {
+                likeBtn.isEnabled = false
+                likeBtn.setImage(#imageLiteral(resourceName: "star-ful.png"), for: .normal)
+                break
+            }
         }
     }
     
@@ -117,7 +143,7 @@ class FormulaDetailVC: UIViewController {
         var formulas: [Formula] = []
         var encodeData: Data;
         
-        var formulaToLike = Formula(staticFormula: formulaInputEt.text!, name: translationTv.text, info: meaningT.text, tags: "tag")
+        let formulaToLike = Formula(staticFormula: formulaInputEt.text!, name: translationTv.text, info: meaningT.text, tags: "tag")
         
         if (UserDefaults.standard.object(forKey: "favFors") != nil) {
             encodeData = UserDefaults.standard.object(forKey: "favFors") as! Data
@@ -129,6 +155,9 @@ class FormulaDetailVC: UIViewController {
         encodeData = NSKeyedArchiver.archivedData(withRootObject: formulas)
         UserDefaults.standard.set(encodeData, forKey: "favFors")
         UserDefaults.standard.synchronize()
+        
+        likeBtn.isEnabled = false
+        likeBtn.setImage(#imageLiteral(resourceName: "star-ful.png"), for: .normal)
     }
 }
 

@@ -27,6 +27,10 @@ class SymbolDetailVC: UIViewController {
         }
     }
     
+    @IBOutlet weak var likeBtn: UIButton!
+    
+    var favSymbols: [Symbol] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         /*
@@ -45,6 +49,19 @@ class SymbolDetailVC: UIViewController {
             openUrlBtn.isEnabled = false
             openUrlBtn.backgroundColor = UIColor.gray
             
+        }
+        
+        if (UserDefaults.standard.object(forKey: "favSymbols") != nil) {
+            let decode = UserDefaults.standard.object(forKey: "favSymbols") as! Data
+            favSymbols = NSKeyedUnarchiver.unarchiveObject(with: decode) as! [Symbol]
+            
+            for item in favSymbols {
+                if item.symbol == symbol?.symbol {
+                    likeBtn.isEnabled = false
+                    likeBtn.setImage(#imageLiteral(resourceName: "star-ful.png"), for: .normal)
+                    break
+                }
+            }
         }
         
     }
@@ -68,6 +85,8 @@ class SymbolDetailVC: UIViewController {
         encodeData = NSKeyedArchiver.archivedData(withRootObject: symbols)
         UserDefaults.standard.set(encodeData, forKey: "favSymbols")
         UserDefaults.standard.synchronize()
+        likeBtn.isEnabled = false
+        likeBtn.setImage(#imageLiteral(resourceName: "star-ful.png"), for: .normal)
     }
     
 }
