@@ -15,7 +15,7 @@ class SearchTableViewCell: UITableViewCell {
     
 }
 
-class SearchViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate, NumericKeyboardDelegate {
+class SearchViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate, MathKeyboardDelegate {
 
     
     @IBOutlet weak var tableView: UITableView!
@@ -78,7 +78,7 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         tableView.dataSource = self
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
-        searchBar.setAsNumericKeyboard(delegate: self)
+        searchBar.setAsMathKeyboard(delegate: self)
         
       
     }
@@ -88,15 +88,7 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         // Dispose of any resources that can be recreated.
     }
     
-    func numericKeyPressed(key: Int) {
-        //protocol stub
-    }
-    
-    func numericBackspacePressed() {
-        //protocol stub
-    }
-    
-    func numericSymbolPressed(symbol: String) {
+    func mathSymbolPressed(symbol: String) {
         //protocol stub
     }
   

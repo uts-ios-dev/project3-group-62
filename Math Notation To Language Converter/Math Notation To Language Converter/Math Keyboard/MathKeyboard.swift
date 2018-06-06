@@ -1,29 +1,26 @@
 //
-//  NumericKeyboard.swift
-//  Zipwire Location Validator
+//  MathKeyboard.swift
+//  Math Notation To Language Converter
 //
-//  Created by Ignacio Nieto Carvajal on 13/10/16.
-//  Copyright © 2016 Zipwire. All rights reserved.
+//  Created by Peter Bower on 06/06/2018
+//  Copyright © 2018 Summer Studios. All rights reserved.
+//
+//  Note: This code was built by following this Tutorial  https://digitalleaves.com/blog/2016/12/custom-in-app-keyboards/
 //
 
 import UIKit
 
-// public consts
-let kDLNumericKeyboardRecommendedHeight = 240.0
+let MathKeyboardRecommendedHeight = 240.0
 
-// private consts
-private let kDLNumericKeyboardNormalImage = UIImage(named: "numericKeyBackground")!
-private let kDLNumericKeyboardPressedImage = UIImage(named: "pressedNumericKeyBackground")!
+private let mathKeyboardNormalImage = UIImage(named: "mathKeyBackground")!
+private let mathKeyboardPressedImage = UIImage(named: "pressedMathKeyBackground")!
 
-@objc protocol NumericKeyboardDelegate {
-    func numericKeyPressed(key: Int)
-    func numericBackspacePressed()
-    func numericSymbolPressed(symbol: String)
+@objc protocol MathKeyboardDelegate {
+    func mathSymbolPressed(symbol: String)
 }
 
-class NumericKeyboard: UIView {
+class MathKeyboard: UIView {        //setup Button outlets for all mathKeyboard items
 
-    //symbols
     @IBOutlet weak var identicallyEqualsBtn: UIButton!
     @IBOutlet weak var notEqualsBtn: UIButton!
     @IBOutlet weak var approxEqualsBtn: UIButton!
@@ -74,8 +71,7 @@ class NumericKeyboard: UIView {
     @IBOutlet weak var infBtn: UIButton!
     
     
-    //create variable of all Keyboard Buttons
-    var allButtons: [UIButton] { return [
+    var allButtons: [UIButton] { return [       //create single variable of all Math Keyboard Buttons
         identicallyEqualsBtn,
         notEqualsBtn,
         approxEqualsBtn,
@@ -126,18 +122,15 @@ class NumericKeyboard: UIView {
         infBtn]
     }
     
-    // data
-    weak var delegate: NumericKeyboardDelegate?
+    weak var delegate: MathKeyboardDelegate?        // Setup data
     
-    // appearance variables
-    var normalBackgroundImage = kDLNumericKeyboardNormalImage { didSet { updateButtonsAppearance() } }
-    var pressedBackgroundImage = kDLNumericKeyboardPressedImage { didSet { updateButtonsAppearance() } }
+    var normalBackgroundImage = mathKeyboardNormalImage { didSet { updateButtonsAppearance() } }        // Setup appearance variables
+    var pressedBackgroundImage = mathKeyboardPressedImage { didSet { updateButtonsAppearance() } }
     var normalFontColor = UIColor.white { didSet { updateButtonsAppearance() } }
     var pressedFontColor = UIColor.white { didSet { updateButtonsAppearance() } }
     
-    // MARK: - Initialization and lifecycle.
-    
-    override init(frame: CGRect) {
+
+    override init(frame: CGRect) {      // Initialize the mathKeyboard
         super.init(frame: frame)
         initializeKeyboard()
     }
@@ -147,20 +140,15 @@ class NumericKeyboard: UIView {
         initializeKeyboard()
     }
     
-    func initializeKeyboard() {
-        // set view
-        let xibFileName = "NumericKeyboard"
+    func initializeKeyboard() { //setup mathKeyboard view
+        let xibFileName = "MathKeyboard"
         let view = Bundle.main.loadNibNamed(xibFileName, owner: self, options: nil)![0] as! UIView
         self.addSubview(view)
         view.frame = self.bounds
-        
-        // set buttons appearance.
         updateButtonsAppearance()
     }
-    
-    // MARK: - Changes in appearance
-    
-    fileprivate func updateButtonsAppearance() {
+
+    fileprivate func updateButtonsAppearance() {        // setup button Appearance
         for button in allButtons {
             button.setTitleColor(normalFontColor, for: .normal)
             button.setTitleColor(pressedFontColor, for: [.selected, .highlighted])
@@ -169,21 +157,11 @@ class NumericKeyboard: UIView {
         }
     }
     
-    // MARK: - Button actions
-    @IBAction func numericButtonPressed(_ sender: UIButton) {
-        //self.delegate?.numericKeyPressed(key: sender.tag)
-        if let symbol = sender.titleLabel?.text, symbol.characters.count > 0 {
-            self.delegate?.numericSymbolPressed(symbol: symbol)
-        }
-    }
-
-    @IBAction func backspacePressed(_ sender: AnyObject) {
-        self.delegate?.numericBackspacePressed()
-    }
+    // handle symbol button being pressed
     
     @IBAction func symbolWasPressed(_ sender: UIButton) {
-        if let symbol = sender.titleLabel?.text, symbol.characters.count > 0 {
-            self.delegate?.numericSymbolPressed(symbol: symbol)
+        if let symbol = sender.titleLabel?.text, !symbol.isEmpty {
+            self.delegate?.mathSymbolPressed(symbol: symbol)
         }
     }
     
