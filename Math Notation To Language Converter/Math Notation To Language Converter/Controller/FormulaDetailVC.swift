@@ -27,7 +27,7 @@ class FormulaDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sourceLinkBtn.setTitle("https://en.wikipedia.org/wiki/Bessel_function", for: .normal)
+        //sourceLinkBtn.setTitle("https://en.wikipedia.org/wiki/Bessel_function", for: .normal)
         // Do any additional setup after loading the view.
         if (formulaToShow != nil) {
             print("static fomrula: " + (formulaToShow?.getFormula())!)
