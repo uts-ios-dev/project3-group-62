@@ -204,9 +204,8 @@
                         <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="mkp-gd-uy6"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oHI-Eo-Yn9">
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oHI-Eo-Yn9">
                     <rect key="frame" x="8" y="511.5" width="752" height="1"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgh-Lq-4Di">
@@ -835,6 +834,7 @@
                 <constraint firstItem="cj1-dP-xO5" firstAttribute="bottom" secondItem="UpR-iq-PU2" secondAttribute="bottom" id="Lh1-YJ-Kg7"/>
                 <constraint firstItem="aHR-Xh-abR" firstAttribute="bottom" secondItem="Gqv-HD-Fzf" secondAttribute="bottom" id="Ltr-Ee-zGF"/>
                 <constraint firstItem="dZE-wv-t3v" firstAttribute="height" secondItem="gdJ-kT-70P" secondAttribute="height" id="LuP-Qi-tIN"/>
+                <constraint firstItem="oHI-Eo-Yn9" firstAttribute="top" secondItem="qFv-RM-QZN" secondAttribute="bottom" constant="8" id="M9E-Z7-wh6"/>
                 <constraint firstItem="2vA-JH-C7O" firstAttribute="top" secondItem="soy-Aq-Sgh" secondAttribute="top" id="MFd-Hz-VxF"/>
                 <constraint firstItem="soy-Aq-Sgh" firstAttribute="height" secondItem="2vA-JH-C7O" secondAttribute="height" id="MKA-Lf-dwg"/>
                 <constraint firstItem="9wz-92-WrG" firstAttribute="width" secondItem="rFZ-ff-pM4" secondAttribute="width" id="Mfp-He-0yr"/>
@@ -963,6 +963,7 @@
                 <constraint firstItem="2g3-0f-b1M" firstAttribute="top" secondItem="t7h-us-FEz" secondAttribute="top" id="k2R-Dm-65h"/>
                 <constraint firstItem="Ky4-oB-Cns" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.0909091" id="kaN-EA-DWo"/>
                 <constraint firstItem="aJ4-gp-Xjg" firstAttribute="height" secondItem="lpN-ht-Bpk" secondAttribute="height" id="kdL-AA-g4A"/>
+                <constraint firstItem="qFv-RM-QZN" firstAttribute="top" secondItem="soy-Aq-Sgh" secondAttribute="bottom" constant="8" id="kuN-bM-aqo"/>
                 <constraint firstItem="T2h-hv-0V3" firstAttribute="width" secondItem="aiT-0Y-dkR" secondAttribute="width" id="l9a-1w-m7S"/>
                 <constraint firstItem="soy-Aq-Sgh" firstAttribute="width" secondItem="2vA-JH-C7O" secondAttribute="width" id="lAE-Sn-zIU"/>
                 <constraint firstItem="Hcl-h3-ecY" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.0909091" id="lB5-tt-SMp"/>
@@ -996,6 +997,7 @@
                 <constraint firstItem="loX-cR-Lwa" firstAttribute="bottom" secondItem="rFZ-ff-pM4" secondAttribute="bottom" id="qrE-tW-ZRR"/>
                 <constraint firstItem="cgh-Lq-4Di" firstAttribute="top" secondItem="Tx1-3Z-SyE" secondAttribute="top" id="qwd-26-fEL"/>
                 <constraint firstItem="par-81-4s0" firstAttribute="top" secondItem="gdJ-kT-70P" secondAttribute="top" id="r6L-YG-ssK"/>
+                <constraint firstItem="Ky4-oB-Cns" firstAttribute="top" secondItem="ZS7-w3-8Fs" secondAttribute="bottom" constant="8" id="rBQ-iP-IqB"/>
                 <constraint firstItem="Jfl-tO-a9T" firstAttribute="width" secondItem="par-81-4s0" secondAttribute="width" id="rQ4-R8-9xe"/>
                 <constraint firstItem="B8L-Cp-jB4" firstAttribute="top" secondItem="IlV-Iz-2l8" secondAttribute="top" id="rQn-72-fok"/>
                 <constraint firstItem="B8L-Cp-jB4" firstAttribute="bottom" secondItem="IlV-Iz-2l8" secondAttribute="bottom" id="rd8-uR-XNG"/>
