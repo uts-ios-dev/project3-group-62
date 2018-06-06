@@ -760,16 +760,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZ9-Sw-ume">
                                         <rect key="frame" x="0.0" y="8" width="414" height="192"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Input your formula" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzm-7v-Lvp">
-                                                <rect key="frame" x="36" y="43" width="321" height="129"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Input your formula" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzm-7v-Lvp">
+                                                <rect key="frame" x="36" y="43" width="342" height="129"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[Translation]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcp-2A-RFk">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Translation]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcp-2A-RFk">
                                                 <rect key="frame" x="27" y="8" width="97" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -778,46 +776,25 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="192" id="JVJ-gZ-Ioh"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yyn-T5-f74">
-                                        <rect key="frame" x="0.0" y="413" width="414" height="55"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Source" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihH-5Z-kQL">
-                                                <rect key="frame" x="33" y="23" width="54" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mo5-KU-RYV">
-                                                <rect key="frame" x="95" y="18" width="72" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
-                                                <state key="normal" title="This is link"/>
-                                                <connections>
-                                                    <action selector="sourceLinkClicked:" destination="eJK-eS-F7X" eventType="touchUpInside" id="DQm-yV-cB0"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="55" id="x4X-VU-bRn"/>
+                                            <constraint firstAttribute="bottom" secondItem="mzm-7v-Lvp" secondAttribute="bottom" constant="20" id="KFL-1g-NL6"/>
+                                            <constraint firstItem="rcp-2A-RFk" firstAttribute="top" secondItem="cZ9-Sw-ume" secondAttribute="top" constant="8" id="P0G-fe-hYk"/>
+                                            <constraint firstItem="mzm-7v-Lvp" firstAttribute="leading" secondItem="cZ9-Sw-ume" secondAttribute="leading" constant="36" id="Xxw-e2-bx5"/>
+                                            <constraint firstItem="mzm-7v-Lvp" firstAttribute="top" secondItem="rcp-2A-RFk" secondAttribute="bottom" constant="14" id="hZR-GR-xfO"/>
+                                            <constraint firstAttribute="trailing" secondItem="mzm-7v-Lvp" secondAttribute="trailing" constant="36" id="r7B-bl-O8g"/>
+                                            <constraint firstItem="rcp-2A-RFk" firstAttribute="leading" secondItem="cZ9-Sw-ume" secondAttribute="leading" constant="27" id="uD2-3O-Aao"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOV-8u-nBS">
-                                        <rect key="frame" x="0.0" y="208" width="414" height="197"/>
+                                        <rect key="frame" x="0.0" y="208" width="414" height="252"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Input your formula" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REm-Rs-cMI">
-                                                <rect key="frame" x="36" y="43" width="343" height="146"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Input your formula" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REm-Rs-cMI">
+                                                <rect key="frame" x="36" y="43" width="343" height="201"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[Meaning]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rz-aw-uVY">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Meaning]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rz-aw-uVY">
                                                 <rect key="frame" x="27" y="8" width="78" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -825,7 +802,13 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="197" id="2Qc-Xq-lFO"/>
+                                            <constraint firstAttribute="height" constant="252" id="2Qc-Xq-lFO"/>
+                                            <constraint firstItem="REm-Rs-cMI" firstAttribute="leading" secondItem="ZOV-8u-nBS" secondAttribute="leading" constant="36" id="2kB-Hg-q3F"/>
+                                            <constraint firstAttribute="trailing" secondItem="REm-Rs-cMI" secondAttribute="trailing" constant="35" id="7Ia-5a-1eM"/>
+                                            <constraint firstItem="0Rz-aw-uVY" firstAttribute="leading" secondItem="ZOV-8u-nBS" secondAttribute="leading" constant="27" id="ClC-wC-Ngh"/>
+                                            <constraint firstItem="0Rz-aw-uVY" firstAttribute="top" secondItem="ZOV-8u-nBS" secondAttribute="top" constant="8" id="O7O-lV-A33"/>
+                                            <constraint firstItem="REm-Rs-cMI" firstAttribute="top" secondItem="0Rz-aw-uVY" secondAttribute="bottom" constant="14" id="hu5-2U-z7c"/>
+                                            <constraint firstAttribute="bottom" secondItem="REm-Rs-cMI" secondAttribute="bottom" constant="8" id="ih9-5m-XLr"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -833,14 +816,10 @@
                                 <constraints>
                                     <constraint firstItem="cZ9-Sw-ume" firstAttribute="centerX" secondItem="vAz-zY-eKP" secondAttribute="centerX" id="9Cu-ow-kwO"/>
                                     <constraint firstItem="ZOV-8u-nBS" firstAttribute="top" secondItem="cZ9-Sw-ume" secondAttribute="bottom" constant="8" id="EV4-c1-VWS"/>
-                                    <constraint firstAttribute="bottom" secondItem="Yyn-T5-f74" secondAttribute="bottom" constant="8" id="Kgz-kp-h9E"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZOV-8u-nBS" secondAttribute="bottom" constant="8" id="EhW-WR-Uru"/>
                                     <constraint firstItem="ZOV-8u-nBS" firstAttribute="leading" secondItem="vAz-zY-eKP" secondAttribute="leading" id="LlG-Zg-zuP"/>
                                     <constraint firstAttribute="trailing" secondItem="cZ9-Sw-ume" secondAttribute="trailing" id="QSk-dU-l3Z"/>
-                                    <constraint firstItem="Yyn-T5-f74" firstAttribute="leading" secondItem="vAz-zY-eKP" secondAttribute="leading" id="Rft-gc-8Pn"/>
-                                    <constraint firstItem="Yyn-T5-f74" firstAttribute="top" secondItem="ZOV-8u-nBS" secondAttribute="bottom" constant="8" id="SZo-mw-g5V"/>
                                     <constraint firstAttribute="trailing" secondItem="ZOV-8u-nBS" secondAttribute="trailing" id="TZc-gy-O6h"/>
-                                    <constraint firstItem="Yyn-T5-f74" firstAttribute="top" secondItem="ZOV-8u-nBS" secondAttribute="bottom" constant="8" id="dDk-HC-GVw"/>
-                                    <constraint firstAttribute="trailing" secondItem="Yyn-T5-f74" secondAttribute="trailing" id="s6U-Fg-umC"/>
                                     <constraint firstItem="ZOV-8u-nBS" firstAttribute="top" secondItem="cZ9-Sw-ume" secondAttribute="bottom" constant="8" id="seT-jM-6eq"/>
                                     <constraint firstItem="cZ9-Sw-ume" firstAttribute="leading" secondItem="vAz-zY-eKP" secondAttribute="leading" id="tHf-ZY-LoR"/>
                                     <constraint firstItem="cZ9-Sw-ume" firstAttribute="top" secondItem="vAz-zY-eKP" secondAttribute="top" constant="8" id="wTW-vm-yQb"/>
@@ -867,7 +846,6 @@
                         <outlet property="formulaInputEt" destination="AKs-5i-k5Q" id="cAg-FW-vEo"/>
                         <outlet property="likeBtn" destination="szI-jB-caD" id="MD8-vv-ni2"/>
                         <outlet property="meaningT" destination="REm-Rs-cMI" id="I6F-lR-17B"/>
-                        <outlet property="sourceLinkBtn" destination="mo5-KU-RYV" id="leQ-ox-sZ6"/>
                         <outlet property="translationTv" destination="mzm-7v-Lvp" id="B38-d5-Mdy"/>
                     </connections>
                 </viewController>
