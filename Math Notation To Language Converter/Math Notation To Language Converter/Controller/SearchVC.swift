@@ -73,6 +73,7 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         }
         */
         search(text: searchBar.text)
+        
     }
 
     override func viewDidLoad() {
@@ -82,12 +83,16 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         searchBar.delegate = self
         searchBar.returnKeyType = UIReturnKeyType.done
         searchBar.setAsMathKeyboard(delegate: self)
+    
     }
 
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     func mathSymbolPressed(symbol: String) {
