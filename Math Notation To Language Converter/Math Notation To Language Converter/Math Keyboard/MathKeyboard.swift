@@ -16,6 +16,7 @@ private let mathKeyboardNormalImage = UIImage(named: "mathKeyBackground")!
 private let mathKeyboardPressedImage = UIImage(named: "pressedMathKeyBackground")!
 
 @objc protocol MathKeyboardDelegate {
+    func numericButtonPressed(symbol: String)
     func mathSymbolPressed(symbol: String)
 }
 
@@ -54,21 +55,13 @@ class MathKeyboard: UIView {        //setup Button outlets for all mathKeyboard 
     @IBOutlet weak var squareRootBtn: UIButton!
     @IBOutlet weak var nthRootBtn: UIButton!
     @IBOutlet weak var modulusBtn: UIButton!
-    @IBOutlet weak var functionXBtn: UIButton!
-    @IBOutlet weak var factorialBtn: UIButton!
     @IBOutlet weak var realNumbersBtn: UIButton!
-    @IBOutlet weak var cylindricalBtn: UIButton!
     @IBOutlet weak var thetaBtn: UIButton!
     @IBOutlet weak var gammaBtn: UIButton!
     @IBOutlet weak var incompleteGammaBtn: UIButton!
     @IBOutlet weak var degenerateBtn: UIButton!
     @IBOutlet weak var laplaceBtn: UIButton!
     @IBOutlet weak var piBtn: UIButton!
-    @IBOutlet weak var sinBtn: UIButton!
-    @IBOutlet weak var cosBtn: UIButton!
-    @IBOutlet weak var tanBtn: UIButton!
-    @IBOutlet weak var limBtn: UIButton!
-    @IBOutlet weak var infBtn: UIButton!
     
     
     var allButtons: [UIButton] { return [       //create single variable of all Math Keyboard Buttons
@@ -105,21 +98,13 @@ class MathKeyboard: UIView {        //setup Button outlets for all mathKeyboard 
         squareRootBtn,
         nthRootBtn,
         modulusBtn,
-        //functionXBtn,
-        //factorialBtn,
         realNumbersBtn,
-        //cylindricalBtn,
         thetaBtn,
         gammaBtn,
         incompleteGammaBtn,
         degenerateBtn,
         laplaceBtn,
-        piBtn]//,
-        //sinBtn,
-        //cosBtn,
-        //tanBtn,
-        //limBtn,
-        //infBtn]
+        piBtn]
     }
     
     weak var delegate: MathKeyboardDelegate?        // Setup data
@@ -158,6 +143,11 @@ class MathKeyboard: UIView {        //setup Button outlets for all mathKeyboard 
     }
     
     // handle symbol button being pressed
+    @IBAction func numericButtonPressed(_ sender: UIButton) {
+        if let symbol = sender.titleLabel?.text, !symbol.isEmpty {
+            self.delegate?.mathSymbolPressed(symbol: symbol)
+        }
+    }
     
     @IBAction func symbolWasPressed(_ sender: UIButton) {
         if let symbol = sender.titleLabel?.text, !symbol.isEmpty {

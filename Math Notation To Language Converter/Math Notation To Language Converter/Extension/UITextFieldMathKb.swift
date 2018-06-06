@@ -14,24 +14,30 @@ private var mathKeyboardDelegate: MathKeyboardDelegate? = nil
 
 extension UITextField: MathKeyboardDelegate {
     
-    // Public methods to set or unset a UITextField that adopts MathKeyboardDelegate as a NumericKeyboard.
+    // Public methods to set or unset a UITextField that adopts MathKeyboardDelegate as a MathKeyboard.
     
     func setAsMathKeyboard(delegate: MathKeyboardDelegate?) {
         let mathKeyboard = MathKeyboard(frame: CGRect(x: 0, y: 0, width: 0, height: MathKeyboardRecommendedHeight))
-        self.inputView = mathKeyboard
+        self.inputAccessoryView = mathKeyboard
         mathKeyboardDelegate = delegate
         mathKeyboard.delegate = self
     }
     
     func unsetAsMathKeyboard() {
-        if let mathKeyboard = self.inputView as? MathKeyboard {
+        if let mathKeyboard = self.inputAccessoryView as? MathKeyboard {
             mathKeyboard.delegate = nil
         }
-        self.inputView = nil
+        self.inputAccessoryView = nil
         mathKeyboardDelegate = nil
     }
     
     //Can extend with Additional button type function here e.g. formula
+    
+    
+    internal func numericButtonPressed(symbol: String) {
+        self.text?.append(symbol)
+        mathKeyboardDelegate?.mathSymbolPressed(symbol: symbol)
+    }
     
     internal func mathSymbolPressed(symbol: String) {
         self.text?.append(symbol)

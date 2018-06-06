@@ -13,8 +13,8 @@ private var mathKeyboardDelegate: MathKeyboardDelegate? = nil
 
 extension UISearchBar: MathKeyboardDelegate {
     
-    // Public methods to set or unset a MathKeyboard to the UISearchBar's Input Accessory View
-    
+    //Public methods to set or unset a MathKeyboard to the UISearchBar's Input Accessory View
+
     func setAsMathKeyboard(delegate: MathKeyboardDelegate?) {
         let mathKeyboard = MathKeyboard(frame: CGRect(x: 0, y: 0, width: 0, height: MathKeyboardRecommendedHeight))
         self.inputAccessoryView = mathKeyboard
@@ -22,8 +22,9 @@ extension UISearchBar: MathKeyboardDelegate {
         mathKeyboard.delegate = self
     }
     
+    
     func unsetAsMathKeyboard() {
-        if let mathKeyboard = self.inputView as? MathKeyboard {
+        if let mathKeyboard = self.inputAccessoryView as? MathKeyboard {
             mathKeyboard.delegate = nil
         }
         self.inputAccessoryView = nil
@@ -31,6 +32,11 @@ extension UISearchBar: MathKeyboardDelegate {
     }
 
     //Can extend with Additional button type function here e.g. formula
+    
+    internal func numericButtonPressed(symbol: String) {
+        self.text?.append(symbol)
+        mathKeyboardDelegate?.mathSymbolPressed(symbol: symbol)
+    }
     
     internal func mathSymbolPressed(symbol: String) {
         self.text?.append(symbol)

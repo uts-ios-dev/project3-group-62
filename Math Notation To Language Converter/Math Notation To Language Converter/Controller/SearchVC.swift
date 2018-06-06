@@ -61,7 +61,47 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
     }
     
     func searchBar (_ searchBar : UISearchBar,textDidChange searchText : String) {
+        /*
         if searchBar.text == nil || searchBar.text == "" {
+            isSeaching = false
+            view.endEditing(true)
+            tableView.reloadData()
+        } else {
+            isSeaching = true
+            filterData = dictionary.symbolArray.filter({$0.symbol.lowercased().range(of:searchBar.text!.lowercased()) != nil || $0.name.lowercased().range(of:searchBar.text!.lowercased()) != nil})
+            tableView.reloadData()
+        }
+        */
+        search(text: searchBar.text)
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+        searchBar.delegate = self
+        searchBar.returnKeyType = UIReturnKeyType.done
+        searchBar.setAsMathKeyboard(delegate: self)
+    }
+
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func mathSymbolPressed(symbol: String) {
+       //print(searchBar.text!)
+        search(text: symbol)
+    }
+    
+    func numericButtonPressed(symbol: String) {
+        //print(searchBar.text!)
+        search(text: symbol)
+    }
+    
+    func search(text : String?) {
+        if text == nil || text == "" {
             isSeaching = false
             view.endEditing(true)
             tableView.reloadData()
@@ -72,24 +112,5 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         }
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
-        searchBar.delegate = self
-        searchBar.returnKeyType = UIReturnKeyType.done
-        searchBar.setAsMathKeyboard(delegate: self)
-        
-      
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func mathSymbolPressed(symbol: String) {
-        //protocol stub
-    }
   
 }
