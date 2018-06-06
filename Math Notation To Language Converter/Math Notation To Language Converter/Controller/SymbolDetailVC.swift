@@ -79,6 +79,7 @@ class SymbolDetailVC: UIViewController {
             encodeData = UserDefaults.standard.object(forKey: "favSymbols") as! Data
             symbols = NSKeyedUnarchiver.unarchiveObject(with: encodeData) as! [Symbol]
         }
+        symbol?.addUrl(url: (symbol?.url)!)
         symbols.append(symbol!)
         
         // encode
