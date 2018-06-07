@@ -5,6 +5,11 @@
 //  Created by Peter Bower on 10/5/18.
 //  Copyright © 2018 Summer Studios. All rights reserved.
 //
+//  Note: Legacy code from Initial Home Page Prototype view.
+//
+//
+
+
 
 import UIKit
 
