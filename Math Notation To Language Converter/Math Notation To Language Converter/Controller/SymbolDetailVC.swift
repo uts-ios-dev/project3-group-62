@@ -5,6 +5,7 @@
 //  Created by サイラク on 2018/6/2.
 //  Copyright © 2018年 Summer Studios. All rights reserved.
 //
+//  Shows detail page after symbol search.
 
 import UIKit
 

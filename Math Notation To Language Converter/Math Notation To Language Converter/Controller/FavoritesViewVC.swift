@@ -84,10 +84,11 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
+    //for searching favourites list
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText != "" {
             var filteredList: [Any] = []
-            for item in favList {
+            for item in favList {                   //Check both symbols and formulas
                 if let symbolItem = item as? Symbol {
                     if symbolItem.symbol.lowercased().contains(searchText) || symbolItem.name.lowercased().contains(searchText) {
                         filteredList.append(symbolItem)

@@ -65,6 +65,8 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         return cell
     }
     
+    //search bar for searching Symbols
+    
     func searchBar (_ searchBar : UISearchBar,textDidChange searchText : String) {
         if searchBar.text == nil || searchBar.text == "" {
             isSearching = false
