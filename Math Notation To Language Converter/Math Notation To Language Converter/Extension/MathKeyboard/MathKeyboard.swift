@@ -5,22 +5,25 @@
 //  Created by Peter Bower on 06/06/2018
 //  Copyright © 2018 Summer Studios. All rights reserved.
 //
-//  Note: This code was built by following this Tutorial  https://digitalleaves.com/blog/2016/12/custom-in-app-keyboards/
+//  Note: This code was built by referencing this Tutorial  https://digitalleaves.com/blog/2016/12/custom-in-app-keyboards/
 //
+//  To the Marker:
+//  Please be aware that due to a genuine IOS bug accessoryKeyboards do not display properly in XCode only unless one unchecks Hardware > Keyboard > 'Connect Hardware Keyboard' from the Simulator menu
 
 import UIKit
 
 let MathKeyboardRecommendedHeight = 240.0
 
+//setup images for Custom Math Keyboard -> for before and on-click
 private let mathKeyboardNormalImage = UIImage(named: "mathKeyBackground")!
 private let mathKeyboardPressedImage = UIImage(named: "pressedMathKeyBackground")!
 
-@objc protocol MathKeyboardDelegate {
-    func numericButtonPressed(symbol: String)
-    func mathSymbolPressed(symbol: String)
-}
+//custom math keyboard currently accepts Symbols, but other types can easily be added e.g. formula, numbers etc.
+@objc protocol MathKeyboardDelegate { func mathSymbolPressed(symbol: String) }
 
-class MathKeyboard: UIView {        //setup Button outlets for all mathKeyboard items
+//setup Button outlets for all mathKeyboard items
+//also note the MathKeyboard.xib button outlets linked to 'File's Owner' symbolWasPressed events file
+class MathKeyboard: UIView {
 
     @IBOutlet weak var identicallyEqualsBtn: UIButton!
     @IBOutlet weak var notEqualsBtn: UIButton!
@@ -114,7 +117,6 @@ class MathKeyboard: UIView {        //setup Button outlets for all mathKeyboard 
     var normalFontColor = UIColor.white { didSet { updateButtonsAppearance() } }
     var pressedFontColor = UIColor.white { didSet { updateButtonsAppearance() } }
     
-
     override init(frame: CGRect) {      // Initialize the mathKeyboard
         super.init(frame: frame)
         initializeKeyboard()
@@ -125,7 +127,7 @@ class MathKeyboard: UIView {        //setup Button outlets for all mathKeyboard 
         initializeKeyboard()
     }
     
-    func initializeKeyboard() { //setup mathKeyboard view
+    func initializeKeyboard() {         //setup mathKeyboard view
         let xibFileName = "MathKeyboard"
         let view = Bundle.main.loadNibNamed(xibFileName, owner: self, options: nil)![0] as! UIView
         self.addSubview(view)
@@ -141,16 +143,9 @@ class MathKeyboard: UIView {        //setup Button outlets for all mathKeyboard 
             button.setBackgroundImage(pressedBackgroundImage, for: [.selected, .highlighted])
         }
     }
-    
-    // handle symbol button being pressed
-    @IBAction func numericButtonPressed(_ sender: UIButton) {
-        if let symbol = sender.titleLabel?.text, !symbol.isEmpty {
-            self.delegate?.mathSymbolPressed(symbol: symbol)
-        }
-    }
-    
-    @IBAction func symbolWasPressed(_ sender: UIButton) {
-        if let symbol = sender.titleLabel?.text, !symbol.isEmpty {
+
+    @IBAction func symbolWasPressed(_ sender: UIButton) {                   // handle symbol button being pressed
+        if let symbol = sender.titleLabel?.text, !symbol.isEmpty {          // further IBActions for new button types can be added below here
             self.delegate?.mathSymbolPressed(symbol: symbol)
         }
     }

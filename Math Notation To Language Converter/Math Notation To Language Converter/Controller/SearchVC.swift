@@ -97,10 +97,6 @@ class SearchViewController: UIViewController,UITableViewDelegate,UITableViewData
         search(text: symbol)
     }
     
-    func numericButtonPressed(symbol: String) {
-        search(text: symbol)
-    }
-    
     func search(text : String?) {
         if text == nil || text == "" {
             isSearching = false

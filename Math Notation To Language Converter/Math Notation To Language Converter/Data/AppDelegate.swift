@@ -17,13 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        //Disabed debug print
         // Override point for customization after application launch.
         
         //Init the configuration for firebase
         FirebaseApp.configure()
         Database.database().isPersistenceEnabled = true
         print("config firebase")
+        
+        
+        //Debug output can be uncommented to demonstrate how to use the data dictionary accessor methods
         
         /*
         let model = Dictionary()
@@ -86,6 +88,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         */
+        
         return true
         
     }
