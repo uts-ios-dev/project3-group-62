@@ -549,7 +549,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3C16387A042D594A23E968F8 /* Pods-Math Notation To Language Converter.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4975ZZV574;
 				INFOPLIST_FILE = "Math Notation To Language Converter/Info.plist";
@@ -566,7 +565,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2018C06B67A36881D95028C4 /* Pods-Math Notation To Language Converter.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4975ZZV574;
 				INFOPLIST_FILE = "Math Notation To Language Converter/Info.plist";
