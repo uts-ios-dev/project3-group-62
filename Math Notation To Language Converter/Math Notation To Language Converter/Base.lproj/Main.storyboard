@@ -961,7 +961,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </stackView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tcP-m1-DE2">
-                                                <rect key="frame" x="350" y="38" width="28" height="30"/>
+                                                <rect key="frame" x="109.33333333333334" y="38" width="268.66666666666663" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -985,7 +985,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Value:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTU-di-l2c">
-                                                <rect key="frame" x="253" y="40.666666666666686" width="89" height="20.666666666666671"/>
+                                                <rect key="frame" x="12.333333333333336" y="40.666666666666686" width="89" height="20.666666666666671"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1015,6 +1015,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="9da-ds-HwF" firstAttribute="top" secondItem="NLN-mW-hSc" secondAttribute="bottom" constant="8" symbolic="YES" id="3ro-IG-sxR"/>
+                                            <constraint firstItem="tcP-m1-DE2" firstAttribute="leading" secondItem="NLN-mW-hSc" secondAttribute="leading" id="4g3-QQ-pe7"/>
                                             <constraint firstItem="eeE-dq-ob6" firstAttribute="leading" relation="lessThanOrEqual" secondItem="CCv-xd-LSc" secondAttribute="leading" constant="20" symbolic="YES" id="58A-Q2-2FF"/>
                                             <constraint firstAttribute="trailing" secondItem="tcP-m1-DE2" secondAttribute="trailing" constant="36" id="CUi-1W-CQP"/>
                                             <constraint firstItem="NLN-mW-hSc" firstAttribute="baseline" secondItem="eeE-dq-ob6" secondAttribute="baseline" id="FJW-ib-wxz"/>
@@ -1040,6 +1041,7 @@
                                             <constraint firstItem="9da-ds-HwF" firstAttribute="leading" secondItem="NLN-mW-hSc" secondAttribute="leading" id="rgK-rR-22A"/>
                                             <constraint firstItem="K5C-9c-jgU" firstAttribute="leading" secondItem="eeE-dq-ob6" secondAttribute="leading" id="rh2-c8-f4F"/>
                                             <constraint firstItem="9da-ds-HwF" firstAttribute="baseline" secondItem="K5C-9c-jgU" secondAttribute="baseline" id="tal-5z-ncw"/>
+                                            <constraint firstItem="tcP-m1-DE2" firstAttribute="trailing" secondItem="NLN-mW-hSc" secondAttribute="trailing" id="tcb-YS-1dd"/>
                                             <constraint firstItem="UTU-di-l2c" firstAttribute="leading" relation="lessThanOrEqual" secondItem="CCv-xd-LSc" secondAttribute="leading" constant="253" id="wwe-RT-9yS"/>
                                         </constraints>
                                     </view>
@@ -1074,7 +1076,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="gSG-IW-pQU">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="gSG-IW-pQU">
                                                 <rect key="frame" x="41" y="47" width="40" height="31"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -1131,7 +1133,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8l-o3-rf7">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8l-o3-rf7">
                                                 <rect key="frame" x="27" y="37" width="361" height="139"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -1347,7 +1349,7 @@
                                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="i=1" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="fYi-ma-Oy7">
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="i=1" textAlignment="center" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="fYi-ma-Oy7">
                                                 <rect key="frame" x="29" y="121" width="64" height="27"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <accessibility key="accessibilityConfiguration">
@@ -1384,7 +1386,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYd-UR-mEg">
                                         <rect key="frame" x="0.0" y="414" width="414" height="184"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U43-ow-P1x">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U43-ow-P1x">
                                                 <rect key="frame" x="27" y="37" width="361" height="139"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
