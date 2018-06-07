@@ -11,7 +11,9 @@ import UIKit
 class SymbolDetailVC: UIViewController {
     
     var symbol : Symbol?
-    //Ui Elements
+    
+    //UI Elements
+    
     @IBOutlet weak var symbolLabel: UILabel!
     
     @IBOutlet weak var nameLabel: UILabel!

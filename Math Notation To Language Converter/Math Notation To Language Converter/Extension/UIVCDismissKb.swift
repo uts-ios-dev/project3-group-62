@@ -11,7 +11,9 @@ import UIKit
 
 extension UIViewController {
     
-    //Stops the keyboard from getting stuck
+    //Enables the keyboard to be dismissed by tapping outside of the keyboard
+    //Prevents instances where the keyboard becomes stuck
+    
     override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }

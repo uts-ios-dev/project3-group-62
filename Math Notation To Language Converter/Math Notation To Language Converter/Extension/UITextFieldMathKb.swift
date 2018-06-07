@@ -5,7 +5,7 @@
 //  Created by Peter Bower on 06/06/2018
 //  Copyright © 2018 Summer Studios. All rights reserved.
 //
-//  Note: This code was built by following this Tutorial  https://digitalleaves.com/blog/2016/12/custom-in-app-keyboards/
+//  Note: This code was built by referencing this Tutorial  https://digitalleaves.com/blog/2016/12/custom-in-app-keyboards/
 //
 
 import UIKit
@@ -34,13 +34,8 @@ extension UITextField: MathKeyboardDelegate {
     //Can extend with Additional button type function here e.g. formula
     
     
-    internal func numericButtonPressed(symbol: String) {
-        self.text?.append(symbol)
-        mathKeyboardDelegate?.mathSymbolPressed(symbol: symbol)
-    }
-    
-    internal func mathSymbolPressed(symbol: String) {
-        self.text?.append(symbol)
+    internal func mathSymbolPressed(symbol: String) {               //handle symbol button being pressed
+        self.text?.append(symbol)                                   // further IBActions for new button types can be added below here
         mathKeyboardDelegate?.mathSymbolPressed(symbol: symbol)
     }
 }

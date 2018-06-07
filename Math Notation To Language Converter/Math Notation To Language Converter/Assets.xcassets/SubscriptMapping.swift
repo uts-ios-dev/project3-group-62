@@ -5,6 +5,7 @@
 //  Created by Peter Bower on 31/5/18.
 //  Copyright © 2018 Summer Studios. All rights reserved.
 //
+//  This file handles subscript mapping for dynamic formulas such as Summation / Product that require small letters
 
 import Foundation
 

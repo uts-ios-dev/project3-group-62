@@ -75,7 +75,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="XZD-tw-162"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="TB3-xq-l4r"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wy-Xk-aS2">
@@ -94,7 +94,7 @@
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="Sxv-zE-yUh"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="mVd-Px-kzj"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UzJ-VO-5OP">
@@ -107,7 +107,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="dbk-wI-Eb6"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="AOW-3l-6ks"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEh-Ub-Pmd">
@@ -120,7 +120,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="2rr-3Z-YFg"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="rmU-Ik-RVa"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3X-oZ-fNi">
@@ -133,7 +133,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="QEs-4a-axr"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="NBi-MW-IHe"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8L-Cp-jB4">
@@ -146,7 +146,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="QwR-ZP-MyL"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="ZQ4-kX-5eg"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IlV-Iz-2l8">
@@ -159,7 +159,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="laz-Yc-qjh"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="7qJ-Bo-cDo"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wz-92-WrG">
@@ -172,7 +172,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="7vp-d8-SfB"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="eta-oW-S7o"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcl-h3-ecY">
@@ -185,7 +185,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="YcT-ah-Y3H"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="DIR-1v-gtn"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2g3-0f-b1M">
@@ -198,7 +198,7 @@
                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="ri2-i0-SyO"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="mHY-wE-Trb"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -339,7 +339,7 @@
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="bD8-Iz-dsW"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="XFm-AH-oKH"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -363,7 +363,7 @@
                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="vi4-CV-f4g"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="f9c-jj-12u"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0z-4V-tl3">
@@ -376,7 +376,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="dh3-fw-mUF"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="Oqf-Y5-e45"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2h-hv-0V3">
@@ -389,7 +389,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="mqb-2v-f96"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="0kb-gQ-Tsy"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvY-EM-bmu">
@@ -402,7 +402,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="khh-0y-eMY"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="LdO-JP-Joq"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UpR-iq-PU2">
@@ -415,7 +415,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="a88-xv-2no"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="l0c-5F-syf"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cj1-dP-xO5">
@@ -428,7 +428,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="cO3-EG-EsW"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="K6a-9l-VPE"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSk-PV-hqa">
@@ -441,7 +441,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="YRR-Um-Mij"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="Vbe-xS-EAf"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5XK-0b-s1U">
@@ -454,7 +454,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="lIS-Rd-Ah4"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="Hle-PJ-HzO"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfl-tO-a9T">
@@ -467,7 +467,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="M31-f1-FPe"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="YaS-XV-SVV"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFe-IH-XqW">
@@ -480,7 +480,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="mkp-gd-uy6"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="3Fm-yF-3va"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -576,7 +576,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="yjE-xB-iac"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="xXK-y3-5C8"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXS-rF-7VK">
@@ -589,7 +589,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="IPg-xr-7GV"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="g0l-1w-cEX"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDp-ga-agN">
@@ -602,7 +602,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="VKY-kY-Qtq"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="UqB-0o-uDQ"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJ4-gp-Xjg">
@@ -615,7 +615,7 @@
                                         <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </state>
                                     <connections>
-                                        <action selector="numericButtonPressed:" destination="-1" eventType="touchUpInside" id="c18-P5-eLv"/>
+                                        <action selector="symbolWasPressed:" destination="-1" eventType="touchUpInside" id="xNl-mG-FC2"/>
                                     </connections>
                                 </button>
                             </subviews>

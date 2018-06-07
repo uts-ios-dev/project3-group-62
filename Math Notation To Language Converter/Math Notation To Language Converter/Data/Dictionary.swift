@@ -2,16 +2,13 @@
 //  Dictionary.swift
 //  Math Notation To Language Converter
 //
-//  Created by サイラク on 2018/5/24.
-//  Modified by Peter Bower on 2018/05/30
-//      Comments:
-//          Added Dictionary properties
-//          Added Dictionaries to access data by key / value pairs.
-//          Added accessor methods
-//      DEV COMMENTS:
-//          If we choose to add custom definitions or model persistence, we will need to add updater functions that keep the source Symbol/Formula Arrays and Dictionary objects in sync
+//  Initial file Created by サイラク on 2018/5/24.
+//  Dictionary Models Created by Peter Bower on 2018/05/30
 //  Copyright © 2018年 Summer Studios. All rights reserved.
 //
+//  This file overrides the SourceData class to take the 'raw' array structure and
+//  create Symbol / Formula dictionaries so values can be accessed by 'Symbol', 'Symbol Name', 'Formula' or 'Formula Name' to support the search function
+
 
 import Foundation
 

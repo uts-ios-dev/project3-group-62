@@ -5,6 +5,13 @@
 //  Created by Peter Bower on 30/5/18.
 //  Copyright © 2018 Summer Studios. All rights reserved.
 //
+//  Firebase integration Added by サイラク on 2018/5/24.
+//
+//  This file populates the app model objects with data loaded via the CSV Handler, and from the live firebase app.
+//  CSV is for the initial source content that we built in StaticFormulas.csv and Symbols.csv
+//  Firebase is a live system that instantly updates for users, however requires them to have a live internet connection.
+
+
 import Firebase
 import FirebaseDatabase
 
